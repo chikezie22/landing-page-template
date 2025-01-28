@@ -153,7 +153,7 @@
     </header>
     <section class="w-full py-[182px] relative">
       <div class="max-w-[1240px] w-[90%] mx-auto relative flex">
-        <div class="text-center">
+        <div class="text-center w-full">
           <div class="max-w-[539px]">
             <h1 class="font-montserrat font-bold text-[52px] w-full">
               Trusted
@@ -242,7 +242,7 @@
               </p>
             </div>
 
-            <div class="w-[389px] ml-10">
+            <div class="max-w-[389px] ml-10">
               <p>
                 At [Clinic Name], we provide expert, compassionate care tailored to your pets'
                 needs, ensuring they live happy, healthy lives.
@@ -250,7 +250,7 @@
             </div>
 
             <div
-              class="w-[442px] min-h-[156px] rounded-[24px] px-[28.57px] bg-[#1e1e1e] flex flex-col justify-center items-center text-white py-[10px] ml-10"
+              class="max-w-[442px] min-h-[156px] rounded-[24px] px-[28.57px] bg-[#1e1e1e] flex flex-col justify-center items-center text-white py-[10px] ml-10"
             >
               <div class="flex gap-[41px] items-center">
                 <p class="font-montserrat font-extrabold text-[46px]">150K</p>
@@ -303,15 +303,9 @@
             </div>
           </div>
         </div>
-        <div class="-ml-[18rem] -mt-[1.6rem]">
-          <div>
-            <svg
-              width="760"
-              height="714"
-              viewBox="0 0 760 714"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+        <div class="-ml-[18rem] -mt-[1.6rem] w-full">
+          <div class="w-full">
+            <svg viewBox="0 0 760 714" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M760 59.2V654.8C760 687.49 733.49 714 700.81 714H313.36C312.53 713.65 311.69 713.28 310.87 712.9C302.87 709.19 294.72 705.65 286.85 702.21C272.1 695.78 258.16 689.72 244.61 682.58L167.56 642.02C166.54 641.48 164.87 640.64 162.75 639.57C154.19 635.25 147.16 631.56 141.42 628.42V621.43C148.54 621.38 156.08 621.75 163.04 622.12C191.83 623.56 220.76 621.35 249.15 616.46C262.33 614.2 275.46 611.55 288.36 608C307.54 602.73 328.93 595.75 333.25 573.62C335.06 564.32 335.32 540.82 298.78 523.55C267.35 508.71 234.74 496.68 203.22 485.05C200.98 484.22 198.73 483.4 196.48 482.57C178.21 475.82 159.7 468.9 141.42 461.35C127.34 455.56 113.42 449.37 99.8901 442.62C95.5101 440.42 89.3801 437.85 81.6401 434.61C68.8501 429.26 35.6901 415.35 28.2501 407.33C30.4401 405.6 36.7601 401.91 53.3501 398.54C62.0901 396.76 71.1101 395.78 80.6601 394.76C92.1701 393.52 104.07 392.24 116.1 389.42C123.89 387.59 132.41 385.97 141.42 384.27C141.5 384.25 141.57 384.24 141.65 384.22C159.33 380.87 178.69 377.2 196.48 371.03C203.91 368.46 211.06 365.46 217.71 361.86C232.76 353.73 242.6 339.94 244.08 324.97C247.19 293.15 208.36 271.12 141.42 249.64C126.38 244.81 109.89 240 92.1601 235.13C85.4001 233.27 79.5701 231.66 76.1301 230.59L70.5501 228.87C49.5101 222.36 29.6401 216.22 13.1601 205.13C4.45013 199.26 1.70012 194.76 0.930119 192.01C0.490119 190.41 0.290117 189.67 3.74012 186.98C5.91012 185.28 8.65012 183.69 11.6801 182.22H141.42V60.24C141.42 26.96 168.38 0 201.64 0H700.81C733.49 0 760 26.5 760 59.2Z"
                 fill="#58D68D"
@@ -400,24 +394,24 @@
     <!-- Another Section -->
 
     <section class="w-full px-[100px] py-[46px]">
-      <div class="max-w-[1239px] flex min-h-[249px]">
+      <div class="max-w-[1239px] flex min-h-[249px] justify-between">
         <!-- first section -->
         <div
           class="flex flex-col gap-[37px] px-[40px] py-[30px] border border-[#F8F8F8] rounded-[40px] bg-[#fff] shadow-[0px_4.29px_53.66px_53.66px] shadow-[#A4A4A426]"
         >
-          <div class="flex">
-            <div class="flex flex-col gap-[15.3px] border-r-2 border-[#BABABA]">
+          <div class="flex justify-center items-center">
+            <div class="flex flex-col gap-[15.3px] border-r-2 border-[#BABABA] w-full">
               <p class="font-poppins font-semibold text-[16px]">Complete Name</p>
-              <div class="flex gap-[6px]">
+              <div class="flex gap-[6px] w-full">
                 <img src="./assets/images/avatar.png" alt="avatar" />
-                <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="Your Name" class="w-full" />
               </div>
             </div>
-            <div class="flex flex-col gap-[15.3px] pl-[35px]">
+            <div class="flex flex-col gap-[15.3px] pl-[35px] w-full">
               <p class="font-poppins font-semibold text-[16px]">Email Address</p>
               <div class="flex gap-[6px]">
                 <img src="./assets/images/message.png" alt="message" />
-                <input type="text" placeholder="Your Email" />
+                <input type="text" placeholder="Your Email" class="w-full" />
               </div>
             </div>
           </div>
@@ -431,7 +425,105 @@
           </button>
         </div>
         <!-- second section -->
-        <div class="grid grid-cols-2 gap-[10px]"></div>
+        <div class="grid grid-cols-2 gap-[10px]">
+          <!-- icon -1  -->
+          <div class="flex justify-center items-center gap-[11px]">
+            <div
+              class="w-[80px] aspect-square bg-white rounded-xl shadow-[0px_4.29px_23.66px_23.66px] shadow-[#A4A4A426] flex items-center justify-center"
+            >
+              <img
+                class="max-w-full object-cover object-center"
+                src="/assets/images/icon-1.png"
+                alt="icon-1"
+              />
+            </div>
+            <div class="flex flex-col">
+              <h3 class="font-poppings font-semibold text-base">Caring</h3>
+              <p class="font-poppings text-sm font-normal">
+                We prioritize your pet’s well-being with unmatched dedication.
+              </p>
+            </div>
+          </div>
+          <!-- icon -2  -->
+          <div class="flex justify-center items-center gap-[11px]">
+            <div
+              class="w-[80px] aspect-square bg-white rounded-xl shadow-[0px_4.29px_23.66px_23.66px] shadow-[#A4A4A426] flex items-center justify-center"
+            >
+              <img
+                class="max-w-full object-cover object-center"
+                src="/assets/images/icon-2.png"
+                alt="icon-1"
+              />
+            </div>
+            <div class="flex flex-col">
+              <h3 class="font-poppings font-semibold text-base">Experienced</h3>
+              <p class="font-poppings text-sm font-normal">
+                Years of expertise ensuring your pet’s health and happiness.
+              </p>
+            </div>
+          </div>
+          <!-- icon -3 -->
+          <div class="flex justify-center items-center gap-[11px]">
+            <div
+              class="w-[80px] aspect-square bg-white rounded-xl shadow-[0px_4.29px_23.66px_23.66px] shadow-[#A4A4A426] flex items-center justify-center"
+            >
+              <img
+                class="max-w-full object-cover object-center"
+                src="/assets/images/icon-3.png"
+                alt="icon-1"
+              />
+            </div>
+            <div class="flex flex-col">
+              <h3 class="font-poppings font-semibold text-base">Reliable</h3>
+              <p class="font-poppings text-sm font-normal">
+                Count on us for trusted and dependable pet care services.
+              </p>
+            </div>
+          </div>
+          <!-- icon -4 -->
+          <div class="flex justify-center items-center gap-[11px]">
+            <div
+              class="w-[80px] aspect-square bg-white rounded-xl shadow-[0px_4.29px_23.66px_23.66px] shadow-[#A4A4A426] flex items-center justify-center"
+            >
+              <img
+                class="max-w-full object-cover object-center"
+                src="/assets/images/icon-4.png"
+                alt="icon-1"
+              />
+            </div>
+            <div class="flex flex-col">
+              <h3 class="font-poppings font-semibold text-base">Compassionate</h3>
+              <p class="font-poppings text-sm font-normal">
+                Heartfelt care for your furry friends, every single visit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- third section -->
+    <section class="w-full py-[50px] px-[100px]">
+      <div class="max-w-[1239px]">
+        <button
+          class="float-end p-[10px] rounded-[24px] bg-[#d1edff] text-base font-poppings font-normal text-center"
+        >
+          Services
+        </button>
+        <!-- main div -->
+        <div class="w-full flex">
+          <div class="hero-2 relative">
+            <div
+              class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <img
+                src="./assets/images/Doctor.png"
+                alt="doctor"
+                class="object-cover h-auto max-w-full"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
