@@ -503,27 +503,100 @@
     </section>
 
     <!-- third section -->
-    <section class="w-full py-[50px] px-[100px]">
+    <section class="w-full h-full py-[50px] px-[100px] relative group overflow-hidden">
+      <div
+        class="relative -left-[100px] top-[70px] group-hover:translate-y-14 transition-all duration-1000"
+      >
+        <img src="./assets/images/curve.png" alt="curve" />
+      </div>
+
       <div class="max-w-[1239px]">
         <button
-          class="float-end p-[10px] rounded-[24px] bg-[#d1edff] text-base font-poppings font-normal text-center"
+          class="float-end p-[10px] w-[218px] rounded-[24px] bg-[#d1edff] text-base font-poppings font-normal text-center"
         >
           Services
         </button>
         <!-- main div -->
-        <div class="w-full flex">
-          <div class="hero-2 relative">
+        <div class="w-full flex gap-3 justify-center items-center">
+          <div class="hero-2 relative group-hover:translate-x-8 transition-all duration-1000">
             <div
-              class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              class="absolute left-20 top-0 flex justify-center items-center z-10 bg-white w-[127px] aspect-square rounded-3xl group-hover:scale-75 transition-all duration-1000"
             >
+              <img
+                class="group-hover:-rotate-90 transition-all duration-1000"
+                src="./assets/images/doc-icon.png"
+                alt="icon"
+              />
+            </div>
+            <div class="absolute inset-0 bottom-[70px] flex justify-center">
               <img
                 src="./assets/images/Doctor.png"
                 alt="doctor"
-                class="object-cover h-auto max-w-full"
+                class="object-contain h-full w-full max-w-[90%]"
               />
             </div>
           </div>
+
+          <!-- other section -->
+          <div
+            class="flex-1 flex justify-center items-center translate-y-10 group-hover:translate-y-0 transition-all duration-1000"
+          >
+            <div class="grid grid-cols-2 gap-4">
+              <!-- first card -->
+              <div
+                class="bg-[#58d68d] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px]"
+              >
+                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
+                  <img src="./assets/images/jam-1.png" alt="jam image" />
+                </div>
+                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                  General Checkups
+                </p>
+              </div>
+              <!-- second card -->
+              <div
+                class="bg-[#e9327b] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px] translate-y-5 group-hover:translate-y-0 transition-all duration-1000"
+              >
+                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
+                  <img src="./assets/images/syringe.png" alt="syringe image" />
+                </div>
+                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                  Vaccinations Protection
+                </p>
+              </div>
+              <!-- third card -->
+              <div
+                class="bg-[#5facdf] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px]"
+              >
+                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
+                  <img src="./assets/images/lucid scissors.png" alt="scissors image" />
+                </div>
+                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                  Pet Grooming
+                </p>
+              </div>
+              <!-- fourth card -->
+              <div
+                class="bg-[#f97a2c] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px] translate-y-5 group-hover:translate-y-0 transition-all duration-1000"
+              >
+                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
+                  <img src="./assets/images/bowl.png" alt="bowl image" />
+                </div>
+                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                  Nutrition Advice
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <button class="bg-[#1386d1] block rounded-[41px] py-2 px-5 text-white mx-auto">
+          See More
+        </button>
+      </div>
+      <div
+        class="absolute right-0 bottom-10 -rotate-[14.22deg] group-hover:-translate-y-10 transition-all duration-1000"
+      >
+        <img src="./assets/images/curve-1.png" alt="curve" />
       </div>
     </section>
 
