@@ -59,6 +59,11 @@
                 '80%': { transform: 'translateX(0)' },
                 '100%': { transform: 'translateX(0)' },
               },
+              bounceHeight: {
+                '0%': { transform: scaleY(1) },
+                '50%': { transform: scaleY(1.1) },
+                '100%': { transform: scaleY(1) },
+              },
             },
             animationDelay: {
               100: '100ms',
@@ -607,10 +612,10 @@
     </section>
 
     <!-- fourth section -->
-    <section class="w-full grid gap-[34px] place-items-center py-[50px] px-[100px]">
+    <section class="w-full grid gap-[34px] place-items-center py-[50px] px-[100px] group">
       <!-- first section -->
       <div
-        class="max-w-[1240px] mx-auto grid grid-cols-[633px_minmax(0,533px)] gap-11 items-center"
+        class="max-w-[1240px] mx-auto grid grid-cols-[minmax(300px,633px)_minmax(300px,533px)] gap-11 items-center relative"
       >
         <!-- first flex -->
         <div class="flex flex-col gap-9 justify-start">
@@ -631,7 +636,7 @@
         </div>
         <!-- second flex -->
 
-        <div class="self-start relative w-full max-w-[533px] flex flex-col items-center">
+        <div class="lg:self-start relative w-full max-w-[533px] flex flex-col items-center">
           <div class="w-full max-w-[278px] relative z-10">
             <img
               src="./assets/images/dog.png"
@@ -639,21 +644,41 @@
               class="max-w-full object-cover object-center"
             />
           </div>
-          <button class="block w-full -mt-16 bg-[#3f9463] rounded-[24px] h-[85px] hover:h-[auto]">
-            <p class="text-white font-montserrat font-bold text-[44px] py-11">
+          <button
+            class="block w-full -mt-16 bg-[#3f9463] rounded-[24px] h-[85px] group-hover:h-auto lg:group-hover:h-[256px] transition-[height] duration-500 ease-in-out hover:ease-[cubic-bezier(0.68,-0.55,0.265,1.55)]"
+          >
+            <p class="text-white font-montserrat font-bold text-[44px] pt-20 pb-11">
               Trusted by 150k+ Pet Owners
             </p>
           </button>
+        </div>
 
-          <!-- <div class="absolute top-24 left-8">
-            <p class="text-black font-montserrat font-bold text-[44px]">
-              Trusted by 150k+ Pet Owners
-            </p>
-          </div> -->
+        <!-- circle image  -->
+        <div class="absolute bottom-0 -left-[100px]">
+          <img
+            src="./assets/images/circle.png"
+            alt="circle image"
+            class="h-auto w-full max-w-full object-contain"
+          />
         </div>
       </div>
       <!-- second section -->
-      <div></div>
+      <div
+        class="relative flex justify-center items-center w-full max-w-[1240px] h-[480px] rounded-[24px] overflow-clip"
+      >
+        <video class="video w-full max-w-full h-full object-cover" muted>
+          <source src="./assets/videos/dog.mp4" type="video/mp4" />
+          Your browser doesn't support the video tag
+        </video>
+
+        <img class="play absolute cursor-pointer" src="./assets/images/play.png" alt="" />
+
+        <img
+          class="hidden pause absolute cursor-pointer"
+          src="./assets/images/pause.png"
+          alt="pause"
+        />
+      </div>
     </section>
 
     <script src="./js/index.js"></script>
