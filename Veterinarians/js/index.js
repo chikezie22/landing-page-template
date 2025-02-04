@@ -35,3 +35,5 @@ video.addEventListener('ended', () => {
   video.currentTime = 0;
   video.play();
 });
+
+// https://github.com/livebloggerofficial/Counter-Animation/tree/main
