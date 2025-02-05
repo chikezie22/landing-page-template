@@ -36,4 +36,30 @@ video.addEventListener('ended', () => {
   video.play();
 });
 
+// carousel implementation
+const carouselTrack = document.querySelector('.carousel-track');
+console.log(carouselTrack);
+const slides = carouselTrack.children;
+let currentIndex = 0;
+
+const nextSlide = () => {
+  currentIndex++;
+  carouselTrack.style.transition = `transform 0.5s ease-in-out`;
+  carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+  // console.log(currentIndex);
+};
+
+// Start auto-advance
+let interval = setInterval(nextSlide, 3000);
+
+carouselTrack.addEventListener('transitionend', () => {
+  if (currentIndex === slides.length - 1) {
+    setTimeout(() => {
+      carouselTrack.style.transition = 'none'; // Disable transition while resetting position
+      carouselTrack.style.transform = `translateX(0)`;
+      currentIndex = 0;
+    }, 1000);
+  }
+});
+
 // https://github.com/livebloggerofficial/Counter-Animation/tree/main
