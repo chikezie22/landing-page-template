@@ -38,7 +38,7 @@ video.addEventListener('ended', () => {
 
 // carousel implementation
 const carouselTrack = document.querySelector('.carousel-track');
-console.log(carouselTrack);
+// console.log(carouselTrack);
 const slides = carouselTrack.children;
 let currentIndex = 0;
 
