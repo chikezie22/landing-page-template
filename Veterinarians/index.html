@@ -59,11 +59,11 @@
                 '80%': { transform: 'translateX(0)' },
                 '100%': { transform: 'translateX(0)' },
               },
-              bounceHeight: {
-                '0%': { transform: scaleY(1) },
-                '50%': { transform: scaleY(1.1) },
-                '100%': { transform: scaleY(1) },
-              },
+              // bounceHeight: {
+              //   '0%': { transform: scaleY(1) },
+              //   '50%': { transform: scaleY(1.1) },
+              //   '100%': { transform: scaleY(1) },
+              // },
             },
             animationDelay: {
               100: '100ms',
@@ -77,7 +77,7 @@
     </script>
   </head>
   <body class="text-[#1e1e1e]">
-    <header class="w-full fixed top-0 left-0 z-50 h-[72px] py-[16px] px-[100px] bg-white">
+    <header class="w-full fixed top-0 left-0 z-50 min-h-[72px] py-[16px] px-[100px] bg-white">
       <div class="container mx-auto">
         <div class="flex justify-between items-center py-4">
           <div class="flex gap-[10px] justify-center items-center">
@@ -1080,8 +1080,8 @@
                 essential information to keep your furry friend happy and thriving.
               </p>
             </div>
-            <div class="w-full pt-[20px]">
-              <div class="flex space-y-6 justify-start items-center gap-[26px]">
+            <div class="w-full pt-[20px] flex flex-col gap-6">
+              <div class="flex justify-start items-center gap-[26px] h-full">
                 <div
                   class="w-[58px] aspect-square bg-[#5dade2] rounded-[17px] text-white flex justify-center items-center"
                 >
@@ -1097,7 +1097,7 @@
                 </div>
               </div>
               <!-- phone -->
-              <div class="flex space-y-6 justify-start items-center gap-[26px]">
+              <div class="flex justify-start items-center gap-[26px]">
                 <div
                   class="w-[58px] aspect-square bg-[#5dade2] rounded-[17px] text-white flex justify-center items-center"
                 >
@@ -1113,7 +1113,7 @@
                 </div>
               </div>
               <!-- find us -->
-              <div class="flex space-y-6 justify-start items-center gap-[26px]">
+              <div class="flex justify-start items-center gap-[26px]">
                 <div
                   class="w-[58px] aspect-square bg-[#5dade2] rounded-[17px] text-white flex justify-center items-center"
                 >
@@ -1164,6 +1164,85 @@
         </div>
       </div>
     </section>
+
+    <!-- footer section -->
+    <footer
+      class="w-full py-[73px] px-[100px] border-t border-t[#787878] flex flex-col gap-[120px]"
+    >
+      <div class="max-w-[1240px] w-full flex justify-between gap-[16px]">
+        <div class="flex-1 max-w-[612px] flex flex-col gap-[24px]">
+          <div class="flex gap-[10px] justify-start items-center">
+            <svg
+              width="40"
+              height="36"
+              viewBox="0 0 40 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="0.738634" width="39.8339" height="34.5227" rx="9.41869" fill="#58D68D" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31.215 11.4736H35.1246L24.1623 28.7986L21.556 24.2757L18.5662 28.7986L16.8796 26.4987L21.556 19.1394L24.0856 23.0492L31.215 11.4736Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.2301 18.227L27.9669 11.4758H24.3809L22.8979 14.0215C22.0036 15.583 22.6726 16.921 23.2301 18.227Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.8325 18.0323L21.0409 16.2014C19.669 10.6731 16.5604 7.00503 11.7759 7.20967C6.22543 7.5802 3.36791 13.462 5.32527 17.6541L11.06 28.1396C11.5419 28.94 12.4541 28.979 12.9358 28.2114L15.4515 23.3802L14.479 21.4862L12.0822 26.4585L7.11692 17.0908C5.41604 13.8303 8.12347 9.43423 11.7759 9.15293C13.9162 8.86466 16.7453 10.9306 17.9207 14.0618L19.8325 18.0321V18.0323Z"
+                fill="white"
+              />
+              <path
+                d="M12.3337 17.5186C13.4523 17.5186 14.359 16.6118 14.359 15.4933C14.359 14.3747 13.4523 13.4679 12.3337 13.4679C11.2151 13.4679 10.3083 14.3747 10.3083 15.4933C10.3083 16.6118 11.2151 17.5186 12.3337 17.5186Z"
+                fill="white"
+              />
+            </svg>
+
+            <p class="font-mulish text-base">Wivali AI</p>
+          </div>
+          <button
+            class="w-fit rounded-3xl flex gap-1 justify-center items-center font-poppings text-sm text-[#1e1e1e] border border-[#58d68d] py-[11px] px-[28px]"
+          >
+            <span><img src="./assets/images/small-message.png" alt="" /></span> Drop a line
+          </button>
+        </div>
+        <div
+          class="flex-1 max-w-[612px] flex justify-between gap-[16px] text-[#1e1e1e] text-sm font-poppings font-normal"
+        >
+          <div class="flex-1">
+            <h3 class="font-semibold text-[10px]">NAV</h3>
+            <p>Home</p>
+            <p>Services</p>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-semibold text-[10px]">ABOUT</h3>
+            <p>Blog</p>
+            <p>About us</p>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-semibold text-[10px]">CONTACT US</h3>
+            <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+            <p>+1 891 989-11-91</p>
+            <p>hello@logoipsum.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center">
+        <span class="font-poppings font-medium text-[10px] text-[#1e1e1e]">© 2025 — Copyright</span>
+        <span class="flex gap-6">
+          <img src="./assets/images/instagram.png" alt="instagram icon" /><img
+            src="./assets/images/facebook.png"
+            alt="facebook icon"
+          />
+        </span>
+      </div>
+    </footer>
 
     <script src="./js/index.js"></script>
   </body>
