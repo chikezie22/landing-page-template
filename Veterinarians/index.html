@@ -217,7 +217,7 @@
         </div>
       </div>
     </header>
-    <section class="w-full py-[182px] max-lg:mb-[182px] relative max-lg:h-dvh">
+    <section class="w-full py-[182px] max-lg:mb-[182px] relative max-lg:h-dvh px-[10px]">
       <div class="max-w-[1240px] w-[90%] mx-auto relative flex items-center">
         <div class="text-center w-full flex-1 max-lg:z-10 relative">
           <div class="max-w-[539px] max-lg:w-full">
@@ -420,7 +420,9 @@
 
         <!--**************************************************** rounded spining icon svg**************************************** -->
 
-        <div class="absolute max-lg:right-0 right-[-100px] -top-[1.6rem] animate-move-round">
+        <div
+          class="absolute max-lg:right-[-50px] right-[-100px] -top-[1.6rem] animate-move-round max-lg:-top-[6rem]"
+        >
           <svg
             width="160"
             height="161"
@@ -466,7 +468,7 @@
 
     <!-- Another Section -->
 
-    <section class="w-full px-[100px] py-[46px] group">
+    <section class="w-full md:px-[100px] px-[10px] py-[46px] group">
       <div
         class="max-w-[1239px] w-full flex min-h-[249px] gap-10 justify-between max-lg:flex-col max-lg:justify-center"
       >
@@ -584,7 +586,7 @@
     </section>
 
     <!-- third section -->
-    <section class="w-full h-full py-[50px] px-[100px] relative group overflow-hidden">
+    <section class="w-full h-full py-[50px] md:px-[100px] px-[10px] relative group overflow-hidden">
       <div
         class="relative -left-[100px] top-[70px] group-hover:translate-y-14 transition-all duration-1000"
       >
@@ -684,7 +686,9 @@
     </section>
 
     <!-- fourth section -->
-    <section class="w-full grid gap-[34px] place-items-center py-[50px] px-[100px] group">
+    <section
+      class="w-full grid gap-[34px] place-items-center py-[50px] md:px-[100px] px-[10px] group"
+    >
       <!-- first section -->
       <div
         class="max-w-[1240px] mx-auto grid grid-cols-[minmax(300px,633px)_minmax(300px,533px)] gap-11 items-center relative max-lg:grid-cols-1 place-items-center"
@@ -692,7 +696,7 @@
         <!-- first flex -->
         <div class="flex flex-col gap-9 justify-start">
           <button class="block max-w-[218px] bg-[#ffcfe2] p-2 rounded-3xl">About Us</button>
-          <h2 class="font-montserrat font-bold text-[44px] text-[#1e1e1e]">
+          <h2 class="font-montserrat font-bold max-md:text-[30px] text-[44px] text-[#1e1e1e]">
             Providing The Best Care Service for Your Pets
           </h2>
           <p class="font-poppings font-normal text-[16px] text-[#787878]">
@@ -755,21 +759,22 @@
 
     <!-- fifth section -->
 
-    <section class="w-full h-full px-[100px] group">
+    <section class="w-full h-full md:px-[100px] px-[10px] group">
       <button
         class="float-right rounded-[24px] p-[10px] bg-[#c9ffe0] text-[#2f734b] font-poppings font-normal text-center text-base"
       >
         Why Choose US
       </button>
       <!-- flex-container -->
-      <div class="w-full h-full flex">
+      <div
+        class="w-full h-full flex justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center"
+      >
         <!-- first flex div -->
         <div
-          class="self-end relative flex justify-center items-center translate-y-20 group-hover:translate-y-0 transition-transform duration-1000"
+          class="self-end max-lg:self-center flex-1 relative flex justify-center items-center translate-y-20 group-hover:translate-y-0 transition-transform duration-1000"
         >
           <svg
-            width="470"
-            height="442"
+            class="w-full max-w-[470px] h-auto z-[-1]"
             viewBox="0 0 470 442"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -788,14 +793,14 @@
             />
           </div>
 
-          <div class="absolute right-10 bottom-0">
+          <div class="absolute right-5 bottom-0 z-10 backdrop-blur-sm">
             <img src="./assets/images/streamline.png" alt="streamline" />
           </div>
         </div>
         <!-- second flex div -->
-        <div class="flex flex-col gap-x-5 justify-center w-full relative">
-          <div class="max-w-[652px] h-[257px] self-end">
-            <h2 class="font-montserrat font-bold text-[44px] text-[#1e1e1e]">
+        <div class="flex flex-[1.5] flex-col gap-x-5 justify-center w-full relative">
+          <div class="max-w-[652px] min-h-[257px] self-end">
+            <h2 class="font-montserrat font-bold text-[44px] max-md:text-[30px] text-[#1e1e1e]">
               Your Pet's Health and Happiness First.
             </h2>
             <p
@@ -810,10 +815,12 @@
           <div
             class="p-[50px] rounded-[24px] flex gap-[22px] justify-between items-center bg-white shadow-[0px_4px_50px_50px_#A4A4A426] max-w-[770px]"
           >
-            <div class="grid grid-cols-2 place-items-center gap-x-[64px] gap-y-[22px]">
+            <div class="grid grid-cols-2 place-items-center gap-x-[64px] gap-y-[22px] text-nowrap">
               <!-- first review -->
               <div class="flex flex-col items-center justify-center">
-                <div class="font-montserrat font-bold text-[56px] text-black text-center">
+                <div
+                  class="font-montserrat font-bold text-[clamp(1rem,-0.3298rem+4.2553vw,3.5rem)] text-black text-center"
+                >
                   <span>3</span>
                   <span> +</span>
                 </div>
@@ -821,7 +828,9 @@
               </div>
               <!-- second review -->
               <div class="flex flex-col items-center justify-center">
-                <div class="font-montserrat font-bold text-[56px] text-black text-center">
+                <div
+                  class="font-montserrat font-bold text-[clamp(1rem,-0.3298rem+4.2553vw,3.5rem)] text-nowrap text-black text-center"
+                >
                   <span>100</span>
                   <span> k</span>
                 </div>
@@ -829,7 +838,9 @@
               </div>
               <!-- third review -->
               <div class="flex flex-col items-center justify-center">
-                <div class="font-montserrat font-bold text-[56px] text-black text-center">
+                <div
+                  class="font-montserrat font-bold text-[clamp(1rem,-0.3298rem+4.2553vw,3.5rem)] text-black text-center"
+                >
                   <span>50</span>
                   <span> +</span>
                 </div>
@@ -837,7 +848,9 @@
               </div>
               <!-- fourth review -->
               <div class="flex flex-col items-center justify-center">
-                <div class="font-montserrat font-bold text-[56px] text-black text-center">
+                <div
+                  class="font-montserrat font-bold text-[clamp(1rem,-0.3298rem+4.2553vw,3.5rem)] text-black text-center"
+                >
                   <span>10</span>
                   <span> +</span>
                 </div>
@@ -846,7 +859,9 @@
             </div>
             <div class="p-4 bg-[#f97a2c] rounded-3xl">
               <div class="flex flex-col justify-center items-center text-white">
-                <p class="font-montserrat font-bold text-[72px]">24/7</p>
+                <p class="font-montserrat font-bold text-[clamp(1rem,-0.8617rem+5.9574vw,4.5rem);]">
+                  24/7
+                </p>
                 <p class="font-poppins font-normal text-base">Customer Care</p>
               </div>
             </div>
@@ -865,7 +880,7 @@
     </section>
 
     <!-- testimonial section  -->
-    <section class="w-full py-[80px]">
+    <section class="w-full py-[80px] px-[10px]">
       <div class="max-w-[750px] mx-auto flex flex-col gap-[32px] justify-center">
         <div class="flex flex-col gap-[51px] items-center">
           <button
@@ -873,7 +888,9 @@
           >
             Testimonials
           </button>
-          <h2 class="text-[#1e1e1e] text-[44px] font-bold font-montserrat">Our Clients Feedback</h2>
+          <h2 class="text-[#1e1e1e] text-[44px] max-md:text-[30px] font-bold font-montserrat">
+            Our Clients Feedback
+          </h2>
         </div>
         <div class="overflow-hidden">
           <div class="flex carousel-track transition-transform duration-500 ease-in-out">
@@ -976,7 +993,7 @@
     </section>
 
     <!-- blog card section -->
-    <section class="py-[43px] px-[98px]">
+    <section class="py-[43px] md:px-[98px] px-[10px]">
       <!-- blog div -->
       <div class="max-w-[1242px] flex flex-col gap-[68px] justify-center items-center">
         <!-- first div section -->
@@ -989,8 +1006,8 @@
             </button>
           </div>
 
-          <div class="flex justify-between items-center">
-            <h2 class="font-montserrat font-bold text-[44px] max-w-[499px]">
+          <div class="flex justify-between items-center max-md:flex-col">
+            <h2 class="font-montserrat font-bold text-[44px] max-w-[499px] max-md:text-[30px]">
               Act Now! Check Out Our Blog Before It’s Too Late!
             </h2>
 
@@ -1133,7 +1150,7 @@
     </section>
 
     <!-- contact us section -->
-    <section class="py-[43px] px-[94px]">
+    <section class="py-[43px] md:px-[94px] px-[10px]">
       <!-- content -->
       <div class="w-full max-w-[1246px] flex flex-col gap-[100px]">
         <button
@@ -1239,10 +1256,12 @@
 
     <!-- footer section -->
     <footer
-      class="w-full py-[73px] px-[100px] border-t border-t[#787878] flex flex-col gap-[120px]"
+      class="w-full py-[73px] md:px-[100px] px-[10px] border-t border-t[#787878] flex flex-col gap-[120px]"
     >
-      <div class="max-w-[1240px] w-full flex justify-between gap-[16px]">
-        <div class="flex-1 max-w-[612px] flex flex-col gap-[24px]">
+      <div class="max-w-[1240px] w-full flex max-sm:flex-col justify-between gap-[16px]">
+        <div
+          class="flex-1 max-w-[612px] flex flex-col gap-[24px] max-sm:flex-row max-sm:justify-between max-sm:mb-8"
+        >
           <div class="flex gap-[10px] justify-start items-center">
             <svg
               width="40"
