@@ -103,10 +103,12 @@
     </script>
   </head>
   <body class="text-[#1e1e1e]">
-    <header class="w-full fixed top-0 left-0 z-50 min-h-[72px] py-[16px] px-[100px] bg-white">
-      <div class="container mx-auto">
-        <div class="flex justify-between items-center py-4">
-          <div class="flex gap-[10px] justify-center items-center">
+    <header
+      class="w-full fixed top-0 left-0 z-50 min-h-[72px] py-[16px] px-[100px] max-lg:px-0 bg-white"
+    >
+      <div class="container mx-auto relative max-md:min-w-full max-md:px-3">
+        <div class="flex justify-between items-center py-4 min-w-full">
+          <div class="flex gap-[10px] justify-center items-center max-md:self-start">
             <svg
               width="40"
               height="36"
@@ -141,8 +143,11 @@
 
             <p class="font-mulish text-base">Wivali AI</p>
           </div>
-          <nav class="nav">
-            <ul class="flex justify-center items-center gap-[23px]">
+          <!-- max-md:hidden -->
+          <nav class="nav hidden md:block menu transition-all duration-300">
+            <ul
+              class="flex justify-center items-center gap-[23px] max-md:flex-col max-md:items-start max-md:absolute max-md:w-full max-md:left-0 max-md:top-[70px] max-md:bg-white max-md:pb-4"
+            >
               <li class="px-[20px] py-[8px]">
                 <a href="#">Home</a>
               </li>
@@ -162,7 +167,7 @@
           </nav>
 
           <button
-            class="bg-[#1386D1] flex gap-[8px] items-center py-[8px] px-[20px] rounded-[41px]"
+            class="bg-[#1386D1] lg:flex gap-[8px] items-center py-[8px] px-[20px] rounded-[41px] hidden"
           >
             <span class="whitespace-nowrap text-white">Call Us</span>
             <svg
@@ -179,14 +184,44 @@
               />
             </svg>
           </button>
+
+          <!-- menu icon -->
+          <svg
+            class="md:hidden menu-open cursor-pointer max-md:self-start"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="39px"
+            height="39px"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
+            ></path>
+          </svg>
+
+          <!-- close icon -->
+          <svg
+            class="hidden md:hidden menu-close cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="39px"
+            height="39px"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 25 22.585938 L 5.7070312 3.2929688 A 1.0001 1.0001 0 1 0 4.2929688 4.7070312 L 22.585938 25 L 4.2929688 45.292969 A 1.0001 1.0001 0 1 0 5.7070312 46.707031 L 25 27.414062 L 44.292969 46.707031 A 1.0001 1.0001 0 1 0 45.707031 45.292969 L 27.414062 25 L 45.707031 4.7070312 A 1.0001 1.0001 0 1 0 44.292969 3.2929688 L 25 22.585938 z"
+            ></path>
+          </svg>
         </div>
       </div>
     </header>
-    <section class="w-full py-[182px] relative">
-      <div class="max-w-[1240px] w-[90%] mx-auto relative flex">
-        <div class="text-center w-full">
-          <div class="max-w-[539px]">
-            <h1 class="font-montserrat font-bold text-[52px] w-full">
+    <section class="w-full py-[182px] relative max-lg:h-dvh">
+      <div class="max-w-[1240px] w-[90%] mx-auto relative flex items-center">
+        <div class="text-center w-full flex-1 max-lg:z-10 relative">
+          <div class="max-w-[539px] max-lg:w-full">
+            <h1 class="font-montserrat font-bold text-[52px] w-full max-lg:text-[80px]">
               Trusted
               <span
                 ><svg
@@ -266,22 +301,26 @@
             </h1>
           </div>
           <!-- new solution -->
-          <div class="hero-1 flex flex-col justify-around text-left">
-            <div class="max-w-[389px] ml-10">
-              <p class="w-full font-montserrat font-bold text-[36px] text-white">
+          <div
+            class="hero-1 flex flex-col justify-around text-left max-lg:hidden max-xl:justify-center max-xl:gap-14 max-lg:mt-4"
+          >
+            <div class="max-w-[389px] ml-10 max-lg:ml-0">
+              <p
+                class="w-full font-montserrat font-bold text-[clamp(1rem,0.3351rem+2.1277vw,2.25rem)] text-white"
+              >
                 The Best Solution for Your Pet's Health
               </p>
             </div>
 
-            <div class="max-w-[389px] ml-10">
-              <p>
+            <div class="max-w-[389px] ml-10 max-lg:ml-0">
+              <p class="w-[350px]">
                 At [Clinic Name], we provide expert, compassionate care tailored to your pets'
                 needs, ensuring they live happy, healthy lives.
               </p>
             </div>
 
             <div
-              class="max-w-[442px] min-h-[156px] rounded-[24px] px-[28.57px] bg-[#1e1e1e] flex flex-col justify-center items-center text-white py-[10px] ml-10"
+              class="max-w-[442px] min-h-[156px] rounded-[24px] px-[28.57px] bg-[#1e1e1e] flex flex-col justify-center items-center text-white py-[10px] ml-10 max-lg:ml-0"
             >
               <div class="flex gap-[41px] items-center">
                 <p class="font-montserrat font-extrabold text-[46px]">150K</p>
@@ -334,7 +373,7 @@
             </div>
           </div>
         </div>
-        <div class="-ml-[18rem] -mt-[1.6rem] w-full animate-move-right">
+        <div class="-ml-[18rem] w-full animate-move-right flex-1 max-lg:hidden">
           <div class="w-full">
             <svg viewBox="0 0 760 714" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -346,7 +385,7 @@
         </div>
 
         <!-- arrow img -->
-        <div id="arrow" class="absolute -bottom-8 left-0 animate-slide-right">
+        <div id="arrow" class="absolute -bottom-8 left-0 animate-slide-right max-lg:hidden">
           <svg
             width="184"
             height="20"
@@ -372,13 +411,16 @@
         </div>
 
         <!-- nurse Image -->
-        <div id="nurse" class="absolute top-0 right-0 animate-slide-left">
+        <div
+          id="nurse"
+          class="absolute top-0 right-0 animate-slide-left max-lg:-top-20 max-lg:z-0 max-lg:blur-sm"
+        >
           <img class="object-cover h-auto max-w-full" src="./assets/images/nurse.png" alt="" />
         </div>
 
         <!--**************************************************** rounded spining icon svg**************************************** -->
 
-        <div class="absolute right-[-100px] -top-[1.6rem] animate-move-round">
+        <div class="absolute max-lg:right-0 right-[-100px] -top-[1.6rem] animate-move-round">
           <svg
             width="160"
             height="161"

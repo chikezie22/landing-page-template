@@ -3,6 +3,25 @@ const nurse = document.querySelector('#nurse');
 const video = document.querySelector('.video');
 const play = document.querySelector('.play');
 const pause = document.querySelector('.pause');
+const menu = document.querySelector('.menu');
+const menuOpen = document.querySelector('.menu-open');
+const menuClose = document.querySelector('.menu-close');
+let index = 0;
+
+// function to handle nav toggling
+menuOpen.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  menu.classList.add('block');
+  menuOpen.classList.toggle('hidden');
+  menuClose.classList.toggle('hidden');
+});
+
+menuClose.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  menu.classList.remove('block');
+  menuOpen.classList.toggle('hidden');
+  menuClose.classList.toggle('hidden');
+});
 
 const slide = () => {
   console.log(arrow);
