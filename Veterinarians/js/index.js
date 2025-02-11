@@ -6,6 +6,7 @@ const pause = document.querySelector('.pause');
 const menu = document.querySelector('.menu');
 const menuOpen = document.querySelector('.menu-open');
 const menuClose = document.querySelector('.menu-close');
+
 let index = 0;
 
 // function to handle nav toggling
