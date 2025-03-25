@@ -1,5 +1,10 @@
 'use strict'
 
+//get the css variable value for primary-color and services slide-control-button color
+const root = document.documentElement;
+const primaryColor = getComputedStyle(root).getPropertyValue('--primary-color').trim();
+const slideBtnColor = getComputedStyle(root).getPropertyValue('--slide-control-button-color').trim();
+
 
 //hero section animation
 const heroBgImage= document.getElementById('bg-image')
@@ -16,10 +21,6 @@ window.onload=()=>{
 
 
 
-//get the css variable value for primary-color and services slide-control-button color
-const root = document.documentElement;
-const primaryColor = getComputedStyle(root).getPropertyValue('--primary-color').trim();
-const slideBtnColor = getComputedStyle(root).getPropertyValue('--slide-control-button-color').trim();
 
 // services setInterval ID
 let servCarouselInterval;
@@ -257,8 +258,8 @@ function changeSlideBtnColor(index=0, multiplier, slidesLength, slideControlMeth
 
 
 
-
-
-
+    const time =document.querySelector("input[type='time']")
+    time.value='12:00'
+    console.log(time, time.value)
 
 

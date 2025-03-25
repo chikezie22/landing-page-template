@@ -38,6 +38,7 @@
   --footer-heading-color: #D3D8DE;
   --slide-control-button-color:#E7C298;
   --testimonial-message-color:#413D45;
+  --form-placeholder-color: #A1A1A1;
   
   
 
@@ -111,12 +112,12 @@ html{
   transform:translateY(-200%)
 }
 #heading-1, #content-desc{
-  transform: translateX(-100%);
+  transform: translateX(-150%);
 }
 #heading-2{
-  transform: translateY(-100%);
+  transform: translateY(-220%);
 }
-#hero-content button{
+#hero-content a{
   transform: translateY(200%);
 }
 
@@ -124,7 +125,7 @@ html{
 .allow-animation #bg-image{
   opacity:1
 }
-.allow-animation #header, .allow-animation #heading-2, .allow-animation #hero-content button{
+.allow-animation #header, .allow-animation #heading-2, .allow-animation #hero-content a{
   transform: translateY(0px);
 }
 
