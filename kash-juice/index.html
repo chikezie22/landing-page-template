@@ -7,10 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Montserrat:ital,wght@0,700;1,700&family=Mulish:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="./app.js" defer></script>
 </head>
 <body>
-    <section id="header" class="absolute left-0 top-0 flex justify-between items-center w-full px-28 h-20 text-[var(--primary-text-color)] z-10">
+    <section id="header" class="fixed left-0 top-0 flex justify-between items-center w-full px-28 h-20 text-[var(--primary-text-color)]b bg-white z-10">
         <div class="letf-arc absolute top-0 left-0"><img src="./assets/images/header-left-arc.svg" alt="left arc"></div>
 
         <div id='header-brand' class="flex items-center gap-2 ">
@@ -30,30 +32,45 @@
             </ul>
         </div>
     </section>
-    <section id="hero" class=" h-[100svh] relative flex justify-between items-end pb-10  pt-24 bg-[linear-gradient(to_bottom,_white_70%,_var(--hero-bg)_30%)]">
-        <div>  
-            <div class="">
-                <p>Pure frash, Full of flavor, Sip the Goodness!</p>
-                <p>Nature’s Finest: Orange, Strawberry, and Blueberry Juices Crafted to Refresh, Energize, and Delight.</p>
+    <section id="hero" class=" h-[100svh]  flex justify-between items-end  pt-24 pl-16 bg-[linear-gradient(to_bottom,_white_65%,_var(--hero-bg)_35%)]">
+        <div class="flex flex-col gap-10 max-w-[400px]">  
+            <div class="flex flex-col gap-10 mb-16">
+                <div class="min-w-[600px] ">
+                    <!--text that changes in hero section -->
+                    <div class="relative text-6xl h-[4rem] mb-2 [font-family:var(--font-primary)] whitespace-nowrap overflow-hidden">
+                        <div id="slide-text" class="absolute top-0 left-0 h-full transition-[transform]duration-1000">
+                            <p class="">Pure, Fresh, </p>
+                            <p class="">Sweet, Juicy, </p>
+                            <p class="">Bold, Vibrant, </p>
+                        </div>
+                        <p class="text-6xl [font-family:var(--font-primary)] whitespace-nowrap transition-[width] duration-1000"><span id="changed-text" class="opacity-0 transition-[width]duration-1000">Pure, Fresh, </span> Full</p>
+                    </div>
+                    <p class="text-6xl [font-family:var(--font-primary)]">of Flavor, Sip the Goodness!</p>
+                </div>
+                <p class=" text-xs text-[var(--secondary-text-color)] leading-[1.5] [font-family:var(--font-secondary)] font-normal max-w-[400px]">Nature’s Finest: Orange, Strawberry, and Blueberry Juices Crafted to Refresh, Energize, and Delight.</p>
             </div>
-            <button class="text-[var(--btn-shadow-color)] border-2 border-[var(--btn-shadow-color)] px-6 py-1  rounded-2xl border-b-8">Try it now</button>
-            <div>   
-                <div class=" ">
-                    <img src="./assets/images/leaf.svg" alt="">
-                    <p>100% Natural Ingredients</p>
-                </div>
-                <div class=" ">
-                    <img src="./assets/images/heart.svg" alt="">
-                    <p>No Artificial Additives </p>
-                </div>
-                <div class=" ">
-                    <img src="./assets/images/orange.svg" alt="">
-                    <p> Rich in Vitamins & Antioxidants </p>    
+            <div class="h-[35svh] relative flex items-center  text-xs text-white font-normal [font-family:var(--font-secondary)] ">   
+                <button class="absolute  left-0 top-0 -translate-y-3/4 text-[var(--btn-shadow-color)] border-2 border-[var(--btn-shadow-color)] bg-white px-6 py-1  rounded-2xl border-b-8">Try it now</button>
+                <div class="flex flex-col gap-2 justify-center bg-[var(--benefits-bg)] pl-6  py-6 rounded-lg min-w-[400px] shadow-2xl">
+                    <div class=" flex gap-2 items-center ">
+                        <img src="./assets/images/leaf.png" alt="" class="w-8" >
+                        <p>100% Natural Ingredients</p>
+                    </div>
+                    <div class=" flex gap-2 items-center ">
+                        <img src="./assets/images/heart.png" alt="" class="w-8" >
+                        <p>No Artificial Additives </p>
+                    </div>
+                    <div class=" flex gap-2 items-center ">
+                        <img src="./assets/images/orange.png" alt="" class="w-8" >
+                        <p> Rich in Vitamins & Antioxidants </p>    
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="w-[700px] flex items-end ">
-            <img src="./assets/images/orange-juice.png" alt="">
+        <div class="self-end   flex items-end ">
+            <div class="w-full">
+                <img src="./assets/images/orange-juice.png" alt="">
+            </div>
         </div>
         
 
