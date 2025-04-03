@@ -9,10 +9,15 @@
     --primary-color:#659F20;
     --primary-text-color:#1E1E1E;
     --secondary-text-color:#797979;
-    --btn-shadow-color:#E06500;
+    --btn-border-orange:#E06500;
+    --btn-border-strawberry:#B13038;
+    --btn-border-blueberry:#70549B;
+
     --orange-text: #F49C00;
+    --strawberry-text: #EC253D;
+    --blueberry-text:#7D67CE;
     --hero-bg:  #FFA500;
-    --benefits-bg: #A76B00;
+    --benefits-bg: #00000080;
 
 
 
@@ -21,6 +26,13 @@
     --font-secondary:"Montserrat", sans-serif;
     --font-inter: "Inter", sans-serif;
     --font-mulish: "Mulish", sans-serif;
+
+
+    /* dynamic theme color */
+    --dynamic-btn-border-color: var(--btn-border-orange);
+    --dynamic-hero-bg-color: var(--hero-bg);
 }
+
+
 
 
