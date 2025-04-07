@@ -10,9 +10,11 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="./app.js" defer></script>
+    <script src="./animateIngredients.js" defer></script>
+    
 </head>
 <body>
-    <section id="header" class="fixed left-0 top-0 flex justify-between items-center w-full px-28 h-20 text-[var(--primary-text-color)]b bg-white z-10">
+    <section id="header" class="fixed left-0 top-0 flex justify-between items-center w-full px-28 h-20 text-[var(--primary-text-color)]b bg-white z-50">
         <div class="letf-arc absolute top-0 left-0"><img src="./assets/images/header-left-arc.svg" alt="left arc"></div>
 
         <div id='header-brand' class="flex items-center gap-2 ">
@@ -39,7 +41,7 @@
                     <!--text that changes in hero section -->
                     <div class="relative text-6xl  [font-family:var(--font-primary)] whitespace-nowrap">
                         <div id="slides-wrapper" class="relative flex  h-[4.5rem] overflow-hidden">
-                            <div id="slides" class="absolute left-0 top-0 transition-[transform] duration-1000">
+                            <div id="slides" class="transition-[transform] duration-1000 ">
                                 <p class="h-[4.5rem] max-w-min text-[var(--orange-text)]">Pure, Fresh,</p>
                                 <p class="h-[4.5rem] max-w-min text-[var(--strawberry-text)]">Sweet, Juicy, </p>
                                 <p class="h-[4.5rem] max-w-min text-[var(--blueberry-text)]">Bold, Vibrant, </p> 
@@ -60,15 +62,15 @@
             <div class="h-[35svh] relative flex items-center  text-xs text-white font-normal [font-family:var(--font-secondary)] ">   
                 <button id="hero-try-it-btn" class="absolute  left-0 top-0 -translate-y-3/4 text-[var(--dynamic-btn-border-color)] border-2 border-[var(--dynamic-btn-border-color)] bg-white px-6 py-1  rounded-2xl border-b-8 transition-[border-color] duration-1000">Try it now</button>
                 <div class="flex flex-col gap-2 justify-center bg-[var(--benefits-bg)] pl-6  py-6 rounded-lg min-w-[400px] shadow-2xl">
-                    <div class=" flex gap-2 items-center ">
+                    <div id="one" class=" flex gap-2 items-center ">
                         <img src="./assets/images/leaf.png" alt="" class="w-8" >
                         <p>100% Natural Ingredients</p>
                     </div>
-                    <div class=" flex gap-2 items-center ">
+                    <div id="two" class=" flex gap-2 items-center ">
                         <img src="./assets/images/heart.png" alt="" class="w-8" >
                         <p>No Artificial Additives </p>
                     </div>
-                    <div class=" flex gap-2 items-center ">
+                    <div id="three" class=" flex gap-2 items-center ">
                         <img src="./assets/images/orange.png" alt="" class="w-8" >
                         <p> Rich in Vitamins & Antioxidants </p>    
                     </div>
@@ -90,6 +92,68 @@
         </div>
         <div id="hero-transtioned-bg" class="h-[35svh] absolute  w-[100vw] -z-10 bottom-0 [font-family:var(--font-secondary)] bg-[var(--dynamic-hero-bg-color)] transtion-[background-color] duration-1000"></div>
     </section>
-    
+    <section id="Ingredients" class="relative right-0 top-0  flex justify-center  [font-family:var(--font-primary)] text-xl text-[var(--primary-text-color)] "> 
+        <div class="absolute right-0 top-0 w-20">
+            <img src="./assets/images/right-top-leaf.svg" alt="left arc" class="">
+        </div>
+
+
+        <div class=" max-w-[400px] bg-white rounded-br-3xl px-6 my-20 relative z-20">
+            <div class="grid  grid-cols-[4rem_1fr] gap-2">
+                <div class="w-16 h-16 rounded-full p-4  border-black  shadow-inner flex items-center justify-center">
+                    <img src="./assets/images/leaf.png" alt="leaf">
+                </div>
+                <div class="">
+                    <h1 class="">Pure, Natural, and Packed with Real Fruit Goodness</h1>
+                    <p class="[font-family:var(--font-metropolis)] text-base text-[var(--secondary-text-color)] mt-4">Made with real, organic strawberries, free from artificial flavors or preservatives! 🌱🍓</p>
+                </div>
+            </div>
+            <div class="grid  grid-cols-[4rem_1fr] gap-2 pt-10">
+                <div class="w-16 h-16 rounded-full p-4  border-black  shadow-inner flex items-center justify-center">
+                    <img src="./assets/images/smiley-face.png" alt="leaf">
+                </div>
+                <div class="">
+                    <h1 class="">Smooth, Juicy, Refreshing, and Bursting with Delicious Fruity Flavor!</h1>
+                    <p class="[font-family:var(--font-metropolis)] text-base text-[var(--secondary-text-color)] mt-4">Made with real, organic strawberries, free from artificial flavors or preservatives! 🌱🍓</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="transitioned-flex-item" class=" w-0 h-[20rem] transition-[width] duration-500"></div>
+        <div id="scaled-juice-bottle" class="absolute bottom-0 transition-[transform] duration-500">
+            <img src="./assets/images/strawberry-juice-bottle.png" alt="juice bottle">
+        </div>
+
+        <div class="max-w-[400px] bg-white rounded-bl-3xl px-6 my-20 relative z-20">
+            <div class="grid  grid-cols-[4rem_1fr] gap-2">
+                <div class="w-16 h-16 rounded-full p-4  border-black  shadow-inner flex items-center justify-center">
+                    <img src="./assets/images/elbow.png" alt="leaf">
+                </div>
+                <div class="">
+                    <h1 class="">Loaded with Essential Vitamins and Natural Fruity Nutrients</h1>
+                    <p class="[font-family:var(--font-metropolis)] text-base text-[var(--secondary-text-color)] mt-4">Loaded with vitamins, antioxidants, and energy, keeping you refreshed all day! ⚡🍏</p>
+                </div>
+            </div>
+            <div class="grid  grid-cols-[4rem_1fr] gap-2 pt-10">
+                <div class="w-16 h-16 rounded-full p-4  border-black  shadow-inner flex items-center justify-center ">
+                    <img src="./assets/images/water-drops.png" alt="leaf" class="">
+                </div>
+                <div class="">
+                    <h1 class="">A Refreshing Burst of Flavor in Every Sip</h1>
+                    <p class="[font-family:var(--font-metropolis)] text-base text-[var(--secondary-text-color)] mt-4">Every sip is a sweet & tangy explosion of fresh, sun-ripened strawberries! 🍹☀️</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute left-0 bottom-0 w-20">
+            <img src="./assets/images/left-bottom-leaf.svg" alt="left arc" class="">
+        </div>
+    </section>
+
+
+
+    <script>
+
+    </script>
 </body>
 </html>

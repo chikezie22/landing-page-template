@@ -1,50 +1,79 @@
-
+'use strict'
 const root = document.documentElement
 const rootStyles = getComputedStyle(root);
-// const dynamicBtnBorderColor = rootStyles.getPropertyValue('--dynamic-btn-border-color').trim();
-// const dynamicHeroBgColor = rootStyles.getPropertyValue('--dynamic-hero-bg-color').trim();
+
 
 const btnBorderColors=[
     '--btn-border-orange',
     '--btn-border-strawberry',
     '--btn-border-blueberry',
 ]
-const btnBorderHex= btnBorderColors.map(color=>rootStyles.getPropertyValue(color).trim())
+const btnBorderHex= btnBorderColors.map(color=>rootStyles.getPropertyValue(color).trim()) //hex values
 
 const heroBgColors=[
     '--hero-bg',
     '--strawberry-text',
     '--blueberry-text',
 ]
-const heroBgHex= heroBgColors.map(color=>rootStyles.getPropertyValue(color).trim())
+const heroBgHex= heroBgColors.map(color=>rootStyles.getPropertyValue(color).trim()) //hex values
 
 const juiceSlides= document.querySelector('#juice-slides');
 const juiceSlideWidth= juiceSlides.offsetWidth;
-console.log(juiceSlideWidth);
 const parentText= document.querySelector('#parent-text');
 const slidesWrapper= document.querySelector('#slides-wrapper').offsetHeight;
 const slides= document.querySelector('#slides');
 const slideElementsWidth= Array.from(slides.children).map(child=>child.offsetWidth);
-// const heroTryItBtn= document.querySelector('#hero-try-it-btn');
-// const heroTransitionedBg= document.querySelector('#hero-transitioned-bg');
+
 
 parentText.firstElementChild.innerText= ''
 parentText.style.paddingLeft= `${slideElementsWidth[0]}px`;
+parentText.style.position='absolute';
 setTimeout(() => {
-    parentText.style.transition=`padding 1s ease-in-out`;
-}, 1000)
+    parentText.style.top=0;
+    parentText.style.left=0;
+    parentText.style.transition=`padding 700ms ease-in-out`;
+}, 500)
 
+let newArray;
 const height= slides.parentElement.offsetHeight;
-console.log(slideElementsWidth);
 let index=1
-console.log(slides, height);
 setInterval(() => {
-    slides.style.transform=`translateY(-${height *index}px)`;
+    console.log(Array.from(juiceSlides.children).map(slide=>slide))
     parentText.style.paddingLeft= `${slideElementsWidth[index]}px`;
+    slides.style.transform=`translateY(-${height *index}px)`;
     document.documentElement.style.setProperty('--dynamic-hero-bg-color', heroBgHex[index]);
     document.documentElement.style.setProperty('--dynamic-btn-border-color', btnBorderHex[index]);
-    juiceSlides.c
-    juiceSlides.style.transform=`translateX(-${juiceSlides.parentElement.offsetWidth *index}px)`;
+
+
+    juiceSlides.children[0].style.transition=`opacity 100ms ease-in-out`;
+    console.log(juiceSlideWidth)
+    // juiceSlides.children[0].style.opacity=0;
+    juiceSlides.style.transform=`translateX(-${juiceSlideWidth}px)`;
+    
+    // console.log('main')
+    // //
+    setTimeout(()=>{
+        // juiceSlides.children[1].style.opacity=1;
+        console.log('main2')
+    }, 1000)
+    
+    setTimeout(()=>{
+        //take the first item to the first position
+        newArray= newArray || Array.from(juiceSlides.children)
+        const firstItem= newArray.shift()
+        newArray.push(firstItem)
+      
+        juiceSlides.style.transition='none'
+        juiceSlides.style.transform= `translateX(0)`
+        juiceSlides.innerHTML= newArray.map(item=>item.outerHTML).join('')
+       
+        console.log('main3')
+        setTimeout(()=>{
+            juiceSlides.style.transition=`transform 500ms ease-in-out`
+        }, 1500)
+        console.log('main3.1')
+
+    }, 2000)
 
     
     index == 2 ? index=0 :index++;
