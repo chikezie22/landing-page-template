@@ -36,7 +36,7 @@
     </section>
     <section id="hero" class=" relative h-[100svh]  flex justify-between items-end  pt-24   transition-[background-image] ">
         <div class="flex flex-col gap-10 max-w-[400px] ml-16">  
-            <div class="flex flex-col gap-10 mb-16 ">
+            <div class="flex flex-col gap-2 mb-16 ">
                 <div class="min-w-[650px] ">
                     <!--text that changes in hero section -->
                     <div class="relative text-6xl  [font-family:var(--font-primary)] whitespace-nowrap">
@@ -46,7 +46,7 @@
                                 <p class="h-[4.5rem] max-w-min text-[var(--strawberry-text)]">Sweet, Juicy, </p>
                                 <p class="h-[4.5rem] max-w-min text-[var(--blueberry-text)]">Bold, Vibrant, </p> 
                             </div>
-                            <p id="parent-text" class="text-6xl [font-family:var(--font-primary)] whitespace-nowrap"> <span class="opacity-0 pr-2">Pure, Fresh,  </span> Full</p> 
+                            <p id="parent-text" class="text-6xl [font-family:var(--font-primary)] whitespace-nowrap pl-1"> Full</p> 
                         </div>
                         <!-- <div id="slide-text" class="absolute top-0 left-0 h-full transition-[transform] duration-1000">    
                             <p class=""><span>Pure, Fresh, </span></p>
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div id="hero-transtioned-bg" class="h-[35svh] absolute  w-[100vw] -z-10 bottom-0 [font-family:var(--font-secondary)] bg-[var(--dynamic-hero-bg-color)] transtion-[background-color] duration-1000"></div>
+        <div id="hero-transtioned-bg" class="h-[35svh] absolute  w-full -z-10 bottom-0 [font-family:var(--font-secondary)] bg-[var(--dynamic-hero-bg-color)] transtion-[background-color] duration-1000"></div>
     </section>
     <section id="Ingredients" class="relative right-0 top-0  flex justify-center  [font-family:var(--font-primary)] text-xl text-[var(--primary-text-color)] "> 
         <div class="absolute right-0 top-0 w-20">
@@ -150,8 +150,47 @@
         </div>
     </section>
 
+    <section id="animated-price-section" class="group flex items-center justify-center gap-20 lg:gap-[8rem] mt-20 mb-24 px-8">
 
+        <div class="relative min-w-[20rem]">
+            <div class="relative z-20 w-full">
+                <img src="./assets/images/blueberry-juice-bottle.png" class="w-[20rem]" alt="Blueberry juice">
+            </div>
+            <div class="absolute bottom-0 right-[-10rem] z-10 transition-transform duration-500 origin-right rotate-0 group-hover:rotate-[10deg]">
+                <img src="./assets/images/animated-blueberry-juice-bottle.png" class="w-[20rem]" alt="Blueberry juice">
+            </div>
+        </div>
 
+        <div class=" [font-family:var(--font-primary)] max-w-[37.5rem] flex flex-col gap-6 overflow-hidden">
+            <h1 class="text-5xl text-[var(--alt-green-color)] transition-transform duration-500 translate-x-10 group-hover:translate-x-0">KASH <span class="text-[var(--orange-text)]">ORGANIC JUICE</span></h1>
+            <hr />
+            <h2 class="text-3xl text-[var(--primary-text-color)] transition-transform duration-500 translate-x-1/3 group-hover:translate-x-0">WHERE FRESHNESS <span class="text-[var(--strawberry-text)]">MEETS VALUE</span></h2>
+            <p class="text-sm text-[var(--secondary-text-color)] font-thin [font-family:var(--font-secondary)] pr-4 transition-transform duration-500 translate-x-20 group-hover:translate-x-0">Savor the perfect blend of freshness and value with our all-natural juice! Made from sun-ripened fruits, it’s free of artificial additives and packed with vibrant flavor. Whether you crave tangy oranges, sweet strawberries, or bold blueberries, every sip delivers pure goodness. Loaded with vitamins and antioxidants, it’s your go-to for refreshment and energy. Taste the difference today! 🍊🍓🫐</p>
+            <div id="animated-price" class="flex gap-4 items-center transition-transform duration-500 origin-left rotate-180 group-hover:rotate-0 group-hover:opacity-100">
+                <p class="text-white bg-[var(--primary-text-color)] w-32 px-6 py-3  rounded-xl text-base">Starting at just</p>
+                <p class="text-4xl text-[var(--alt-green-color)]"> $19.9</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="relative h-[80vsh] overflow-hidden">
+        <div class="absolute right-0 top-0 -translate-y-1/2 w-20">
+            <img src="./assets/images/broad-leaf-right.png" alt="leaf">
+        </div>
+        <div class="relative flex items-center">
+            <div class="relative translate-x-[10rem]">
+                <img src="./assets/images/slide-strawberry-bottle.png" alt="blueberry-juice">
+            </div>
+            <div class="absolute left-1/2 -translate-x-1/2 -translate-y-[60%]">
+                <img src="./assets/images/slide-orange-bottle.png" class="w-[20rem] scale-[3]" alt="orange-juice" >
+            </div>
+            <div class="relative -translate-x-[10rem]">
+                <img src="./assets/images/slide-blueberry-bottle.png" alt="blueberry-juice">
+            </div>
+        </div>
+    </section>
+
+    <section></section>
     <script>
 
     </script>

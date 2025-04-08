@@ -25,21 +25,23 @@ const slides= document.querySelector('#slides');
 const slideElementsWidth= Array.from(slides.children).map(child=>child.offsetWidth);
 
 
-parentText.firstElementChild.innerText= ''
-parentText.style.paddingLeft= `${slideElementsWidth[0]}px`;
 parentText.style.position='absolute';
+parentText.style.paddingLeft= `${slideElementsWidth[0]+10}px`;
+setTimeout(() => {
+}, 300)
+
 setTimeout(() => {
     parentText.style.top=0;
     parentText.style.left=0;
     parentText.style.transition=`padding 700ms ease-in-out`;
-}, 500)
+}, 3000)
 
 let newArray;
 const height= slides.parentElement.offsetHeight;
 let index=1
 setInterval(() => {
     console.log(Array.from(juiceSlides.children).map(slide=>slide))
-    parentText.style.paddingLeft= `${slideElementsWidth[index]}px`;
+    parentText.style.paddingLeft= `${slideElementsWidth[index] +10}px`;
     slides.style.transform=`translateY(-${height *index}px)`;
     document.documentElement.style.setProperty('--dynamic-hero-bg-color', heroBgHex[index]);
     document.documentElement.style.setProperty('--dynamic-btn-border-color', btnBorderHex[index]);
