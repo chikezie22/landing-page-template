@@ -18,15 +18,19 @@
     --btn-border-orange:#E06500;
     --btn-border-strawberry:#B13038;
     --btn-border-blueberry:#70549B;
+    --secondary-black:#181818;
 
     --orange-text: #F49C00;
     --strawberry-text: #EC253D;
     --blueberry-text:#7D67CE;
-    --hero-bg:  #FFA500;
     --benefits-bg: #00000080;
     --alt-green-color :#78AB3C;
-
-
+    
+    --gradient-orange: #F39E02;
+    
+    /* bg color */
+    --hero-bg:  #FFA500;
+    --contact-us-bg:#FFF6E5;
 
     /* fonts */
     --font-primary: "Dela Gothic One", sans-serif;
