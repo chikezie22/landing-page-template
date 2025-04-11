@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Metropolis";
+    font-style: normal;
+    src: url(../font/metropolis/Metropolis-Regular.otf) format("opentype"),
+}
+
 
 
 :root{
@@ -26,13 +32,12 @@
     --font-secondary:"Montserrat", sans-serif;
     --font-inter: "Inter", sans-serif;
     --font-mulish: "Mulish", sans-serif;
+    --font-metropolis: "Metropolis", sans-serif;
 
 
     /* dynamic theme color */
     --dynamic-btn-border-color: var(--btn-border-orange);
     --dynamic-hero-bg-color: var(--hero-bg);
 }
-
-
 
 
