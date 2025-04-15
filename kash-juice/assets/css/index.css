@@ -45,4 +45,11 @@
     --dynamic-hero-bg-color: var(--hero-bg);
 }
 
-
+/* Global styles */
+#order-modal{
+bottom: -100%;
+transition: bottom 0.5s ease-in-out;
+}
+.modal-open #order-modal{
+    bottom:0
+}

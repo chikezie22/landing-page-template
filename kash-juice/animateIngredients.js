@@ -1,10 +1,10 @@
 'use strict'
 
+
 const ingredients= document.getElementById('Ingredients')
 const transitionedFlexItem= document.getElementById('transitioned-flex-item')
 const scaledJuiceBottle= document.getElementById('scaled-juice-bottle')
-console.log(scaledJuiceBottle.firstElementChild)
-console.log(scaledJuiceBottle)
+
 ingredients.onmouseenter = function() {
     transitionedFlexItem.style.width= '14rem'
     scaledJuiceBottle.style.transform= 'scale(1.5)'  

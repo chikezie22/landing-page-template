@@ -17,66 +17,76 @@ const heroBgColors=[
 ]
 const heroBgHex= heroBgColors.map(color=>rootStyles.getPropertyValue(color).trim()) //hex values
 
+//juice image slides
 const juiceSlides= document.querySelector('#juice-slides');
 const juiceSlideWidth= juiceSlides.offsetWidth;
+
+
+
+// juice text slide 
+let textSlides = document.querySelector('#text-slides');
 const parentText= document.querySelector('#parent-text');
-const slidesWrapper= document.querySelector('#slides-wrapper').offsetHeight;
-const slides= document.querySelector('#slides');
-const slideElementsWidth= Array.from(slides.children).map(child=>child.offsetWidth);
 
 
-parentText.style.position='absolute';
-parentText.style.paddingLeft= `${slideElementsWidth[0]+10}px`;
-setTimeout(() => {
-}, 300)
-
-setTimeout(() => {
-    parentText.style.top=0;
-    parentText.style.left=0;
-    parentText.style.transition=`padding 700ms ease-in-out`;
-}, 3000)
+//alte test
+const alte=document.querySelector('.alte')
 
 let newArray;
-const height= slides.parentElement.offsetHeight;
+const height= textSlides?.parentElement?.offsetHeight;
 let index=1
+let slideIndex=1
+setTimeout(() => {
+    const textSlidesWidth= Array.from(textSlides.children).map(child=>child.offsetWidth);
+    alte.firstElementChild.style.width= textSlidesWidth[0] + 'px'
+    alte.firstElementChild.innerText=''
+
+}, 2000)
+modifyCarousel()
 setInterval(() => {
-    console.log(Array.from(juiceSlides.children).map(slide=>slide))
-    parentText.style.paddingLeft= `${slideElementsWidth[index] +10}px`;
-    slides.style.transform=`translateY(-${height *index}px)`;
+    const textSlidesWidth= Array.from(textSlides.children).map(child=>child.offsetWidth);
+    console.log('textSlidesWidth', textSlidesWidth)
+    const juiceSlideWidth= juiceSlides.offsetWidth;
+    
+
+    juiceSlides.style.transition=`transform 500ms `;
+    console.log('juiceSlideWidth', textSlides.children[index].textContent)
+    alte.firstElementChild.style.width= textSlidesWidth[index] + 'px'
+
+    //slide the text slides
+    textSlides.style.transform=`translateY(-${height *index}px)`;
+
+    //change colors
     document.documentElement.style.setProperty('--dynamic-hero-bg-color', heroBgHex[index]);
     document.documentElement.style.setProperty('--dynamic-btn-border-color', btnBorderHex[index]);
 
-
-    juiceSlides.children[0].style.transition=`opacity 100ms ease-in-out`;
-    console.log(juiceSlideWidth)
-    // juiceSlides.children[0].style.opacity=0;
-    juiceSlides.style.transform=`translateX(-${juiceSlideWidth}px)`;
+    //fade out the current juice slide
     
-    // console.log('main')
-    // //
-    setTimeout(()=>{
-        // juiceSlides.children[1].style.opacity=1;
-        console.log('main2')
-    }, 1000)
-    
-    setTimeout(()=>{
-        //take the first item to the first position
-        newArray= newArray || Array.from(juiceSlides.children)
-        const firstItem= newArray.shift()
-        newArray.push(firstItem)
-      
-        juiceSlides.style.transition='none'
-        juiceSlides.style.transform= `translateX(0)`
-        juiceSlides.innerHTML= newArray.map(item=>item.outerHTML).join('')
-       
-        console.log('main3')
-        setTimeout(()=>{
-            juiceSlides.style.transition=`transform 500ms ease-in-out`
-        }, 1500)
-        console.log('main3.1')
 
-    }, 2000)
+    //slide the juice 
+    juiceSlides.style.transform=`translateX(-${juiceSlideWidth * slideIndex }px)`;
 
-    
+
+    juiceSlides.ontransitionend=()=>{
+        // parentText.style.transition=`padding 700ms ease-in-out`;
+        if(slideIndex==1){
+            juiceSlides.style.transition=`none`;
+            juiceSlides.style.transform=`translateX(0px)`;
+
+        }   
+    }
     index == 2 ? index=0 :index++;
+    slideIndex == 3 ? slideIndex=1 :slideIndex++;
+
 }, 5000);
+
+
+
+setTimeout(() => {
+}, 6000)
+function modifyCarousel (){
+    // append first and last slide to end and start of carousel, respectively.
+    const firstItem= juiceSlides.children[0].cloneNode(true)
+    const lastItem= juiceSlides.children[juiceSlides.children.length -1].cloneNode(true)
+    juiceSlides.append(firstItem);
+
+}
