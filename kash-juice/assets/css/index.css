@@ -46,18 +46,20 @@
     
 
     /* font size */
-    font-size:87.5%
+    font-size:87.5%;
+
+    scroll-behavior: smooth;
 }
 
 /* Global styles */
 #order-modal{
-bottom: -100%;
-transition: bottom 0.5s ease-in-out;
+    bottom: -100%;
+    transition: bottom 500ms ease-in-out, background-color 150ms ease-in-out 500ms;
 }
 .modal-open #order-modal{
-    bottom:0
+    bottom:0;
+    background-color:#00000099;
 }
-
 
 @media (min-width: 768px) {
     :root {

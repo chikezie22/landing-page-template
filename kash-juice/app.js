@@ -62,10 +62,9 @@ function handleHeroTransitions (){
     
     //fade out the current juice slide
     const slidesLen= juiceSlides.children.length
-    console.log(slideIndex-1)
     juiceSlides.children[slideIndex-1].style.opacity=0
 
-    juiceSlides.style.transition=`transform 500ms `;
+    juiceSlides.style.transition=`transform 500ms cubic-bezier(0, 1.32, 0.27, 1.19)`;
     parentText.firstElementChild.style.width= textSlidesWidth[index] + 'px'
 
     //slide text-slides

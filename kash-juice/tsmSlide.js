@@ -44,15 +44,14 @@ function ModifyAndCloneCarousel (carouselElement, cloneParentId='', transProp=''
     //clone carouselElement to be used when fading out of last slide and fading in of first slide
     const clonedCarousel = carouselElement.cloneNode(true);
     clonedCarousel.id= 'cloned-' + carouselElement.id
-    console.log( carouselElement.id, carouselElement.scrollHeight, cloneParent.offsetHeight)    
-    clonedCarousel.style.height = document.getElementById('testimonial-carousel').scrollHeight+'px'
-    console.log( document.getElementById('testimonial-carousel').scrollHeight+'px')
+    clonedCarousel.style.height = document.getElementById('testimonial-carousel').offsetHeight+'px'
     clonedCarousel.style.width = carouselElement.offsetWidth+'px'
     clonedCarousel.style.transition = transProp
     clonedCarousel.style.position = 'absolute'
     clonedCarousel.style.zIndex = '10'
     clonedCarousel.style.top = '0'
     clonedCarousel.style.left = '0'
+    clonedCarousel.children[0].style.borderWidth = 0;
 
     //keep cloned carousel fadded out
     clonedCarousel.style.opacity = 0

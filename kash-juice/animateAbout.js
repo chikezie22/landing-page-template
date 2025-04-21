@@ -1,39 +1,50 @@
 'use strict'
-//handle animations for the 
+//handle animations for about section and juices id-section
 
 
 const about = document.getElementById('about')
 
 //parent elment that contains texts we are animating
-const parent= about.children[1].children
-const animatedBottle = about.children[0]
-console.log(animatedBottle.children)
+const animatedTexts= about.children[1].children
+const animatedBottle = about.children[0].children[1]
 
+
+//animate juices
+const juices= document.getElementById('juices')
 
 window.onscroll = handleScroll
 
 function handleScroll(){
     for(let i=0; i<5; i++){
-        handleAnimation(parent[i], i)
+        handleAnimation(animatedTexts[i], i, window.innerWidth)
     }
+    
+    //animated juice bottle
+    handleAnimation(animatedBottle, 5, window.innerWidth )
+    handleAnimation(juices.children[0].children[1].firstElementChild, 6, window.innerWidth)
 }
 
-function handleAnimation (element, id){
+function handleAnimation (element, id, screenWidth){
     const rect = element.getBoundingClientRect()
     const headerHeight= document.getElementById('header').offsetHeight
-    const animationPropArr=[
+    const animatedTextPropArr=[
         'translateY(0)',
         'translateY(0)',
         'translateY(0)',
         'translateY(0)',
         'rotate(0deg)',
+        'rotate(10deg)',
+        'translateY(3rem)'
     ]
 
-    if(rect.top >= headerHeight && rect.bottom <= window.innerHeight  ){
-        // ceror here on purpose
-        console.error('error for here')
-        id == 1 ? null : element.style.transform= animationPropArr[id]
-    }else{
-        id == 1 ? null : element.style.transform= ''
+    if(screenWidth <= '1024'){ //smaller than desktop view
+        if(rect.top >= headerHeight && rect.bottom <= window.innerHeight  ){
+            id == 1 ? null : element.style.transform= animatedTextPropArr   [id]
+        }else{
+            id == 1 ? null : element.style.transform = ''
+        }
     }
 }
+
+
+
