@@ -4,7 +4,188 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LushGlow</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #ffb7c5;
+        --color-secondary: #f4e3cf;
+        --color-accent: #d36a91;
+        --color-charcoal-gray: #4e4e4e;
+        --color-white: #ffffff;
+        --color-light-bg: #fff5f8;
+        /* --color-light-blue: var(--color-blue); */
+        --font-sans: 'Lato', 'sans-serif';
+        --font-gt: 'GT';
+
+        --animate-slide-up: slide-up 1s ease-in-out;
+
+        @keyframes slide-up {
+          0% {
+            transform: scale(0);
+            transform-origin: bottom left;
+          }
+          60% {
+            transform: scale(1.05);
+            transform-origin: bottom left;
+          }
+          80% {
+            transform: translateY(5%) scale(0.95);
+            transform-origin: bottom left;
+          }
+          100% {
+            transform: translateY(0) scale(1);
+            transform-origin: bottom left;
+          }
+        }
+      }
+    </style>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body></body>
+  <body class="max-w-[1440px] mx-auto">
+    <header class="p-5 flex items-center justify-around">
+      <!-- logo -->
+      <img src="./assests/svg/Logo.svg" alt="logo" />
+      <nav>
+        <ul class="flex gap-8 text-sm font-bold">
+          <li>Home</li>
+          <li>Our Product</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>FAQs</li>
+        </ul>
+      </nav>
+
+      <button class="bg-charcoal-gray rounded-full text-white px-5 py-2">Place an Order</button>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section
+        class="px-[150px] pt-[50px] bg-linear-to-r from-[#ffe8ed] to-[#ffb7c5] min-h-[459px] flex items-center justify-center"
+      >
+        <div class="basis-[434px] space-y-8">
+          <div class="font-gt">
+            <h1 class="font-[900] text-[55px]">Glow Naturally, Shine Always</h1>
+            <p class="font-normal text-base text-charcoal-gray">
+              Discover luxurious, eco-friendly cosmetic crafted to enhance your natural beauty.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button class="bg-charcoal-gray rounded-full flex text-white px-5 py-2">
+              <img src="./assests/svg/shopping-bag.svg" alt="shopping-bag" /> Shop Now
+            </button>
+            <button class="bg-accent rounded-full flex text-white px-5 py-2">
+              <img src="./assests/svg/explore.svg" alt="explore" /> Explore
+            </button>
+          </div>
+        </div>
+        <div class="relative w-[470px] max-w-full h-[459px] overflow-clip">
+          <div class="absolute bottom-0 image-slide hidden">
+            <img
+              src="./assests/images/beauty-1.png"
+              alt="beauty image"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="absolute bottom-0 image-slide hidden">
+            <img
+              src="./assests/images/beauty-2.png"
+              alt="beauty image"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="absolute bottom-0 image-slide hidden">
+            <img
+              src="./assests/images/beauty-3.png"
+              alt="beauty image"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-[30px] pb-[50px] px-[150px]">
+        <div class="grid gap-5 place-items-center">
+          <div class="font-gt text-charcoal-gray">
+            <h2 class="text-[25px] font-[900] text-center">Glow Starts Here</h2>
+            <p class="text-base font-[300]">
+              Find your favorites in our premium collection tailored for every beauty routine
+            </p>
+          </div>
+          <div class="flex gap-[10px] flex-wrap">
+            <div
+              class="flex max-w-[333px] p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
+            >
+              <div class="flex flex-col gap-[5px]">
+                <p class="text-base font-semibold flex items-center">
+                  <img
+                    src="./assests/svg/shopping-bag.svg"
+                    alt="shopping-bag"
+                    class="w-[30px] aspect-square"
+                  />
+                  Skincare Essentials
+                </p>
+                <p class="text-sm font-normal">
+                  Effortless beauty with bold lips and flawless foundations.
+                </p>
+              </div>
+              <button
+                class="bg-primary p-[10px] rounded-[10px] text-nowrap min-w-[108px] self-end text-sm font-semibold"
+              >
+                Shop Skincare
+              </button>
+            </div>
+            <div
+              class="flex max-w-[333px] p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
+            >
+              <div class="flex flex-col gap-[5px]">
+                <p class="text-base font-semibold flex items-center">
+                  <img
+                    src="./assests/svg/shopping-bag.svg"
+                    alt="shopping-bag"
+                    class="w-[30px] aspect-square"
+                  />
+                  Skincare Essentials
+                </p>
+                <p class="text-sm font-normal">
+                  Effortless beauty with bold lips and flawless foundations.
+                </p>
+              </div>
+              <button
+                class="bg-primary p-[10px] rounded-[10px] text-nowrap min-w-[108px] self-end text-sm font-semibold"
+              >
+                Shop Skincare
+              </button>
+            </div>
+            <div
+              class="flex max-w-[333px] p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
+            >
+              <div class="flex flex-col gap-[5px]">
+                <p class="text-base font-semibold flex items-center">
+                  <img
+                    src="./assests/svg/shopping-bag.svg"
+                    alt="shopping-bag"
+                    class="w-[30px] aspect-square"
+                  />
+                  Skincare Essentials
+                </p>
+                <p class="text-sm font-normal">
+                  Effortless beauty with bold lips and flawless foundations.
+                </p>
+              </div>
+              <button
+                class="bg-primary p-[10px] rounded-[10px] text-nowrap min-w-[108px] self-end text-sm font-semibold"
+              >
+                Shop Skincare
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
