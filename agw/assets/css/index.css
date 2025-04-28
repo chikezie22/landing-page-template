@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#header .link-active{
+    @apply text-primary hover:text-white;
+}
+
+.header-top-4{
+    @apply top-4;
+}
+.group_hero p{
+    transform: translateX(0px);
+}
+.group_hero button{
+    transform: translateY(0px);
+}
+
+.btn-custom-transition {
+    transition-property: transform, background-color;
+    transition-duration: 1000ms, 300ms;
+    transition-delay: 500ms, 0ms;
+  }
