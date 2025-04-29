@@ -12,6 +12,7 @@
       @theme {
         --color-primary: #ffb7c5;
         --color-secondary: #f4e3cf;
+        --color-secondary-light: #f1e1c5;
         --color-accent: #d36a91;
         --color-charcoal-gray: #4e4e4e;
         --color-white: #ffffff;
@@ -21,7 +22,7 @@
         --font-gt: 'GT';
 
         --animate-slide-up: slide-up 1s ease-in-out;
-
+        --animate-scale-up: scale-up 6s ease-in-out infinite alternate;
         @keyframes slide-up {
           0% {
             transform: scale(0);
@@ -40,14 +41,34 @@
             transform-origin: bottom left;
           }
         }
+        @keyframes scale-up {
+          0% {
+            transform: scale(1);
+          }
+          20% {
+            transform: scale(1);
+          }
+          30% {
+            transform: scale(1.5);
+          }
+          50% {
+            transform: scale(1.5);
+          }
+          60% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
       }
     </style>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body class="max-w-[1440px] mx-auto">
-    <header class="p-5 flex items-center justify-around">
+  <body class="max-w-[1440px] mx-auto text-charcoal-gray">
+    <header class="p-5 flex items-center justify-around flex-wrap">
       <!-- logo -->
-      <img src="./assests/svg/Logo.svg" alt="logo" />
+      <img src="./assets/svg/Logo.svg" alt="logo" />
       <nav>
         <ul class="flex gap-8 text-sm font-bold">
           <li>Home</li>
@@ -61,10 +82,10 @@
       <button class="bg-charcoal-gray rounded-full text-white px-5 py-2">Place an Order</button>
     </header>
 
-    <main>
+    <main class="mx-auto">
       <!-- hero -->
       <section
-        class="px-[150px] pt-[50px] bg-linear-to-r from-[#ffe8ed] to-[#ffb7c5] min-h-[459px] flex items-center justify-center"
+        class="lg:px-[150px] pt-[50px] px-10 bg-linear-to-r from-[#ffe8ed] to-[#ffb7c5] min-h-[459px] flex items-center justify-center"
       >
         <div class="basis-[434px] space-y-8">
           <div class="font-gt">
@@ -75,31 +96,31 @@
           </div>
           <div class="flex gap-2">
             <button class="bg-charcoal-gray rounded-full flex text-white px-5 py-2">
-              <img src="./assests/svg/shopping-bag.svg" alt="shopping-bag" /> Shop Now
+              <img src="./assets/svg/shopping-bag.svg" alt="shopping-bag" /> Shop Now
             </button>
             <button class="bg-accent rounded-full flex text-white px-5 py-2">
-              <img src="./assests/svg/explore.svg" alt="explore" /> Explore
+              <img src="./assets/svg/explore.svg" alt="explore" /> Explore
             </button>
           </div>
         </div>
         <div class="relative w-[470px] max-w-full h-[459px] overflow-clip">
           <div class="absolute bottom-0 image-slide hidden">
             <img
-              src="./assests/images/beauty-1.png"
+              src="./assets/images/beauty-1.png"
               alt="beauty image"
               class="w-full h-auto object-cover"
             />
           </div>
           <div class="absolute bottom-0 image-slide hidden">
             <img
-              src="./assests/images/beauty-2.png"
+              src="./assets/images/beauty-2.png"
               alt="beauty image"
               class="w-full h-auto object-cover"
             />
           </div>
           <div class="absolute bottom-0 image-slide hidden">
             <img
-              src="./assests/images/beauty-3.png"
+              src="./assets/images/beauty-3.png"
               alt="beauty image"
               class="w-full h-auto object-cover"
             />
@@ -107,7 +128,7 @@
         </div>
       </section>
 
-      <section class="pt-[30px] pb-[50px] px-[150px]">
+      <section class="pt-[30px] pb-[50px] lg:px-[150px] px-10 grid place-content-center">
         <div class="grid gap-5 place-items-center">
           <div class="font-gt text-charcoal-gray">
             <h2 class="text-[25px] font-[900] text-center">Glow Starts Here</h2>
@@ -115,14 +136,14 @@
               Find your favorites in our premium collection tailored for every beauty routine
             </p>
           </div>
-          <div class="flex gap-[10px] flex-wrap">
+          <div class="flex justify-center gap-[10px] flex-wrap">
             <div
-              class="flex max-w-[333px] p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
+              class="flex max-w-[333px] w-full p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
             >
               <div class="flex flex-col gap-[5px]">
                 <p class="text-base font-semibold flex items-center">
                   <img
-                    src="./assests/svg/shopping-bag.svg"
+                    src="./assets/svg/shopping-bag.svg"
                     alt="shopping-bag"
                     class="w-[30px] aspect-square"
                   />
@@ -139,12 +160,12 @@
               </button>
             </div>
             <div
-              class="flex max-w-[333px] p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
+              class="flex max-w-[333px] w-full p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
             >
               <div class="flex flex-col gap-[5px]">
                 <p class="text-base font-semibold flex items-center">
                   <img
-                    src="./assests/svg/shopping-bag.svg"
+                    src="./assets/svg/shopping-bag.svg"
                     alt="shopping-bag"
                     class="w-[30px] aspect-square"
                   />
@@ -161,12 +182,12 @@
               </button>
             </div>
             <div
-              class="flex max-w-[333px] p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
+              class="flex max-w-[333px] w-full p-[20px] gap-2 rounded-[20px] bg-charcoal-gray text-white"
             >
               <div class="flex flex-col gap-[5px]">
                 <p class="text-base font-semibold flex items-center">
                   <img
-                    src="./assests/svg/shopping-bag.svg"
+                    src="./assets/svg/shopping-bag.svg"
                     alt="shopping-bag"
                     class="w-[30px] aspect-square"
                   />
@@ -185,7 +206,254 @@
           </div>
         </div>
       </section>
+
+      <section
+        class="lg:py-[113px] lg:px-[194px] px-10 py-5 flex gap-[100px] flex-wrap bg-light-bg"
+      >
+        <div class="max-w-[398px] w-full grid gap-[31px]">
+          <div class="space-y-[4px] font-gt">
+            <h2 class="text-[35px]">Why choose us?</h2>
+            <p class="font-normal text-base">Your beauty deserves the best.</p>
+          </div>
+          <div class="grid gap-[15px]">
+            <h3 class="font-bold text-[25px] font-gt">Features</h3>
+            <p class="flex gap-2 font-semibold">
+              <img src="./assets/svg/check-mark.svg" alt="check-mark" />Safe Ingredients:
+              <span class="font-normal">Cruelty-free and gentle.</span>
+            </p>
+
+            <p class="flex gap-2 font-semibold">
+              <img src="./assets/svg/check-mark.svg" alt="check-mark" />Proven Results:
+              <span class="font-normal">Science-backed formulas.</span>
+            </p>
+            <p class="flex gap-2 font-semibold">
+              <img src="./assets/svg/check-mark.svg" alt="check-mark" />Affordable Quality:
+              <span class="font-normal">Luxury within reach.</span>
+            </p>
+            <p class="flex gap-2 font-semibold">
+              <img src="./assets/svg/check-mark.svg" alt="check-mark" />For Everyone:
+              <span class="font-normal">Perfect for all skin types.</span>
+            </p>
+          </div>
+          <button class="text-white bg-accent rounded-full px-5 py-[10px] max-w-[184px]">
+            Try LusgGlow Now
+          </button>
+        </div>
+        <div class="max-w-[452px] w-full overflow-clip rounded-[67px]">
+          <img
+            class="w-full h-full animate-scale-up"
+            src="./assets/images/image-1.webp"
+            alt="image"
+          />
+        </div>
+      </section>
+
+      <section class="lg:py-[50px] lg:px-[194px] font-gt grid gap-[54px] px-10 py-5">
+        <div class="max-w-[666px] mx-auto text-center w-full">
+          <h3 class="font-extrabold text-[35px]">Our Products</h3>
+          <p class="font-normal text-base">
+            Welcome to LustGrow, where affordable meets the organic beauty of nature. Our
+            handcrafted skincare pieces are designed to bring the tranquility of the outdoors to
+            your living spaces.
+          </p>
+        </div>
+
+        <div class="grid gap-[31px]">
+          <div
+            id="btn-container"
+            class="flex flex-wrap justify-center items-center gap-[10px] text-white font-sans text-base"
+          >
+            <button
+              class="btn bg-accent py-[10px] px-[15px] rounded-[10px] hover:scale-110 hover:cursor-pointer"
+            >
+              Popular
+            </button>
+            <button
+              class="btn bg-secondary-light py-[10px] px-[15px] rounded-[10px] hover:scale-110 hover:cursor-pointer"
+            >
+              skincare
+            </button>
+            <button
+              class="btn bg-secondary-light py-[10px] px-[15px] rounded-[10px] text-nowrap hover:scale-110 hover:cursor-pointer"
+            >
+              Hair & Body
+            </button>
+            <button
+              class="btn bg-secondary-light py-[10px] px-[15px] rounded-[10px] hover:scale-110 hover:cursor-pointer"
+            >
+              All
+            </button>
+          </div>
+          <div id="card-container" class="grid md:grid-cols-2 lg:grid-cols-3 mx-auto gap-5"></div>
+        </div>
+      </section>
+
+      <section
+        class="lg:py-[113px] lg:px-[194px] flex gap-[70px] bg-secondary items-center overflow-clip px-10 py-5"
+      >
+        <div class="space-y-10 font-gt min-w-[295px]">
+          <div>
+            <h2 class="text-[35px] font-extrabold align-middle leading-[100%] font-gt">
+              Why Customers Love LushGlow
+            </h2>
+            <p class="text-base font-[300]">
+              Real stories from people who transformed their beauty routine with us.
+            </p>
+          </div>
+          <button class="bg-accent py-[10px] px-[20px] text-white rounded-full">Shop Now</button>
+        </div>
+        <div class="bg-white py-[40px] px-[50px] flex flex-col gap-3">
+          <div class="flex gap-2">
+            <div class="flex flex-col p-5 w-[328px] border border-secondary">
+              <div class="flex flex-col gap-[10px]">
+                <img width="39" src="./assets/svg/quote.svg" alt="quote" />
+                <p class="text-sm font-normal italic">
+                  The rejuvenating body oil has been a game-changer for my skin. I’ve never felt so
+                  confident!
+                </p>
+              </div>
+              <div class="self-end flex gap-2">
+                <p class="italic text-sm max-w-[56px] text-accent self-end">Emily R., New York</p>
+                <div class="w-[60px] overflow-clip rounded-[10px]">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="./assets/images/testimonial.png"
+                    alt="testimonial"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 w-[328px] border border-secondary">
+              <div class="flex flex-col gap-[10px]">
+                <img width="39" src="./assets/svg/quote.svg" alt="quote" />
+                <p class="text-sm font-normal italic">
+                  The rejuvenating body oil has been a game-changer for my skin. I’ve never felt so
+                  confident!
+                </p>
+              </div>
+              <div class="self-end flex gap-2">
+                <p class="italic text-sm max-w-[56px] text-accent self-end">Emily R., New York</p>
+                <div class="w-[60px] overflow-clip rounded-[10px]">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="./assets/images/testimonial.png"
+                    alt="testimonial"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col p-5 w-[328px] border border-secondary">
+              <div class="flex flex-col gap-[10px]">
+                <img width="39" src="./assets/svg/quote.svg" alt="quote" />
+                <p class="text-sm font-normal italic">
+                  The rejuvenating body oil has been a game-changer for my skin. I’ve never felt so
+                  confident!
+                </p>
+              </div>
+              <div class="self-end flex gap-2">
+                <p class="italic text-sm max-w-[56px] text-accent self-end">Emily R., New York</p>
+                <div class="w-[60px] overflow-clip rounded-[10px]">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="./assets/images/testimonial.png"
+                    alt="testimonial"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of testimonial -->
+          <p class="text-accent">< <span class="text-charcoal-gray">1-4</span> ></p>
+        </div>
+      </section>
+
+      <section
+        class="lg:py-[113px] lg:px-[194px] flex justify-center items-center relative group h-[500px] overflow-hidden px-10 py-5"
+      >
+        <!-- Sliding Text -->
+        <div
+          class="hidden lg:block lg:absolute lg:group-hover:-translate-x-[60%] transition-all duration-[1.5s] ease-in-out opacity-0 group-hover:opacity-100 bg-white p-6 max-w-[446px]"
+        >
+          <div class="flex flex-col gap-[67px]">
+            <div class="flex flex-col gap-2">
+              <div class="text-[35px] font-gt leading-[100%] font-extrabold">
+                <p class="text-charcoal-gray">Discover</p>
+                <p class="text-accent">Lush Cosmetic</p>
+              </div>
+              <p class="font-gt text-base">
+                At LushGlow, we craft skincare and beauty products inspired by nature, designed to
+                bring out your natural glow. With a commitment to quality and sustainability, our
+                formulas blend nourishing ingredients and innovative techniques. Whether it’s
+                radiant skin or confidence that shines, we’re here to help you achieve it every day.
+              </p>
+            </div>
+            <button
+              class="border border-primary px-[20px] py-[10px] text-accent font-gt font-bold text-base w-fit rounded-[20px]"
+            >
+              Learn More About Us
+            </button>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div
+          class="lg:w-[471px] w-full rounded-[67px] overflow-hidden z-10 lg:group-hover:translate-x-[60%] transition-all duration-[1.5s] ease-in-out"
+        >
+          <img class="w-full h-full object-cover" src="./assets/images/beauty-4.png" alt="image" />
+        </div>
+      </section>
+
+      <section
+        class="px-10 py-5 lg:px-[194px] lg:py-[113px] bg-light-bg relative overflow-hidden group"
+      >
+        <div
+          class="grid gap-2 max-w-[486px] w-full mx-auto relative z-20 lg:group-hover:translate-x-[60%] transition-all duration-[1.5s] ease-in-out"
+        >
+          <div class="bg-white px-[20px] py-[15px] rounded-[20px] flex flex-col gap-2 font-gt">
+            <p class="text-base font-semibold">Do you offer international shipping?</p>
+            <p class="text-sm font-normal">
+              Yes, we ship worldwide with reliable delivery options.
+            </p>
+          </div>
+
+          <div class="bg-white px-[20px] py-[15px] rounded-[20px] flex flex-col gap-2 font-gt">
+            <p class="text-base font-semibold">Do you offer international shipping?</p>
+            <p class="text-sm font-normal">
+              Yes, we ship worldwide with reliable delivery options.
+            </p>
+          </div>
+
+          <div class="bg-white px-[20px] py-[15px] rounded-[20px] flex flex-col gap-2 font-gt">
+            <p class="text-base font-semibold">Do you offer international shipping?</p>
+            <p class="text-sm font-normal">
+              Yes, we ship worldwide with reliable delivery options.
+            </p>
+          </div>
+
+          <div class="bg-white px-[20px] py-[15px] rounded-[20px] flex flex-col gap-2 font-gt">
+            <p class="text-base font-semibold">Do you offer international shipping?</p>
+            <p class="text-sm font-normal">
+              Yes, we ship worldwide with reliable delivery options.
+            </p>
+          </div>
+
+          <!-- last div -->
+          <div
+            class="flex flex-col gap-2 font-gt text-[35px] font-bold mx-auto leading-[100%] text-center"
+          >
+            <h2>Got Questions?</h2>
+            <h2 class="text-accent">We've Got Answers!</h2>
+          </div>
+        </div>
+
+        <div
+          class="max-w-[471px] rounded-[67px] overflow-clip mx-auto absolute top-[100px] left-1/2 -translate-x-1/2 z-10 hidden lg:block lg:absolute lg:group-hover:-translate-x-[110%] transition-all duration-[1.5s] ease-in-out opacity-0 group-hover:opacity-100"
+        >
+          <img src="./assets/images/beauty-5.png" alt="beauty" class="w-full h-full object-cover" />
+        </div>
+      </section>
     </main>
     <script src="./js/index.js"></script>
+    <script src="./js/card.js"></script>
   </body>
 </html>
