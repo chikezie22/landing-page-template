@@ -12,6 +12,7 @@
       @theme {
         --color-primary: #ffb7c5;
         --color-secondary: #f4e3cf;
+        --color-secondary-light: #f1e1c5;
         --color-accent: #d36a91;
         --color-charcoal-gray: #4e4e4e;
         --color-white: #ffffff;
@@ -21,7 +22,7 @@
         --font-gt: 'GT';
 
         --animate-slide-up: slide-up 1s ease-in-out;
-
+        --animate-scale-up: scale-up 6s ease-in-out infinite alternate;
         @keyframes slide-up {
           0% {
             transform: scale(0);
@@ -40,11 +41,31 @@
             transform-origin: bottom left;
           }
         }
+        @keyframes scale-up {
+          0% {
+            transform: scale(1);
+          }
+          20% {
+            transform: scale(1);
+          }
+          30% {
+            transform: scale(1.5);
+          }
+          50% {
+            transform: scale(1.5);
+          }
+          60% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
       }
     </style>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body class="max-w-[1440px] mx-auto">
+  <body class="max-w-[1440px] mx-auto text-charcoal-gray">
     <header class="p-5 flex items-center justify-around">
       <!-- logo -->
       <img src="./assests/svg/Logo.svg" alt="logo" />
@@ -181,6 +202,95 @@
               >
                 Shop Skincare
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-[113px] px-[194px] flex gap-[100px] flex-wrap bg-light-bg">
+        <div class="basis-[398px] grid gap-[31px]">
+          <div class="space-y-[4px] font-gt">
+            <h2 class="text-[35px]">Why choose us?</h2>
+            <p class="font-normal text-base">Your beauty deserves the best.</p>
+          </div>
+          <div class="grid gap-[15px]">
+            <h3 class="font-bold text-[25px] font-gt">Features</h3>
+            <p class="flex gap-2 font-semibold">
+              <img src="./assests/svg/check-mark.svg" alt="check-mark" />Safe Ingredients:
+              <span class="font-normal">Cruelty-free and gentle.</span>
+            </p>
+
+            <p class="flex gap-2 font-semibold">
+              <img src="./assests/svg/check-mark.svg" alt="check-mark" />Proven Results:
+              <span class="font-normal">Science-backed formulas.</span>
+            </p>
+            <p class="flex gap-2 font-semibold">
+              <img src="./assests/svg/check-mark.svg" alt="check-mark" />Affordable Quality:
+              <span class="font-normal">Luxury within reach.</span>
+            </p>
+            <p class="flex gap-2 font-semibold">
+              <img src="./assests/svg/check-mark.svg" alt="check-mark" />For Everyone:
+              <span class="font-normal">Perfect for all skin types.</span>
+            </p>
+          </div>
+          <button class="text-white bg-accent rounded-full px-5 py-[10px] max-w-[184px]">
+            Try LusgGlow Now
+          </button>
+        </div>
+        <div class="basis-[452px] overflow-clip rounded-[67px]">
+          <img
+            class="w-full h-full animate-scale-up"
+            src="./assests/images/image-1.webp"
+            alt="image"
+          />
+        </div>
+      </section>
+
+      <section class="py-[50px] px-[194px] font-gt grid gap-[54px]">
+        <div class="max-w-[666px] mx-auto text-center">
+          <h3 class="font-extrabold text-[35px]">Our Products</h3>
+          <p class="font-normal text-base">
+            Welcome to LustGrow, where affordable meets the organic beauty of nature. Our
+            handcrafted skincare pieces are designed to bring the tranquility of the outdoors to
+            your living spaces.
+          </p>
+        </div>
+
+        <div class="grid gap-[31px]">
+          <div class="flex justify-center items-center gap-[10px] text-white font-sans text-base">
+            <button class="btn bg-accent py-[10px] px-[15px] rounded-[10px]">Popular</button
+            ><button class="btn bg-secondary-light py-[10px] px-[15px] rounded-[10px]">
+              skincare</button
+            ><button class="btn bg-secondary-light py-[10px] px-[15px] rounded-[10px]">
+              Hair & Body</button
+            ><button class="btn bg-secondary-light py-[10px] px-[15px] rounded-[10px]">All</button>
+          </div>
+          <div id="container" class="grid md:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="rounded-[30px] p-5 grid gap-5 border border-[#f6e4e8] min-h-[412px] max-w-[270px]"
+            >
+              <div class="w-[230px] overflow-clip rounded-[20px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assests/images/card-1.png"
+                  alt="card image"
+                />
+              </div>
+              <div class="flex flex-col gap-2 font-lato">
+                <p class="font-semibold text-base">Cactus Soap Bar</p>
+                <p class="italic text-sm font-normal">
+                  A moisturizing soap with cactus extract that gently cleanses and nourishes the
+                  skin, perfect for dry and sensitive skin.
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-3 font-semibold text-base">
+                  <p class="text-accent">$55.00</p>
+                  <p class="line-through">$60.00</p>
+                </div>
+                <button class="w-fit bg-primary text-white py-2 px-4 rounded-[10px]">Buy</button>
+              </div>
             </div>
           </div>
         </div>
