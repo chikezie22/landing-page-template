@@ -1,7 +1,7 @@
 // first section
 document.addEventListener('DOMContentLoaded', function () {
   const images = document.querySelectorAll('.image-slide');
-  console.log(images);
+
   let current = 0;
   function showImage(index) {
     images.forEach((img) => {
