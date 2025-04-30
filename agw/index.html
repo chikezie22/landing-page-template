@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/hero.js" defer></script>
     <script src="./assets/js/activeLink.js" defer></script>
+    <script src="./assets/js/favourite.js" defer></script>
+
 </head>
 <body class="font-poppins text-white">
     <section id="header" class="fixed z-50 -top-1/2 left-1/2 flex justify-between items-center gap-16 w-[90%] max-w-[1200px] -translate-x-1/2  px-10 py-4 bg-[#00000098] backdrop-blur-lg rounded-xl transition-[top] duration-[1500ms]">
@@ -45,7 +47,7 @@
     </section>
     <section id="about" class="flex gap-16 justify-center items-center text-black mt-32 mb-16 ">
         <div class="max-w-[40%] flex flex-col gap-12">
-            <h1 class="text-primary text-5xl">About US</h1>
+            <h1 class="text-primary text-5xl font-semibold ">About US</h1>
             <p class="">Founded on the principles of sustainability and community, our farm is more than just a place to grow crops it's a way of life. We believe in nurturing the earth and bringing the best organic produce directly from our fields to your table.</p>
             <div class="flex gap-12 justify-between">
                 <div class=" w-1/2">
@@ -74,23 +76,419 @@
             <img src="./assets//images//about-image.png" alt="about us image">
         </div>
     </section>
-    <section id="what-we-offer" class="max-w-[calc(65%+4rem)] mx-auto my-32">
-        <h1 class="text-primary text-5xl">What We Offer</h1>
+    <section id="what-we-offer" class="max-w-[calc(65%+4rem)] mx-auto my-32 pb-16">
+        <h1 class="text-primary text-5xl font-semibold ">What We Offer</h1>
         <p class="text-base">Discover a world of fresh, organic produce, engage in immersive farm experiences, and learn about our sustainable practices. Our farm offers quality and connection to nature in every aspect of what we do.</p>
 
-        <div id="cards" class="grid grid-cols-3 gap-x-9">
-            <div class="relative max-w-full">
-                <img src="./assets//images//what-we-offer-1.png" alt="what we offer image 1" class="object-center object-cover">
-                <p class="absolute inset-0 w-full h-full"></p>
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-9">
+            <div class="relative max-w-full rounded-xl overflow-hidden group/card ">
+                <img src="./assets//images//what-we-offer-1.png" alt="what we offer image 1" class="object-center object-cover w-full scale-120">
+                <div class=" absolute top-0 left-0 w-full h-full bg-dark-gradient pl-6 pt-6 -translate-y-full group-hover/card:translate-y-0 transition-transform duration-500 cursor-pointer overflow-hidden">
+                    <p class="font-semibold text-2xl ">Organic Produce</p>
+                    <p class=" max-w-[90%] mt-4">
+                        Our farm grows a wide range of organic fruits and vegetables, carefully cultivated to provide the freshest and healthiest options for your family.
+                    </p>
+                </div>
             </div>
-            <div class="max-w-full">
-                <img src="./assets//images//what-we-offer-2.png" alt="what we offer image 2" class=" object-cover w-full">
+            <div class="relative max-w-full rounded-xl overflow-hidden group/card" >
+                <img src="./assets//images//what-we-offer-2.png" alt="what we offer image 2" class=" object-cover w-full scale-120">
+                <div class=" absolute top-0 left-0 w-full h-full bg-dark-gradient pl-6 pt-6 translate-x-full group-hover/card:translate-x-0 transition-transform duration-500 cursor-pointer overflow-hidden rounded-xl">
+                    <p class="font-semibold text-2xl ">Organic Produce</p>
+                    <p class=" max-w-[90%] mt-4">
+                        Our farm grows a wide range of organic fruits and vegetables, carefully cultivated to provide the freshest and healthiest options for your family.
+                    </p>
+                </div>
             </div>
-            <div class="max-w-full">
-                <img src="./assets//images//what-we-offer-3.png" alt="what we offer image 3" class="object-center object-cover">
+            <div class="relative max-w-full rounded-xl overflow-hidden group/card ">
+                <img src="./assets//images//what-we-offer-3.png" alt="what we offer image 3" class="object-center object-cover w-full scale-120">
+                <div class=" absolute top-0 left-0 w-full h-full bg-dark-gradient pl-6 pt-6 translate-y-full group-hover/card:translate-y-0 transition-transform duration-500 cursor-pointer overflow-hidden rounded-xl">
+                    <p class="font-semibold text-2xl ">Organic Produce</p>
+                    <p class=" max-w-[90%] mt-4">
+                        Our farm grows a wide range of organic fruits and vegetables, carefully cultivated to provide the freshest and healthiest options for your family.
+                    </p>
+                </div>
             </div>
         </div>
-        
+    </section>
+    <section id="our-produce" class="flex flex-col max-w-[calc(65%+4rem)] mx-auto my-32">
+        <h1 class="text-primary text-5xl font-semibold">Our Fresh Produce</h1>
+        <p class="text-base text-black pt-12 pb-10">From vibrant vegetables to delicious fruits, we offer a variety of fresh, organic produce grown with love and care. Whether you’re looking for juicy tomatoes, crunchy greens, or seasonal fruits, you’ll find the best at our farm.</p>
+        <div id="cards" class="grid grid-cols-4 gap-9">
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/green-beans.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/onions.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/tomato.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/mint-leaf.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[12rem] w-full overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/eggs.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/lettuce.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/juice.png"   alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/cake.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/cake.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/eggs.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/lettuce.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/juice.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
+                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                </svg>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                                w-full opacity-0 ">
+                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
+                            </svg>
+                                </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="self-center max-w-fit bg-primary py-3 px-4 rounded-md text-white hover:bg-black btn-custom-transition mt-14 ">See More </button>
+    </section>
+
+    <section class="flex flex-col items-center gap-10 py-16 bg-tsm-dark">  
+        <h1 class=" text-5xl font-semibold ">What Our Customers Say</h1>
+        <div id="testimonial-carousel-wrapper" class="w-3/5">
+            <div id="testimonial-carousel" class="flex w-full">
+                <div class="flex-shrink-0 w-full ">
+                    <div class="pl-10">
+                        <img src="./assets/images/quote.png" alt="quote" class="w-10">
+                        <p class="font-semibold text-2xl">"The produce is always fresh and delicious. I love knowing that everything I buy is grown sustainably!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 </body>
 </html>

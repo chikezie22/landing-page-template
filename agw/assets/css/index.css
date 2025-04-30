@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+:root{
+    font-size:14px
+}
 
 #header .link-active{
     @apply text-primary hover:text-white;
@@ -22,4 +25,18 @@
     transition-property: transform, background-color;
     transition-duration: 1000ms, 300ms;
     transition-delay: 500ms, 0ms;
+  }
+
+
+
+  @media (min-width: 768px) {
+  
+    :root{
+        font-size:16px
+    }
+  }
+
+
+  .card-shadow{
+    box-shadow : -1px -1px 10px 0px #00000020, 1px -1px 10px 0px #00000020 ;
   }
