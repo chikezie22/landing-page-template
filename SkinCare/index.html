@@ -368,7 +368,7 @@
       </section>
 
       <section
-        class="lg:py-[113px] lg:px-[194px] flex justify-center items-center relative group h-[500px] overflow-hidden px-10 py-5"
+        class="lg:py-[113px] lg:px-[194px] flex justify-center items-center relative group min-h-[500px] overflow-hidden px-10 py-5"
       >
         <!-- Sliding Text -->
         <div
@@ -452,7 +452,76 @@
           <img src="./assets/images/beauty-5.png" alt="beauty" class="w-full h-full object-cover" />
         </div>
       </section>
+      <!-- get in touch us section -->
+      <section
+        class="bg-accent px-10 py-5 lg:px-[194px] lg:py-[60px] flex gap-[58px] flex-wrap text-white"
+      >
+        <div class="max-w-[434px] mx-auto font-gt text-center lg:text-start">
+          <p class="text-[30px] font-extrabold">Get in Touch with Us</p>
+          <p class="text-base font-normal">
+            We’re here to help! Whether you have a question, need assistance, or just want to say
+            hello, feel free to reach out.
+          </p>
+        </div>
+        <div class="max-w-[560px] space-y-2 mx-auto">
+          <div class="flex gap-2">
+            <div class="bg-[#FFB7C594] rounded-[5px] p-[10px] flex gap-2">
+              <img src="./assets/svg/phone.svg" alt="phone" />
+              <p>Call Us +1(800) 123-4567</p>
+            </div>
+            <div class="bg-[#FFB7C594] rounded-[5px] p-[10px] flex gap-2">
+              <img src="./assets/svg/email.svg" alt="email" />
+              <p>Email Us support@lushglow.com</p>
+            </div>
+          </div>
+          <div class="bg-[#FFB7C594] rounded-[5px] p-[10px] flex gap-2">
+            <img src="./assets/svg/location.svg" alt="location" />
+            <p>Address 123 Beauty Lane, Glow City, NY 1000</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="bg-charcoal-gray lg:py-[50px] lg:px-[194px] px-10 py-5 space-y-10 text-white">
+      <div
+        class="flex justify-between border-b border-[#707070] pb-[20px] gap-3 text-white flex-wrap"
+      >
+        <div class="flex flex-col gap-[16px]">
+          <h3 class="text-[20px] font-extrabold">Quick Links</h3>
+          <p class="text-[14px] font-normal">About us</p>
+          <p class="text-[14px] font-normal">Shop Products</p>
+          <p class="text-[14px] font-normal">Contact</p>
+          <p class="text-[14px] font-normal">FAQs</p>
+        </div>
+
+        <div class="flex flex-col gap-[16px]">
+          <h3 class="text-[20px] font-extrabold">Follow us on</h3>
+          <p class="text-[14px] font-normal">Facebook</p>
+          <p class="text-[14px] font-normal">Instagram</p>
+          <p class="text-[14px] font-normal">Twitter</p>
+        </div>
+
+        <div class="flex flex-col gap-[16px] max-sm:mx-auto">
+          <h3 class="text-[20px] font-extrabold">Subscription Form</h3>
+          <p class="text-[14px] font-normal">Stay updated with the latest deals and trends.</p>
+
+          <input
+            class="w-full max-w-[277px] rounded-[10px] p-[10px]"
+            type="text"
+            placeholder="Enter your email"
+          />
+
+          <button class="bg-primary w-fit text-white rounded-[10px] self-end py-[10px] px-[15px]">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-between flex-wrap">
+        <img src="./assets/svg/Logo.svg" alt="logo" />
+        <p class="text-[#fff5f8] text-sm font-semibold">
+          © 2024 LushGlow Cosmetics. All rights reserved.
+        </p>
+      </div>
+    </footer>
     <script src="./js/index.js"></script>
     <script src="./js/card.js"></script>
   </body>
