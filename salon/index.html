@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloon | Wivali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,700;1,700&family=Mulish:ital,wght@0,800;1,800&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./heroTypewriter.js" defer></script>
+</head>
+<body>
+    <section id="header" class="absolute top-0 left-0 flex justify-between items-center gap-16 w-full px-16 pt-6 pb-6 font-inter " >
+            <div id='header-brand' class="flex gap-2  items-center">
+                <div id="brand-logo" class="flex items-center justify-center bg-primary w-10 h-8 rounded-lg " >
+                    <img src="./assets/images/Logo.svg" class="w-[1.75rem]" alt="logo">
+                </div>
+                <div id="brand-name" class="mr-8" >
+                    <h1 class="text-black text-sm font-mulish whitespace-nowrap">Wivali AI</h1>
+                </div>
+            </div>
+
+            <div id="header-bigscreen-navigation" class="hidden  md:flex md:grow px-4 max-w-[500px]">
+                <ul class= "justify-between flex items-center w-full  text-black text-xs lg:text-sm ">
+                    <li> <a href="#" class="hover:bg-primary hover:text-white py-2 px-3 rounded-full   transition-colors">Home</a> </li>
+                    <li> <a href="#services" class="hover:bg-primary hover:text-white py-2 px-3 rounded-full   transition-colors ">Services</a> </li>
+                    <li> <a href="#about-us" class="hover:bg-primary hover:text-white py-2 px-3 rounded-full   transition-colors whitespace-nowrap ">About Us</a> </li>
+                    <li> <a href="#blog" class="hover:bg-primary hover:text-white py-2 px-3 rounded-full   transition-colors">Blog</a> </li>
+                    <li> <a href="#contact" class="hover:bg-primary hover:text-white py-2 px-3 rounded-full   transition-colors whitespace-nowrap">Contact</a> </li>
+                </ul>
+            </div>
+            
+            <a href="#book-now" class="flex gap-2 items-center justify-center px-4 py-2 rounded-full no-underline bg-primary hover:bg-primary-active transition-[background-color]"> 
+                <p class="text-white text-sm">Book Now</p>
+                <img src="./assets//images/right-arrow.png" alt="book now" class="w-6">
+            </a>
+            
+            <div id="menu-bar" class="relative md:hidden ">
+                <button class="flex flex-col gap-1 px-4 hover">
+                    <div class="w-6 h-[.125rem] bg-white rounded-sm hover:bg-[var(--primary-color)] transition-[bacground-color] duration-500 "></div>
+                    <div class="w-6 h-[.125rem] bg-white rounded-sm hover:bg-[var(--primary-color)] transition-[bacground-color] duration-500 "></div>
+                    <div class="w-6 h-[.125rem] bg-white rounded-sm hover:bg-[var(--primary-color)] transition-[bacground-color] duration-500 "></div>
+                </button>
+                <div id="mobile-navbar" class="absolute h-0 mt-2 top-full right-[25%] overflow-hidden transition-[height] duration-500">
+                    <ul class= "flex flex-col justify-between items-stretch gap-2  text-white text-xs font-century-gothic bg-[var(--bg-header)] px-4 py-2 rounded">
+                        <li> <a href="#" class="hover:text-[var(--primary-color)] ">Home</a> </li>
+                        <li> <a href="#about-us" class="hover:text-[var(--primary-color)] whitespace-nowrap">About Us</a> </li>
+                        <li> <a href="#services" class="hover:text-[var(--primary-color)]">Services</a> </li>
+                        <li> <a href="#contact-us" class="hover:text-[var(--primary-color)] whitespace-nowrap">Contact Us</a> </li>
+                        <li> <a href="#packages" class="hover:text-[var(--primary-color)]">Packages</a> </li>
+                        <li> <a href="#blog" class="hover:text-[var(--primary-color)]">Blog</a> </li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+    <section id="hero" class="flex items-end justify-center h-[100svh] pb-10 px-16">
+        <div class="flex justify-between bg-hero-bg w-full h-[60svh] rounded-3xl max-w-[1200px]">
+            <div class="self-center flex flex-col gap-8 items-start w-1/5 ml-20  overflow-hidden min-w-[400px]">
+              <div class=" font-montserrat text-4xl text-primary-dark">
+                <span id="typewriter-text" class="">
+                    
+                </span><span class="animate-cursor">|</span>
+              </div>
+                <p class="text-secondary font-poppins max-w-[400px]">Unwind, rejuvenate, and let our experts bring out your best. Experience beauty treatments crafted just for you.</p>
+                <a href="#book-now" class="flex gap-2  justify-center px-4 py-2 rounded-full no-underline bg-primary hover:bg-primary-active transition-[background-color]"> 
+                    <p class="text-white text-sm">Explore Our Services</p>
+                    <img src="./assets//images/right-arrow.png" alt="book now" class="w-6">
+                </a>
+            </div>
+            <div class="self-end flex items-end h-[60svh]">
+                <div class="relative z-10 left-[25%] w-3/5 h-[130%] flex justify-center items-end">
+                    <img src="./assets/images/model-1.png" class="max-h-full w-auto" alt="model-1">
+                </div>
+                <div class="h-[120%] w-2/5 flex items-end justify-end">
+                    <img src="./assets/images/model-2.png" class="max-h-full w-auto" alt="model-1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

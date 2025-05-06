@@ -3,7 +3,6 @@
 // change favourite button on click
 
 const favouriteBtns = document.querySelectorAll('.favourite');
-console.log(favouriteBtns);
 favouriteBtns.forEach(btn => {
     btn.onclick = ToggleOpacity;
 })

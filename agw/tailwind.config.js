@@ -13,6 +13,7 @@ module.exports = {
         orange: "#FB8A2E",
         "tsm-dark":'#444444',
         'tsm-dark-1': "#262626",
+        'team-dark': '#333333',
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -25,8 +26,12 @@ module.exports = {
         'hero-bg': "url('/assets/images/hero.png')",
         'dark-gradient': 'linear-gradient(to bottom, #1E1C1C 0%, #232121D9 20%, #272525CC 40%, #343333B3 60%, #46454599 80%, #5A5A5A80 100%)',
         'tsm-gradient': 'linear-gradient(to bottom, #8A888866 50%, #5A5A5A00 100%)',
+        'gray-gradient': 'linear-gradient(to bottom, #232121, #272525, #343333, #464545, #5A5A5A)',
+
       },
     },
   },
   plugins: [],
 }
+
+
