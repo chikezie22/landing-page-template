@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/hero.js" defer></script>
     <script src="./assets/js/activeLink.js" defer></script>
@@ -17,7 +20,8 @@
 </head>
 <body class="font-poppins text-white">
     <section id="header" class="fixed z-50 -top-1/2 left-1/2 flex justify-between items-center gap-16 w-[90%] max-w-[1200px] -translate-x-1/2  px-10 py-4 bg-[#00000098] backdrop-blur-lg rounded-xl transition-[top] duration-[1500ms]">
-        <div id="brand" class="">
+        <div id="brand" class="">   
+            <span class="iconify mdi:home"></span>
             <img src="./assets/images/logo.svg" alt="logo" class="w-12">
         </div>
 
@@ -131,15 +135,10 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            </button>
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -161,15 +160,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -191,15 +184,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -221,15 +208,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -238,7 +219,7 @@
             </div>            
             <div class=" group/card ">
                 <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
-                    <div class="h-[12rem] w-full overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
                         <img src="./assets//images/eggs.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
                     </div>
                   <div class="bg-white py-3 group-hover/card:border-x">
@@ -251,15 +232,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -281,15 +256,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -311,15 +280,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -341,15 +304,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -371,21 +328,16 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
                     </div>
                 </div>
-            </div>            <div class=" group/card ">
+            </div>            
+            <div class=" group/card ">
                 <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
                     <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
                         <img src="./assets//images/eggs.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
@@ -400,21 +352,16 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
                     </div>
                 </div>
-            </div>            <div class=" group/card ">
+            </div>            
+            <div class=" group/card ">
                 <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
                     <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
                         <img src="./assets//images/lettuce.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
@@ -429,21 +376,16 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
                     </div>
                 </div>
-            </div>            <div class=" group/card ">
+            </div>            
+            <div class=" group/card ">
                 <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
                     <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
                         <img src="./assets//images/juice.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
@@ -458,15 +400,9 @@
                         <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
                         <div  class="relative flex gap-1 items-center bg-cart">
                             <button class="favourite relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="relative z-10 w-6">
-                                    <path fill="#fff" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                </svg>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                                w-full opacity-0 ">
-                                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z " fill="#FB8A2E"/>
-                            </svg>
-                                </button>
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
                             <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
 
                         </div>
@@ -557,86 +493,89 @@
            </div>
         </div>
     </section>
-    <section id="team" class="flex flex-col mx-auto my-32">
-        <div id="team-carousel-wrapper" class="overflow-hidden" >
-            <div id="team-carousel" class="flex items-center gap-4 relative left-[40%] px-4 py-16 transition-transform duration-700">
-                <div class="team-card w-[300px] flex-shrink-0 rounded-xl overflow-hidden  px-8 transition-transform duration-500 scale-110">
+    <section id="team" class="flex flex-col mx-auto my-32 w-[calc(65%+4rem)]">
+        <!-- Tailwind class safelist -->
+    <div class="hidden opacity-0 opacity-100 absolute top-0 left-0 transition-opacity duration-1000"></div>
+
+        <div id="team-carousel-wrapper" class="relative overflow-hidden w-full" >
+            <div id="team-carousel" class="flex items-center gap-4 relative left-[40%] px-4 py-16 transition-all duration-700">
+                <div class="team-card w-[300px] flex-shrink-0 rounded-xl overflow-hidden  px-4 transition-transform duration-1000 scale-110">
                     <div class="h-[16rem] rounded-t-xl overflow-hidden">
                         <img src="./assets/images/team-img-1.png" alt="team person image 1" class="object-cover h-full">
                     </div>
-                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6">
-                        <p class="text-lg font-bold">John Smith</p>
-                        <p class="text-xs text-primary">Farm Manager</p>
-                        <p class="my-4 text-sm">With over a decade of experience in organic farming, John oversees all operations and ensures our sustainable practices are upheld.</p>
-                        <div class="flex gap-3 items-center">
-                            <a href='#' ><img src="./assets/images/ig.png" alt="Instagram icon" class="w-3"> </a>   
-                            <a href='#' ><img src="./assets/images/linkedin.png" alt="Linkedin icon" class="w-3"> </a>  
-                            <a href='#' ><img src="./assets/images/fb.png" alt="facebook icon" class="w-2"> </a>    
-                            <a href='#' ><img src="./assets/images/x.png" alt="x icon" class="w-3"> </a>    
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Sarah Green</p>
+                        <p class="text-xs text-primary">Community Outreach Coordinator</p>
+                        <p class="my-4 text-sm">Sarah organizes educational events and tours, helping to foster a love for agriculture within the community.</p>
+                        <div class="flex gap-2 items-center">
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="sarah green's instagram  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="sarah green's link on linkedin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="sarah green's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="sarah green's twitter  link" class="w-4"></a>    
                         </div>
                     </div>
                 </div>
-                <div class="team-card w-[300px] flex-shrink-0 rounded-xl  px-8 transition-transform duration-500">
-                    <div class="h-[16rem] ">
-                        <img src="./assets/images/team-img-1.png" alt="team person image 1" class="object-cover h-full">
+                <div class="team-card w-[300px] flex-shrink-0 rounded-xl  px-4 transition-transform duration-1000">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden">
+                        <img src="./assets/images/team-img-2.png" alt="team person image 1" class="object-cover object-top h-full ease-out">
                     </div>
-                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6">
-                        <p class="text-lg font-bold">John Smith</p>
-                        <p class="text-xs text-primary">Farm Manager</p>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Mike Brown</p>
+                        <p class="text-xs text-primary">Agricultural Technician</p>
                         <p class="my-4 text-sm">With over a decade of experience in organic farming, John oversees all operations and ensures our sustainable practices are upheld.</p>
                         <div class="flex gap-3 items-center">
-                            <a href='#' ><img src="./assets/images/ig.png" alt="Instagram icon" class="w-3"> </a>   
-                            <a href='#' ><img src="./assets/images/linkedin.png" alt="Linkedin icon" class="w-3"> </a>  
-                            <a href='#' ><img src="./assets/images/fb.png" alt="facebook icon" class="w-2"> </a>    
-                            <a href='#' ><img src="./assets/images/x.png" alt="x icon" class="w-3"> </a>    
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="Mike Brown's instagram  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="Mike Brown's link on linkedin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="Mike Brown's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="Mike Brown's twitter  link" class="w-4"></a>     
                         </div>
                     </div>
                 </div>
-                <div class=" team-card w-[300px] flex-shrink-0 rounded-xl px-8 transition-transform duration-500  ">
-                    <div class="h-[16rem] ">
-                        <img src="./assets/images/team-img-1.png" alt="team person image 1" class="object-cover h-full">
+                <div class=" team-card w-[300px] flex-shrink-0 rounded-xl px-4 transition-transform duration-1000  ">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden ">
+                        <img src="./assets/images/team-img-3.png" alt="team person image 1" class="object-cover h-full">
                     </div>
-                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6">
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
                         <p class="text-lg font-bold">John Smith</p>
                         <p class="text-xs text-primary">Farm Manager</p>
                         <p class="my-4 text-sm">With over a decade of experience in organic farming, John oversees all operations and ensures our sustainable practices are upheld.</p>
                         <div class="flex gap-3 items-center">
-                            <a href='#' ><img src="./assets/images/ig.png" alt="Instagram icon" class="w-3"> </a>   
-                            <a href='#' ><img src="./assets/images/linkedin.png" alt="Linkedin icon" class="w-3"> </a>  
-                            <a href='#' ><img src="./assets/images/fb.png" alt="facebook icon" class="w-2"> </a>    
-                            <a href='#' ><img src="./assets/images/x.png" alt="x icon" class="w-3"> </a>    
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="John Smith's instagram  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="John Smith's link on linkedin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="John Smith's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="John Smith's twitter  link" class="w-4"></a>      
                         </div>
                     </div>
                 </div>
-                <div class=" team-card w-[300px] flex-shrink-0 rounded-xl px-8 transition-transform duration-500  ">
-                    <div class="h-[16rem] ">
-                        <img src="./assets/images/team-img-1.png" alt="team person image 1" class="object-cover h-full">
+                <div class=" team-card w-[300px] flex-shrink-0 rounded-xl px-4 transition-transform duration-1000  ">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden ">
+                        <img src="./assets/images/team-img-4.png" alt="team person image 4" class="object-cover h-full">
                     </div>
-                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6">
-                        <p class="text-lg font-bold">John Smith</p>
-                        <p class="text-xs text-primary">Farm Manager</p>
-                        <p class="my-4 text-sm">With over a decade of experience in organic farming, John oversees all operations and ensures our sustainable practices are upheld.</p>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Tom Wilson</p>
+                        <p class="text-xs text-primary">Head of Production</p>
+                        <p class="my-4 text-sm">Tom ensures that our produce meets the highest standards of quality. His expertise in crop management helps us consistently..</p>
                         <div class="flex gap-3 items-center">
-                            <a href='#' ><img src="./assets/images/ig.png" alt="Instagram icon" class="w-3"> </a>   
-                            <a href='#' ><img src="./assets/images/linkedin.png" alt="Linkedin icon" class="w-3"> </a>  
-                            <a href='#' ><img src="./assets/images/fb.png" alt="facebook icon" class="w-2"> </a>    
-                            <a href='#' ><img src="./assets/images/x.png" alt="x icon" class="w-3"> </a>    
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="Tom Wilson's facebook  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="Tom Wilson's link on linkenin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="Tom Wilson's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="Tom Wilson's facebook  link" class="w-4"></a>      
                         </div>
                     </div>
                 </div>
-                <div class=" team-card w-[300px] flex-shrink-0 rounded-xl  px-8 transition-transform duration-500 ">
-                    <div class="h-[16rem] ">
-                        <img src="./assets/images/team-img-1.png" alt="team person image 1" class="object-cover h-full">
+                <div class="team-card w-[300px] flex-shrink-0 rounded-xl  px-4 transition-transform duration-1000 ">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden ">
+                        <img src="./assets/images/team-img-5.png" alt="team person image 5" class="object-cover object-top h-full">
                     </div>
-                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6">
-                        <p class="text-lg font-bold">John Smith</p>
-                        <p class="text-xs text-primary">Farm Manager</p>
-                        <p class="my-4 text-sm">With over a decade of experience in organic farming, John oversees all operations and ensures our sustainable practices are upheld.</p>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Emily Jones</p>
+                        <p class="text-xs text-primary">Marketing Specialist</p>
+                        <p class="my-4 text-sm">Emily connects our farm to the community through social media and outreach, sharing our story and values with the world.</p>
                         <div class="flex gap-3 items-center">
-                            <a href='#' ><img src="./assets/images/ig.png" alt="Instagram icon" class="w-3"> </a>   
-                            <a href='#' ><img src="./assets/images/linkedin.png" alt="Linkedin icon" class="w-3"> </a>  
-                            <a href='#' ><img src="./assets/images/fb.png" alt="facebook icon" class="w-2"> </a>    
-                            <a href='#' ><img src="./assets/images/x.png" alt="x icon" class="w-3"> </a>    
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="Emily jones' facebook  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="Emily jones' link on linkenin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="Emily jones' facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="Emily jones' facebook  link" class="w-4"></a>  
                         </div>
                     </div>
                 </div>

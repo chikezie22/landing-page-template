@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+
+gti/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./*.html'],
   theme: {
