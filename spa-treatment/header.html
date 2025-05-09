@@ -1,0 +1,46 @@
+<section id="header" class="absolute top-6 left-0 z-10 flex justify-center px-2 sm:px-0 w-full" >
+    <div id="header-wrapper" class="grow flex justify-between items-center gap-4 xl:gap-24 px-2 lg:px-12 py-4 md:py-6 mx-2 md:mx-8 lg:mx-24 bg-[var(--bg-header)] rounded-2xl max-w-[1080px]">
+        <div id='header-brand' class="flex gap-2 border-r  items-center">
+            <div id="brand-logo" class=" w-8" >
+                <img src="./assets/images/Logo.svg" alt="logo">
+            </div>
+            <div id="brand-name" class="mr-8" >
+                <h1 class="text-white text-sm font-mulish-800 whitespace-nowrap">Wivali AI</h1>
+            </div>
+        </div>
+
+        <div id="header-bigscreen-navigation" class="hidden  md:flex md:grow px-4">
+            <ul class= "justify-between flex items-center w-full  text-white text-xs lg:text-sm font-century-gothic">
+                <li> <a href="#" class="hover:bg-[var(--primary-color)] p-2 rounded-lg   transition-[background-color]">Home</a> </li>
+                <li> <a href="#about-us" class="hover:bg-[var(--primary-color)] p-2 rounded-lg   transition-[background-color] whitespace-nowrap ">About Us</a> </li>
+                <li> <a href="#services" class="hover:bg-[var(--primary-color)] p-2 rounded-lg   transition-[background-color] ">Services</a> </li>
+                <li> <a href="#contact-us" class="hover:bg-[var(--primary-color)] p-2 rounded-lg   transition-[background-color] whitespace-nowrap">Contact Us</a> </li>
+                <li> <a href="#packages" class="hover:bg-[var(--primary-color)] p-2 rounded-lg   transition-[background-color]">Packages</a> </li>
+                <li> <a href="#blog" class="hover:bg-[var(--primary-color)] p-2 rounded-lg   transition-[background-color]">Blog</a> </li>
+            </ul>
+        </div>
+    
+        <div id='header-socials' class="flex items-center justify-end space-x-4 text-white min-w-[80px]">
+            <a href="#" class=""  > <img src="./assets/./images/iconoir_youtube.svg" alt="youtube link " /> </a>
+            <a href="#" class="" > <img src="./assets/images/ant-design_instagram-outlined.svg" alt="instagram link" /> </a>
+            <a href="#" class="" > <img src="./assets/images/la_facebook.svg" alt="facebook link" /> </a>
+        </div>
+        <div id="menu-bar" class="relative md:hidden ">
+            <button class="flex flex-col gap-1 px-4 hover">
+                <div class="w-6 h-[.125rem] bg-white rounded-sm hover:bg-[var(--primary-color)] transition-[bacground-color] duration-500 "></div>
+                <div class="w-6 h-[.125rem] bg-white rounded-sm hover:bg-[var(--primary-color)] transition-[bacground-color] duration-500 "></div>
+                <div class="w-6 h-[.125rem] bg-white rounded-sm hover:bg-[var(--primary-color)] transition-[bacground-color] duration-500 "></div>
+            </button>
+            <div id="mobile-navbar" class="absolute h-0 mt-2 top-full right-[25%] overflow-hidden transition-[height] duration-500">
+                <ul class= "flex flex-col justify-between items-stretch gap-2  text-white text-xs font-century-gothic bg-[var(--bg-header)] px-4 py-2 rounded">
+                    <li> <a href="#" class="hover:text-[var(--primary-color)] ">Home</a> </li>
+                    <li> <a href="#about-us" class="hover:text-[var(--primary-color)] whitespace-nowrap">About Us</a> </li>
+                    <li> <a href="#services" class="hover:text-[var(--primary-color)]">Services</a> </li>
+                    <li> <a href="#contact-us" class="hover:text-[var(--primary-color)] whitespace-nowrap">Contact Us</a> </li>
+                    <li> <a href="#packages" class="hover:text-[var(--primary-color)]">Packages</a> </li>
+                    <li> <a href="#blog" class="hover:text-[var(--primary-color)]">Blog</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
