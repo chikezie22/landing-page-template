@@ -1,8 +1,13 @@
 'use strict'
+// handle transitions in hero section
+
+
+
 const root = document.documentElement
 const rootStyles = getComputedStyle(root);
 
 
+//get hex values of color variables defined in :root, css.
 const btnBorderColors=[
     '--btn-border-orange',
     '--btn-border-strawberry',
@@ -17,64 +22,77 @@ const heroBgColors=[
 ]
 const heroBgHex= heroBgColors.map(color=>rootStyles.getPropertyValue(color).trim()) //hex values
 
+//juice image slides
 const juiceSlides= document.querySelector('#juice-slides');
 const juiceSlideWidth= juiceSlides.offsetWidth;
+
+// juice text slide 
+let textSlides = document.querySelector('#text-slides');
 const parentText= document.querySelector('#parent-text');
-const slidesWrapper= document.querySelector('#slides-wrapper').offsetHeight;
-const slides= document.querySelector('#slides');
-const slideElementsWidth= Array.from(slides.children).map(child=>child.offsetWidth);
 
 
-parentText.firstElementChild.innerText= ''
-parentText.style.paddingLeft= `${slideElementsWidth[0]}px`;
-parentText.style.position='absolute';
-setTimeout(() => {
-    parentText.style.top=0;
-    parentText.style.left=0;
-    parentText.style.transition=`padding 700ms ease-in-out`;
-}, 500)
+//alte test
+const alte=document.querySelector('.alte')
 
 let newArray;
-const height= slides.parentElement.offsetHeight;
+const height= textSlides?.parentElement?.offsetHeight;
 let index=1
-setInterval(() => {
-    console.log(Array.from(juiceSlides.children).map(slide=>slide))
-    parentText.style.paddingLeft= `${slideElementsWidth[index]}px`;
-    slides.style.transform=`translateY(-${height *index}px)`;
+let slideIndex=1
+setTimeout(() => {
+    const textSlidesWidth= Array.from(textSlides.children).map(child=>child.offsetWidth);
+    parentText.firstElementChild.style.width= textSlidesWidth[0] + 'px'
+    parentText.firstElementChild.innerText=''
+}, 2000)
+
+modifyCarousel()
+
+setInterval(handleHeroTransitions
+  , 5000);
+
+function modifyCarousel (){
+    // append first and last slide to end and start of carousel, respectively.
+    const firstItem= juiceSlides.children[0].cloneNode(true)
+    const lastItem= juiceSlides.children[juiceSlides.children.length -1].cloneNode(true)
+    juiceSlides.append(firstItem);
+}
+
+function handleHeroTransitions (){
+    const textSlidesWidth= Array.from(textSlides.children).map(child=>child.offsetWidth);
+    const juiceSlideWidth= juiceSlides.offsetWidth;
+    
+    //fade out the current juice slide
+    const slidesLen= juiceSlides.children.length
+    juiceSlides.children[slideIndex-1].style.opacity=0
+
+    juiceSlides.style.transition=`transform 500ms cubic-bezier(0, 1.32, 0.27, 1.19)`;
+    parentText.firstElementChild.style.width= textSlidesWidth[index] + 'px'
+
+    //slide text-slides
+    textSlides.style.transform=`translateY(-${height *index}px)`;
+
+    //change colors
     document.documentElement.style.setProperty('--dynamic-hero-bg-color', heroBgHex[index]);
-    document.documentElement.style.setProperty('--dynamic-btn-border-color', btnBorderHex[index]);
-
-
-    juiceSlides.children[0].style.transition=`opacity 100ms ease-in-out`;
-    console.log(juiceSlideWidth)
-    // juiceSlides.children[0].style.opacity=0;
-    juiceSlides.style.transform=`translateX(-${juiceSlideWidth}px)`;
+    document.documentElement.style.setProperty('--dynamic-btn-border-color', btnBorderHex[index]);    
     
-    // console.log('main')
-    // //
-    setTimeout(()=>{
-        // juiceSlides.children[1].style.opacity=1;
-        console.log('main2')
-    }, 1000)
-    
-    setTimeout(()=>{
-        //take the first item to the first position
-        newArray= newArray || Array.from(juiceSlides.children)
-        const firstItem= newArray.shift()
-        newArray.push(firstItem)
-      
-        juiceSlides.style.transition='none'
-        juiceSlides.style.transform= `translateX(0)`
-        juiceSlides.innerHTML= newArray.map(item=>item.outerHTML).join('')
-       
-        console.log('main3')
-        setTimeout(()=>{
-            juiceSlides.style.transition=`transform 500ms ease-in-out`
-        }, 1500)
-        console.log('main3.1')
+    //slide the juice 
+    juiceSlides.style.transform=`translateX(-${juiceSlideWidth * slideIndex }px)`;
 
-    }, 2000)
+    //set opacity to 1; translate back to slide begining  when reached the end.
+    juiceSlides.ontransitionend=()=>{
+        setTimeout(()=> {
+            //set opacity back to 1
+            slideIndex ==1 ? ( juiceSlides.children[slidesLen-2].style.opacity=1): juiceSlides.children[slideIndex-2].style.opacity=1
 
-    
+            //translate slide to start
+            if(slideIndex==1){
+                juiceSlides.style.transition=`none`;
+                juiceSlides.style.transform=`translateX(0)`
+            } 
+        }, 2000)
+    }
+
     index == 2 ? index=0 :index++;
-}, 5000);
+    slideIndex == 3 ? slideIndex=1 :slideIndex++;
+}
+
+

@@ -1,13 +1,8 @@
-const arrow = document.querySelector('#arrow');
-const nurse = document.querySelector('#nurse');
-const video = document.querySelector('.video');
-const play = document.querySelector('.play');
-const pause = document.querySelector('.pause');
 const menu = document.querySelector('.menu');
 const menuOpen = document.querySelector('.menu-open');
 const menuClose = document.querySelector('.menu-close');
 
-let index = 0;
+// let index = 0;
 
 // function to handle nav toggling
 menuOpen.addEventListener('click', () => {
@@ -24,6 +19,8 @@ menuClose.addEventListener('click', () => {
   menuClose.classList.toggle('hidden');
 });
 
+const arrow = document.querySelector('#arrow');
+const nurse = document.querySelector('#nurse');
 const slide = () => {
   console.log(arrow);
   setTimeout(() => {
@@ -36,6 +33,10 @@ const slide = () => {
   }, 10000);
 };
 window.addEventListener('load', slide);
+
+const video = document.querySelector('.video');
+const play = document.querySelector('.play');
+const pause = document.querySelector('.pause');
 
 play.addEventListener('click', (e) => {
   e.preventDefault();
@@ -58,7 +59,6 @@ video.addEventListener('ended', () => {
 
 // carousel implementation
 const carouselTrack = document.querySelector('.carousel-track');
-// console.log(carouselTrack);
 const slides = carouselTrack.children;
 let currentIndex = 0;
 
@@ -66,7 +66,6 @@ const nextSlide = () => {
   currentIndex++;
   carouselTrack.style.transition = `transform 0.5s ease-in-out`;
   carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
-  // console.log(currentIndex);
 };
 
 // Start auto-advance

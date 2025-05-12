@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGW | Wivali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/hero.js" defer></script>
+    <script src="./assets/js/activeLink.js" defer></script>
+    <script src="./assets/js/favourite.js" defer></script>
+    <script src="./assets/js/slideTestimonial.js" defer></script>
+    <script src="./assets/js/slideTeamCarousel.js" defer></script>
+
+</head>
+<body class="font-poppins text-white">
+    <section id="header" class="fixed z-50 -top-1/2 left-1/2 flex justify-between items-center gap-16 w-[90%] max-w-[1200px] -translate-x-1/2  px-10 py-4 bg-[#00000098] backdrop-blur-lg rounded-xl transition-[top] duration-[1500ms]">
+        <div id="brand" class="">   
+            <span class="iconify mdi:home"></span>
+            <img src="./assets/images/logo.svg" alt="logo" class="w-12">
+        </div>
+
+        <div id="header-bigscreen-navigation" class="hidden  md:flex  px-4">
+            <ul class= "justify-between flex items-center gap-8 w-full  text-white text-xs lg:text-sm">
+                <li> <a href="/" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Home</a> </li>
+                <li> <a href="/about" class="hover:text-primary p-2 rounded-lg   transition-[color] ">About</a> </li>
+                <li> <a href="/shop" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Shop</a> </li>
+                <li> <a href="/blog" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Blog</a> </li>
+                <li> <a href="/contact-us" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
+            </ul>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <img src="./assets/images/search-icon.svg" alt="search icon" class="w-6">
+            <button class="flex items-center justify-between gap-2 bg-primary py-2 px-3 rounded-lg text-white hover:bg-black transition-[background-color] duration-300">
+                Basket  
+                <div class="relative">
+                    <img src="./assets/images/bag-timer.svg" alt="">
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <section id="hero" class="h-[100svh] w-full bg-gray-400 bg-hero-bg bg-cover bg-no-repeat flex flex-col justify-center items-center text-center  gap-10 px-6 overflow-hidden">
+        <p class="text-7xl font-montserrat font-bold lg:max-w-[820px] transition-transform translate-x-[200%] duration-[1500ms] mt-[5rem]"> Fresh, Organic, and Sustainable Farming at Its Best</p>
+        <p class="text-xl max-w-[730px] group-text-red-400 transition-transform translate-x-[-200%] duration-[1500ms]">Discover a world where nature meets nurture. Our farm is dedicated to providing the freshest produce grown with sustainable, eco-friendly practices for a healthier tomorrow.</p>
+        <button class="flex items-center justify-between gap-2 bg-primary py-2 px-3 rounded-lg text-white translate-y-[1000%]  hover:bg-black btn-custom-transition">Explore Our Produce </button>
+    </section>
+    <section id="about" class="flex gap-16 justify-center items-center text-black mt-32 mb-16 ">
+        <div class="max-w-[40%] flex flex-col gap-12">
+            <h1 class="text-primary text-5xl font-semibold ">About US</h1>
+            <p class="">Founded on the principles of sustainability and community, our farm is more than just a place to grow crops it's a way of life. We believe in nurturing the earth and bringing the best organic produce directly from our fields to your table.</p>
+            <div class="flex gap-12 justify-between">
+                <div class=" w-1/2">
+                    <p class="text-2xl">Sustainability</p>
+                    <p class="text-base">We use eco friendly methods that protect and enhance our natural resources.</p>
+                </div>
+                <div class="w-1/2">
+                    <p class="text-2xl">Organic Farming</p>
+                    <p class="text-base">No chemicals, no shortcuts just pure, wholesome produce.</p>
+                </div>
+            </div>
+            <div class="flex gap-12 justify-between">
+                <div class=" w-1/2">
+                    <p class="text-2xl">Community Engagement</p>
+                    <p class="text-base">Supporting local communities through educational farm tours and events.</p>
+                </div>
+                <div class="w-1/2">
+                    <p class="text-2xl whitespace-nowrap">Innovation</p>
+                    <p class="text-base">Embracing new technologies and practices to improve efficiency and sustainability in our farming methods.</p>
+                </div>
+            </div>
+            <button class="self-start bg-primary py-3 px-4 rounded-md text-white hover:bg-black btn-custom-transition">Learn More </button>
+
+        </div>
+        <div class="max-w-[25%] rounded-2xl ">
+            <img src="./assets//images//about-image.png" alt="about us image">
+        </div>
+    </section>
+    <section id="what-we-offer" class="max-w-[calc(65%+4rem)] mx-auto my-32 pb-16">
+        <h1 class="text-primary text-5xl font-semibold ">What We Offer</h1>
+        <p class="text-base">Discover a world of fresh, organic produce, engage in immersive farm experiences, and learn about our sustainable practices. Our farm offers quality and connection to nature in every aspect of what we do.</p>
+
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-9">
+            <div class="relative max-w-full rounded-xl overflow-hidden group/card ">
+                <img src="./assets//images//what-we-offer-1.png" alt="what we offer image 1" class="object-center object-cover w-full scale-120">
+                <div class=" absolute top-0 left-0 w-full h-full bg-dark-gradient pl-6 pt-6 -translate-y-full group-hover/card:translate-y-0 transition-transform duration-500 cursor-pointer overflow-hidden">
+                    <p class="font-semibold text-2xl ">Organic Produce</p>
+                    <p class=" max-w-[90%] mt-4">
+                        Our farm grows a wide range of organic fruits and vegetables, carefully cultivated to provide the freshest and healthiest options for your family.
+                    </p>
+                </div>
+            </div>
+            <div class="relative max-w-full rounded-xl overflow-hidden group/card" >
+                <img src="./assets//images//what-we-offer-2.png" alt="what we offer image 2" class=" object-cover w-full scale-120">
+                <div class=" absolute top-0 left-0 w-full h-full bg-dark-gradient pl-6 pt-6 translate-x-full group-hover/card:translate-x-0 transition-transform duration-500 cursor-pointer overflow-hidden rounded-xl">
+                    <p class="font-semibold text-2xl ">Organic Produce</p>
+                    <p class=" max-w-[90%] mt-4">
+                        Our farm grows a wide range of organic fruits and vegetables, carefully cultivated to provide the freshest and healthiest options for your family.
+                    </p>
+                </div>
+            </div>
+            <div class="relative max-w-full rounded-xl overflow-hidden group/card ">
+                <img src="./assets//images//what-we-offer-3.png" alt="what we offer image 3" class="object-center object-cover w-full scale-120">
+                <div class=" absolute top-0 left-0 w-full h-full bg-dark-gradient pl-6 pt-6 translate-y-full group-hover/card:translate-y-0 transition-transform duration-500 cursor-pointer overflow-hidden rounded-xl">
+                    <p class="font-semibold text-2xl ">Organic Produce</p>
+                    <p class=" max-w-[90%] mt-4">
+                        Our farm grows a wide range of organic fruits and vegetables, carefully cultivated to provide the freshest and healthiest options for your family.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-produce" class="flex flex-col max-w-[calc(65%+4rem)] mx-auto my-32">
+        <h1 class="text-primary text-5xl font-semibold">Our Fresh Produce</h1>
+        <p class="text-base text-black pt-12 pb-10">From vibrant vegetables to delicious fruits, we offer a variety of fresh, organic produce grown with love and care. Whether you’re looking for juicy tomatoes, crunchy greens, or seasonal fruits, you’ll find the best at our farm.</p>
+        <div id="cards" class="grid grid-cols-4 gap-9">
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/green-beans.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            </button>
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/onions.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/tomato.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/mint-leaf.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/eggs.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/lettuce.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/juice.png"   alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/cake.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/cake.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/eggs.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/lettuce.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class=" group/card ">
+                <div class="bg-card group-hover/card:bg-white  rounded-t-xl px-2 pt-2 hover:shadow-2xl transition-all duration-300">
+                    <div class="h-[11rem] overflow-hidden group-hover/card:border-x group-hover/card:border-t rounded-t-xl">
+                        <img src="./assets//images/juice.png" alt="" class="group-hover/card:scale-110 transition-transform duration-300 object-cover">
+                    </div>
+                  <div class="bg-white py-3 group-hover/card:border-x">
+                    <p class="text-black text-center ">Aurore Grape</p>
+                    <p class="text-primary text-center text-xl font-bold pt-2">£15.00</p>
+                  </div>
+                </div>
+                <div class="px-2">
+                    <div class="flex justify-between bg-cart rounded-b-xl py-2 pl-2 pr-3">
+                        <button class=" hover:bg-primary text py-2 px-2 transition-[color] duration-300 whitespace-nowrap text-sm">Add to Cart</button>
+                        <div  class="relative flex gap-1 items-center bg-cart">
+                            <button class="favourite relative">
+                            <img src="https://api.iconify.design/tdesign/heart.svg?color=%23ffff" alt="add item to favourite" class="relative z-10 w-6">
+                            <img src="https://api.iconify.design/tdesign/heart-filled.svg?color=%23fb8a2e" alt="add item to favourite" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-full opacity-0 ">
+                            <button><img src="./assets/images/eye.png" alt="plus icon" class="w-6"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="self-center max-w-fit bg-primary py-3 px-4 rounded-md text-white hover:bg-black btn-custom-transition mt-14 ">See More </button>
+    </section>
+
+    <section class="flex flex-col items-center gap-16 py-16 bg-tsm-dark">  
+        <h1 class=" text-5xl font-semibold ">What Our Customers Say</h1>
+
+        <div class="relative w-3/5">
+            <div id="testimonial-carousel-wrapper" class="relative w-full overflow-hidden">
+                <div id="testimonial-carousel" class="flex px-2 w-full transition-transform duration-[2000ms] ease-custom">
+                    <div class="flex-shrink-0 flex flex-col w-full mx-2">
+                        <div class="grow px-10 flex flex-col gap-9  py-16 bg-tsm-gradient rounded-t-2xl">
+                            <img src="./assets/images/quote.png" alt="quote" class="w-10">
+                            <p class="font-semibold text-2xl">"The produce is always fresh and delicious. I love knowing that everything I buy is grown sustainably!"</p>
+                        </div>
+                        <div class="bg-tsm-dark-1 flex gap-4 items-center py-6 pl-10 rounded-b-2xl">
+                            <img src="./assets/images/tsm-image-1.png" alt="testimonial image" class="w-32">
+                            <div class="text-xl font-montserrat">
+                                <p class="font-semibold">John Dan</p>
+                                <p class=" text-orange">Nutritionist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 flex flex-col w-full mx-2">
+                        <div class="grow px-10 flex flex-col gap-9  py-16 bg-tsm-gradient rounded-t-2xl">
+                            <img src="./assets/images/quote.png" alt="quote" class="w-10">
+                            <p class="font-semibold text-2xl">"Visiting the farm was such an amazing experience. We learned so much about organic farming and the kids loved it."</p>
+                        </div>
+                        <div class="bg-tsm-dark-1 flex gap-4 items-center py-6 pl-10 rounded-b-2xl">
+                            <img src="./assets/images/tsm-image-2.png" alt="testimonial image" class="w-32">
+                            <div class="text-xl font-montserrat">
+                                <p class="font-semibold">James W.</p>
+                                <p class=" text-orange">Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 flex flex-col w-full mx-2">
+                        <div class="grow px-10 flex flex-col gap-9  py-16 bg-tsm-gradient rounded-t-2xl">
+                            <img src="./assets/images/quote.png" alt="quote" class="w-10">
+                            <p class="font-semibold text-2xl">"Our children loved the farm tour! The staff were knowledgeable, and it was a fantastic way for them to learn about sustainable farming."</p>
+                        </div>
+                        <div class="bg-tsm-dark-1 flex gap-4 items-center py-6 pl-10 rounded-b-2xl">
+                            <img src="./assets/images/tsm-image-3.png" alt="testimonial image" class="w-32">
+                            <div class="text-xl font-montserrat">
+                                <p class="font-semibold">Karen S</p>
+                                <p class=" text-orange">Restaurant Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 flex flex-col w-full mx-2">
+                        <div class="grow px-10 flex flex-col gap-9  py-16 bg-tsm-gradient rounded-t-2xl">
+                            <img src="./assets/images/quote.png" alt="quote" class="w-10">
+                            <p class="font-semibold text-2xl">"I’ve been a loyal customer for years, and I can honestly say this farm cares about the community and the environment. It’s inspiring to see their commitment."</p>
+                        </div>
+                        <div class="bg-tsm-dark-1 flex gap-4 items-center py-6 pl-10 rounded-b-2xl">
+                            <img src="./assets/images/tsm-image-4.png" alt="testimonial image" class="w-32">
+                            <div class="text-xl font-montserrat">
+                                <p class="font-semibold">DAvid H</p>
+                                <p class=" text-orange">Environmental Advocate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 flex flex-col w-full mx-2">
+                        <div class="grow px-10 flex flex-col gap-9  py-16 bg-tsm-gradient rounded-t-2xl">
+                            <img src="./assets/images/quote.png" alt="quote" class="w-10">
+                            <p class="font-semibold text-2xl">"The farm’s organic produce has been a game-changer for my restaurant’s menu. It’s a privilege to work with a team that values quality and sustainability."</p>
+                        </div>
+                        <div class="bg-tsm-dark-1 flex gap-4 items-center py-6 pl-10 rounded-b-2xl">
+                            <img src="./assets/images/tsm-image-5.png" alt="testimonial image" class="w-32">
+                            <div class="text-xl font-montserrat">
+                                <p class="font-semibold">Megan R</p>
+                                <p class=" text-orange">Restaurant Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           <div class="" id="slide-controls">
+                <button id="prev" class="absolute top-1/2 -left-32 -translate-y-1/2 bg-orange hover:bg-gray-gradient flex items-center justify-center w-16 h-16 rounded-full opacity-0 transition-all duration-300" disabled> <img src="./assets/images/caret.jpg" alt="caret" class="w-4 rotate-180"></button>
+                <button id="next" class="absolute top-1/2 -right-32 -translate-y-1/2 bg-orange hover:bg-gray-gradient flex items-center justify-center w-16 h-16 rounded-full transition-all duration-300"> <img src="./assets/images/caret.jpg" alt="caret" class="w-4"></button>
+           </div>
+        </div>
+    </section>
+    <section id="team" class="flex flex-col mx-auto my-32 w-[calc(65%+4rem)]">
+        <!-- Tailwind class safelist -->
+    <div class="hidden opacity-0 opacity-100 absolute top-0 left-0 transition-opacity duration-1000"></div>
+
+        <div id="team-carousel-wrapper" class="relative overflow-hidden w-full" >
+            <div id="team-carousel" class="flex items-center gap-4 relative left-[40%] px-4 py-16 transition-all duration-700">
+                <div class="team-card w-[300px] flex-shrink-0 rounded-xl overflow-hidden  px-4 transition-transform duration-1000 scale-110">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden">
+                        <img src="./assets/images/team-img-1.png" alt="team person image 1" class="object-cover h-full">
+                    </div>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Sarah Green</p>
+                        <p class="text-xs text-primary">Community Outreach Coordinator</p>
+                        <p class="my-4 text-sm">Sarah organizes educational events and tours, helping to foster a love for agriculture within the community.</p>
+                        <div class="flex gap-2 items-center">
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="sarah green's instagram  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="sarah green's link on linkedin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="sarah green's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="sarah green's twitter  link" class="w-4"></a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card w-[300px] flex-shrink-0 rounded-xl  px-4 transition-transform duration-1000">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden">
+                        <img src="./assets/images/team-img-2.png" alt="team person image 1" class="object-cover object-top h-full ease-out">
+                    </div>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Mike Brown</p>
+                        <p class="text-xs text-primary">Agricultural Technician</p>
+                        <p class="my-4 text-sm">With over a decade of experience in organic farming, John oversees all operations and ensures our sustainable practices are upheld.</p>
+                        <div class="flex gap-3 items-center">
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="Mike Brown's instagram  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="Mike Brown's link on linkedin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="Mike Brown's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="Mike Brown's twitter  link" class="w-4"></a>     
+                        </div>
+                    </div>
+                </div>
+                <div class=" team-card w-[300px] flex-shrink-0 rounded-xl px-4 transition-transform duration-1000  ">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden ">
+                        <img src="./assets/images/team-img-3.png" alt="team person image 1" class="object-cover h-full">
+                    </div>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">John Smith</p>
+                        <p class="text-xs text-primary">Farm Manager</p>
+                        <p class="my-4 text-sm">With over a decade of experience in organic farming, John oversees all operations and ensures our sustainable practices are upheld.</p>
+                        <div class="flex gap-3 items-center">
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="John Smith's instagram  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="John Smith's link on linkedin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="John Smith's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="John Smith's twitter  link" class="w-4"></a>      
+                        </div>
+                    </div>
+                </div>
+                <div class=" team-card w-[300px] flex-shrink-0 rounded-xl px-4 transition-transform duration-1000  ">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden ">
+                        <img src="./assets/images/team-img-4.png" alt="team person image 4" class="object-cover h-full">
+                    </div>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Tom Wilson</p>
+                        <p class="text-xs text-primary">Head of Production</p>
+                        <p class="my-4 text-sm">Tom ensures that our produce meets the highest standards of quality. His expertise in crop management helps us consistently..</p>
+                        <div class="flex gap-3 items-center">
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="Tom Wilson's facebook  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="Tom Wilson's link on linkenin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="Tom Wilson's facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="Tom Wilson's facebook  link" class="w-4"></a>      
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card w-[300px] flex-shrink-0 rounded-xl  px-4 transition-transform duration-1000 ">
+                    <div class="h-[16rem] rounded-t-xl overflow-hidden ">
+                        <img src="./assets/images/team-img-5.png" alt="team person image 5" class="object-cover object-top h-full">
+                    </div>
+                    <div class="grow flex flex-col justify-end bg-team-dark py-4 px-6 rounded-b-xl">
+                        <p class="text-lg font-bold">Emily Jones</p>
+                        <p class="text-xs text-primary">Marketing Specialist</p>
+                        <p class="my-4 text-sm">Emily connects our farm to the community through social media and outreach, sharing our story and values with the world.</p>
+                        <div class="flex gap-3 items-center">
+                            <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%230eaf48" alt="Emily jones' facebook  link" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%230eaf48" alt="Emily jones' link on linkenin" class="w-4">
+                            <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%230eaf48" alt="Emily jones' facebook  link" class="w-4"></a>
+                            <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%230eaf48" alt="Emily jones' facebook  link" class="w-4"></a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

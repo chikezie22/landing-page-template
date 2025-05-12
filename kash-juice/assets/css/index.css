@@ -18,14 +18,19 @@
     --btn-border-orange:#E06500;
     --btn-border-strawberry:#B13038;
     --btn-border-blueberry:#70549B;
+    --secondary-black:#181818;
 
     --orange-text: #F49C00;
     --strawberry-text: #EC253D;
     --blueberry-text:#7D67CE;
+    --alt-green-color :#78AB3C;
+    
+    --gradient-orange: #F39E02;
+    
+    /* bg color */
     --hero-bg:  #FFA500;
+    --contact-us-bg:#FFF6E5;
     --benefits-bg: #00000080;
-
-
 
     /* fonts */
     --font-primary: "Dela Gothic One", sans-serif;
@@ -38,6 +43,26 @@
     /* dynamic theme color */
     --dynamic-btn-border-color: var(--btn-border-orange);
     --dynamic-hero-bg-color: var(--hero-bg);
+    
+
+    /* font size */
+    font-size:87.5%;
+
+    scroll-behavior: smooth;
 }
 
+/* Global styles */
+#order-modal{
+    bottom: -100%;
+    transition: bottom 500ms ease-in-out, background-color 150ms ease-in-out 500ms;
+}
+.modal-open #order-modal{
+    bottom:0;
+    background-color:#00000099;
+}
 
+@media (min-width: 768px) {
+    :root {
+        font-size: 16px;
+    }
+  }
