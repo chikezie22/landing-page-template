@@ -17,73 +17,73 @@
         theme: {
           extend: {
             animation: {
-              'slide-right': 'slide-right 5s ease-in-out 5s  infinite',
-              'slide-left': 'slide-left 5s ease-in-out 5s  infinite',
-              'move-left': 'move-left 4s ease-in-out  infinite',
-              'move-left-more': 'move-left-more 4s ease-in-out  infinite',
-              'move-right': 'move-right 4s linear  infinite',
-              'move-round': 'move-round 4s linear  infinite',
-              'flip-right': 'flip-right 4s linear  infinite',
+              "slide-right": "slide-right 5s ease-in-out 5s  infinite",
+              "slide-left": "slide-left 5s ease-in-out 5s  infinite",
+              "move-left": "move-left 4s ease-in-out  infinite",
+              "move-left-more": "move-left-more 4s ease-in-out  infinite",
+              "move-right": "move-right 4s linear  infinite",
+              "move-round": "move-round 4s linear  infinite",
+              "flip-right": "flip-right 4s linear  infinite",
             },
             fontFamily: {
-              bebas: ['"Bebas Neue"', 'cursive'],
-              montserrat: ['"Montserrat"', 'sans-serif'],
-              poppins: ['"Poppins"', 'sans-serif'],
-              mulish: ['"Mulish"', 'sans-serif'],
+              bebas: ['"Bebas Neue"', "cursive"],
+              montserrat: ['"Montserrat"', "sans-serif"],
+              poppins: ['"Poppins"', "sans-serif"],
+              mulish: ['"Mulish"', "sans-serif"],
             },
             keyframes: {
-              'slide-right': {
-                '0%': { transform: 'translateX(0)' },
-                '20%': { transform: 'translateX(100%)' },
-                '60%': { transform: 'translateX(100%)' },
-                '80%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(0)' },
+              "slide-right": {
+                "0%": { transform: "translateX(0)" },
+                "20%": { transform: "translateX(100%)" },
+                "60%": { transform: "translateX(100%)" },
+                "80%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(0)" },
               },
-              'slide-left': {
-                '0%': { transform: 'translateX(0)' },
-                '20%': { transform: 'translateX(-20%)' },
-                '60%': { transform: 'translateX(-20%)' },
-                '80%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(0)' },
-              },
-
-              'move-left': {
-                '0%': { transform: 'translateX(0)' },
-                '20%': { transform: 'translateX(-8px)' },
-                '70%': { transform: 'translateX(-8px)' },
-                '80%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(0)' },
+              "slide-left": {
+                "0%": { transform: "translateX(0)" },
+                "20%": { transform: "translateX(-20%)" },
+                "60%": { transform: "translateX(-20%)" },
+                "80%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(0)" },
               },
 
-              'move-left-more': {
-                '0%': { transform: 'translateX(0)' },
-                '20%': { transform: 'translateX(-16px)' },
-                '70%': { transform: 'translateX(-16px)' },
-                '80%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(0)' },
+              "move-left": {
+                "0%": { transform: "translateX(0)" },
+                "20%": { transform: "translateX(-8px)" },
+                "70%": { transform: "translateX(-8px)" },
+                "80%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(0)" },
               },
 
-              'move-right': {
-                '0%': { transform: 'translateX(0)' },
-                '20%': { transform: 'translateX(50px)' },
-                '70%': { transform: 'translateX(50px)' },
-                '80%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(0)' },
+              "move-left-more": {
+                "0%": { transform: "translateX(0)" },
+                "20%": { transform: "translateX(-16px)" },
+                "70%": { transform: "translateX(-16px)" },
+                "80%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(0)" },
               },
 
-              'move-round': {
-                '0%': { transform: 'rotate(0deg)' },
-                '20%': { transform: 'rotate(360deg)' },
-                '70%': { transform: 'rotate(360deg)' },
-                '80%': { transform: 'rotate(0deg)' },
-                '100%': { transform: 'rotate(0deg)' },
+              "move-right": {
+                "0%": { transform: "translateX(0)" },
+                "20%": { transform: "translateX(50px)" },
+                "70%": { transform: "translateX(50px)" },
+                "80%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(0)" },
               },
-              'flip-right': {
-                '0%': { transform: 'rotateY(0deg) scale(1)' },
-                '20%': { transform: 'rotateY(180deg) scale(1.3)' },
-                '70%': { transform: 'rotateY(180deg) scale(1.3)' },
-                '80%': { transform: 'rotateY(0deg) scale(1)' },
-                '100%': { transform: 'rotateY(0deg) scale(1)' },
+
+              "move-round": {
+                "0%": { transform: "rotate(0deg)" },
+                "20%": { transform: "rotate(360deg)" },
+                "70%": { transform: "rotate(360deg)" },
+                "80%": { transform: "rotate(0deg)" },
+                "100%": { transform: "rotate(0deg)" },
+              },
+              "flip-right": {
+                "0%": { transform: "rotateY(0deg) scale(1)" },
+                "20%": { transform: "rotateY(180deg) scale(1.3)" },
+                "70%": { transform: "rotateY(180deg) scale(1.3)" },
+                "80%": { transform: "rotateY(0deg) scale(1)" },
+                "100%": { transform: "rotateY(0deg) scale(1)" },
               },
               // bounceHeight: {
               //   '0%': { transform: scaleY(1) },
@@ -92,10 +92,10 @@
               // },
             },
             animationDelay: {
-              100: '100ms',
-              200: '200ms',
-              300: '300ms',
-              400: '400ms',
+              100: "100ms",
+              200: "200ms",
+              300: "300ms",
+              400: "400ms",
             },
           },
         },
@@ -103,129 +103,15 @@
     </script>
   </head>
   <body class="text-[#1e1e1e] w-full overflow-x-hidden">
-    <header
-      class="fixed top-0 left-0 w-full z-50 min-h-[72px] py-[16px] px-[100px] max-lg:px-0 bg-white"
+    <section
+      class="w-full py-[182px] max-lg:mb-[182px] relative max-lg:h-dvh px-[10px]"
     >
-      <div class="container mx-auto relative max-md:min-w-full max-md:px-3">
-        <div class="flex justify-between items-center py-4 min-w-full">
-          <div class="flex gap-[10px] justify-center items-center max-md:self-start">
-            <svg
-              width="40"
-              height="36"
-              viewBox="0 0 40 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.738634" width="39.8339" height="34.5227" rx="9.41869" fill="#58D68D" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M31.215 11.4736H35.1246L24.1623 28.7986L21.556 24.2757L18.5662 28.7986L16.8796 26.4987L21.556 19.1394L24.0856 23.0492L31.215 11.4736Z"
-                fill="white"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M23.2301 18.227L27.9669 11.4758H24.3809L22.8979 14.0215C22.0036 15.583 22.6726 16.921 23.2301 18.227Z"
-                fill="white"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M19.8325 18.0323L21.0409 16.2014C19.669 10.6731 16.5604 7.00503 11.7759 7.20967C6.22543 7.5802 3.36791 13.462 5.32527 17.6541L11.06 28.1396C11.5419 28.94 12.4541 28.979 12.9358 28.2114L15.4515 23.3802L14.479 21.4862L12.0822 26.4585L7.11692 17.0908C5.41604 13.8303 8.12347 9.43423 11.7759 9.15293C13.9162 8.86466 16.7453 10.9306 17.9207 14.0618L19.8325 18.0321V18.0323Z"
-                fill="white"
-              />
-              <path
-                d="M12.3337 17.5186C13.4523 17.5186 14.359 16.6118 14.359 15.4933C14.359 14.3747 13.4523 13.4679 12.3337 13.4679C11.2151 13.4679 10.3083 14.3747 10.3083 15.4933C10.3083 16.6118 11.2151 17.5186 12.3337 17.5186Z"
-                fill="white"
-              />
-            </svg>
-
-            <p class="font-mulish text-base">Wivali AI</p>
-          </div>
-          <!-- max-md:hidden -->
-          <nav
-            class="nav hidden md:block menu transition-all duration-300"
-            style="height: calc(auto)"
-          >
-            <ul
-              class="flex justify-center items-center gap-[23px] max-md:flex-col max-md:items-start max-md:absolute max-md:w-full max-md:left-0 max-md:top-[70px] max-md:bg-white max-md:pb-4 transition-all duration-300"
-              style="height: calc(auto)"
-            >
-              <li class="px-[20px] py-[8px]">
-                <a href="#">Home</a>
-              </li>
-              <li class="px-[20px] py-[8px]">
-                <a href="#">Services</a>
-              </li>
-              <li class="px-[20px] py-[8px]">
-                <a href="#">About Us</a>
-              </li>
-              <li class="px-[20px] py-[8px]">
-                <a href="#">Contact</a>
-              </li>
-              <li class="px-[20px] py-[8px]">
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-          </nav>
-
-          <button
-            class="bg-[#1386D1] lg:flex gap-[8px] items-center py-[8px] px-[20px] rounded-[41px] hidden"
-          >
-            <span class="whitespace-nowrap text-white">Call Us</span>
-            <svg
-              width="29"
-              height="24"
-              viewBox="0 0 29 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="29" height="24" rx="12" fill="#004F84" />
-              <path
-                d="M21.125 19.5C19.3889 19.5 17.6736 19.1217 15.9792 18.365C14.2847 17.6083 12.7431 16.5353 11.3542 15.1458C9.96528 13.7564 8.8925 12.2147 8.13583 10.5208C7.37917 8.82694 7.00056 7.11167 7 5.375C7 5.125 7.08333 4.91667 7.25 4.75C7.41667 4.58333 7.625 4.5 7.875 4.5H11.25C11.4444 4.5 11.6181 4.56611 11.7708 4.69833C11.9236 4.83056 12.0139 4.98667 12.0417 5.16667L12.5833 8.08333C12.6111 8.30556 12.6042 8.49306 12.5625 8.64583C12.5208 8.79861 12.4444 8.93056 12.3333 9.04167L10.3125 11.0833C10.5903 11.5972 10.92 12.0936 11.3017 12.5725C11.6833 13.0514 12.1036 13.5133 12.5625 13.9583C12.9931 14.3889 13.4444 14.7883 13.9167 15.1567C14.3889 15.525 14.8889 15.8617 15.4167 16.1667L17.375 14.2083C17.5 14.0833 17.6633 13.9897 17.865 13.9275C18.0667 13.8653 18.2644 13.8478 18.4583 13.875L21.3333 14.4583C21.5278 14.5139 21.6875 14.6147 21.8125 14.7608C21.9375 14.9069 22 15.07 22 15.25V18.625C22 18.875 21.9167 19.0833 21.75 19.25C21.5833 19.4167 21.375 19.5 21.125 19.5ZM9.52083 9.5L10.8958 8.125L10.5417 6.16667H8.6875C8.75694 6.73611 8.85417 7.29861 8.97917 7.85417C9.10417 8.40972 9.28472 8.95833 9.52083 9.5ZM16.9792 16.9583C17.5208 17.1944 18.0731 17.3819 18.6358 17.5208C19.1986 17.6597 19.7644 17.75 20.3333 17.7917V15.9583L18.375 15.5625L16.9792 16.9583Z"
-                fill="white"
-              />
-            </svg>
-          </button>
-
-          <!-- menu icon -->
-          <svg
-            class="md:hidden menu-open cursor-pointer max-md:self-start"
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="39px"
-            height="39px"
-            viewBox="0 0 50 50"
-          >
-            <path
-              d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
-            ></path>
-          </svg>
-
-          <!-- close icon -->
-          <svg
-            class="hidden md:hidden menu-close cursor-pointer"
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="39px"
-            height="39px"
-            viewBox="0 0 50 50"
-          >
-            <path
-              d="M 25 22.585938 L 5.7070312 3.2929688 A 1.0001 1.0001 0 1 0 4.2929688 4.7070312 L 22.585938 25 L 4.2929688 45.292969 A 1.0001 1.0001 0 1 0 5.7070312 46.707031 L 25 27.414062 L 44.292969 46.707031 A 1.0001 1.0001 0 1 0 45.707031 45.292969 L 27.414062 25 L 45.707031 4.7070312 A 1.0001 1.0001 0 1 0 44.292969 3.2929688 L 25 22.585938 z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </header>
-    <section class="w-full py-[182px] max-lg:mb-[182px] relative max-lg:h-dvh px-[10px]">
       <div class="max-w-[1240px] w-[90%] mx-auto relative flex items-center">
         <div class="text-center w-full flex-1 max-lg:z-10 relative">
           <div class="max-w-[539px] max-lg:w-full">
-            <h1 class="font-montserrat font-bold text-[52px] w-full max-lg:text-[80px]">
+            <h1
+              class="font-montserrat font-bold text-[52px] w-full max-lg:text-[80px]"
+            >
               Trusted
               <span
                 ><svg
@@ -263,7 +149,11 @@
                       y2="13.5644"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0.173109" stop-color="#D9D9D9" stop-opacity="0" />
+                      <stop
+                        offset="0.173109"
+                        stop-color="#D9D9D9"
+                        stop-opacity="0"
+                      />
                       <stop offset="0.51" />
                     </linearGradient>
                     <linearGradient
@@ -318,8 +208,8 @@
 
             <div class="max-w-[389px] ml-10 max-lg:ml-0">
               <p class="w-[350px] text-white">
-                At [Clinic Name], we provide expert, compassionate care tailored to your pets'
-                needs, ensuring they live happy, healthy lives.
+                At [Clinic Name], we provide expert, compassionate care tailored
+                to your pets' needs, ensuring they live happy, healthy lives.
               </p>
             </div>
 
@@ -371,15 +261,19 @@
                 </div>
               </div>
               <span class="font-poppins font-normal text-[11.51px] w-[332px]"
-                >Trusted by millions, delivering expert and compassionate care for beloved
-                pets!</span
+                >Trusted by millions, delivering expert and compassionate care
+                for beloved pets!</span
               >
             </div>
           </div>
         </div>
         <div class="-ml-[18rem] w-full animate-move-right flex-1 max-lg:hidden">
           <div class="w-full">
-            <svg viewBox="0 0 760 714" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              viewBox="0 0 760 714"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M760 59.2V654.8C760 687.49 733.49 714 700.81 714H313.36C312.53 713.65 311.69 713.28 310.87 712.9C302.87 709.19 294.72 705.65 286.85 702.21C272.1 695.78 258.16 689.72 244.61 682.58L167.56 642.02C166.54 641.48 164.87 640.64 162.75 639.57C154.19 635.25 147.16 631.56 141.42 628.42V621.43C148.54 621.38 156.08 621.75 163.04 622.12C191.83 623.56 220.76 621.35 249.15 616.46C262.33 614.2 275.46 611.55 288.36 608C307.54 602.73 328.93 595.75 333.25 573.62C335.06 564.32 335.32 540.82 298.78 523.55C267.35 508.71 234.74 496.68 203.22 485.05C200.98 484.22 198.73 483.4 196.48 482.57C178.21 475.82 159.7 468.9 141.42 461.35C127.34 455.56 113.42 449.37 99.8901 442.62C95.5101 440.42 89.3801 437.85 81.6401 434.61C68.8501 429.26 35.6901 415.35 28.2501 407.33C30.4401 405.6 36.7601 401.91 53.3501 398.54C62.0901 396.76 71.1101 395.78 80.6601 394.76C92.1701 393.52 104.07 392.24 116.1 389.42C123.89 387.59 132.41 385.97 141.42 384.27C141.5 384.25 141.57 384.24 141.65 384.22C159.33 380.87 178.69 377.2 196.48 371.03C203.91 368.46 211.06 365.46 217.71 361.86C232.76 353.73 242.6 339.94 244.08 324.97C247.19 293.15 208.36 271.12 141.42 249.64C126.38 244.81 109.89 240 92.1601 235.13C85.4001 233.27 79.5701 231.66 76.1301 230.59L70.5501 228.87C49.5101 222.36 29.6401 216.22 13.1601 205.13C4.45013 199.26 1.70012 194.76 0.930119 192.01C0.490119 190.41 0.290117 189.67 3.74012 186.98C5.91012 185.28 8.65012 183.69 11.6801 182.22H141.42V60.24C141.42 26.96 168.38 0 201.64 0H700.81C733.49 0 760 26.5 760 59.2Z"
                 fill="#58D68D"
@@ -389,7 +283,10 @@
         </div>
 
         <!-- arrow img -->
-        <div id="arrow" class="absolute -bottom-8 left-0 animate-slide-right max-lg:hidden">
+        <div
+          id="arrow"
+          class="absolute -bottom-8 left-0 animate-slide-right max-lg:hidden"
+        >
           <svg
             width="184"
             height="20"
@@ -404,7 +301,10 @@
                 stroke-width="2"
                 stroke-miterlimit="10"
               />
-              <path d="M166.17 19.95L183.44 9.97L166.17 0V19.95Z" fill="#E9327B" />
+              <path
+                d="M166.17 19.95L183.44 9.97L166.17 0V19.95Z"
+                fill="#E9327B"
+              />
             </g>
             <defs>
               <clipPath id="clip0_246_863">
@@ -419,7 +319,11 @@
           id="nurse"
           class="absolute top-0 right-0 animate-slide-left max-lg:-top-20 max-lg:z-0 max-lg:blur-sm"
         >
-          <img class="object-cover h-auto max-w-full" src="./assets/images/nurse.png" alt="" />
+          <img
+            class="object-cover h-auto max-w-full"
+            src="./assets/images/nurse.png"
+            alt=""
+          />
         </div>
 
         <!--**************************************************** rounded spining icon svg**************************************** -->
@@ -443,7 +347,13 @@
               height="159.943"
               fill="url(#pattern0_246_866)"
             />
-            <circle cx="80.0001" cy="80" r="39.073" stroke="#58D68D" stroke-width="9.96995" />
+            <circle
+              cx="80.0001"
+              cy="80"
+              r="39.073"
+              stroke="#58D68D"
+              stroke-width="9.96995"
+            />
             <circle cx="79.9999" cy="80" r="22.029" fill="#5FACDF" />
             <circle cx="80" cy="80" r="12" fill="white" />
             <defs>
@@ -482,15 +392,21 @@
           class="flex flex-1 max-lg:max-w-[700px] mx-auto flex-col gap-[37px] px-[40px] py-[30px] border border-[#F8F8F8] rounded-[40px] bg-[#fff] shadow-[0px_4.29px_53.66px_53.66px] shadow-[#A4A4A426] origin-bottom scale-y-90 group-hover:scale-y-100 transition-all duration-1000"
         >
           <div class="flex justify-center items-center">
-            <div class="flex flex-col gap-[15.3px] border-r-2 border-[#BABABA] w-full">
-              <p class="font-poppins font-semibold text-[16px]">Complete Name</p>
+            <div
+              class="flex flex-col gap-[15.3px] border-r-2 border-[#BABABA] w-full"
+            >
+              <p class="font-poppins font-semibold text-[16px]">
+                Complete Name
+              </p>
               <div class="flex gap-[6px] w-full">
                 <img src="./assets/images/avatar.png" alt="avatar" />
                 <input type="text" placeholder="Your Name" class="w-full" />
               </div>
             </div>
             <div class="flex flex-col gap-[15.3px] pl-[35px] w-full">
-              <p class="font-poppins font-semibold text-[16px]">Email Address</p>
+              <p class="font-poppins font-semibold text-[16px]">
+                Email Address
+              </p>
               <div class="flex gap-[6px]">
                 <img src="./assets/images/message.png" alt="message" />
                 <input type="text" placeholder="Your Email" class="w-full" />
@@ -580,7 +496,9 @@
               />
             </div>
             <div class="flex flex-col">
-              <h3 class="font-poppings font-semibold text-base">Compassionate</h3>
+              <h3 class="font-poppings font-semibold text-base">
+                Compassionate
+              </h3>
               <p class="font-poppings text-sm font-normal">
                 Heartfelt care for your furry friends, every single visit.
               </p>
@@ -592,7 +510,9 @@
 
     <!-- third section -->
     <!-- services section -->
-    <section class="w-full h-full py-[50px] md:px-[100px] px-[10px] relative group overflow-hidden">
+    <section
+      class="w-full h-full py-[50px] md:px-[100px] px-[10px] relative group overflow-hidden"
+    >
       <div
         class="relative -left-[100px] top-[70px] group-hover:translate-y-14 transition-all duration-1000"
       >
@@ -606,7 +526,9 @@
           Services
         </button>
         <!-- main div -->
-        <div class="w-full flex gap-3 justify-center items-center max-lg:flex-col">
+        <div
+          class="w-full flex gap-3 justify-center items-center max-lg:flex-col"
+        >
           <div
             class="hero-2 relative group-hover:translate-x-8 transition-all duration-1000 max-lg:hidden"
           >
@@ -637,10 +559,14 @@
               <div
                 class="bg-[#58d68d] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px]"
               >
-                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
+                <div
+                  class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square"
+                >
                   <img src="./assets/images/jam-1.png" alt="jam image" />
                 </div>
-                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                <p
+                  class="text-white font-montserrat font-bold text-center line-clamp-2"
+                >
                   General Checkups
                 </p>
               </div>
@@ -648,10 +574,14 @@
               <div
                 class="bg-[#e9327b] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px] translate-y-5 group-hover:translate-y-0 transition-all duration-1000"
               >
-                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
+                <div
+                  class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square"
+                >
                   <img src="./assets/images/syringe.png" alt="syringe image" />
                 </div>
-                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                <p
+                  class="text-white font-montserrat font-bold text-center line-clamp-2"
+                >
                   Vaccinations Protection
                 </p>
               </div>
@@ -659,10 +589,17 @@
               <div
                 class="bg-[#5facdf] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px]"
               >
-                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
-                  <img src="./assets/images/lucid scissors.png" alt="scissors image" />
+                <div
+                  class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square"
+                >
+                  <img
+                    src="./assets/images/lucid scissors.png"
+                    alt="scissors image"
+                  />
                 </div>
-                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                <p
+                  class="text-white font-montserrat font-bold text-center line-clamp-2"
+                >
                   Pet Grooming
                 </p>
               </div>
@@ -670,17 +607,23 @@
               <div
                 class="bg-[#f97a2c] p-12 rounded-3xl flex flex-col justify-center items-center gap-2 max-w-[264px] max-h-[231px] translate-y-5 group-hover:translate-y-0 transition-all duration-1000"
               >
-                <div class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square">
+                <div
+                  class="grid place-items-center bg-white rounded-3xl w-[80px] aspect-square"
+                >
                   <img src="./assets/images/bowl.png" alt="bowl image" />
                 </div>
-                <p class="text-white font-montserrat font-bold text-center line-clamp-2">
+                <p
+                  class="text-white font-montserrat font-bold text-center line-clamp-2"
+                >
                   Nutrition Advice
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <button class="bg-[#1386d1] block rounded-[41px] py-2 px-5 text-white mx-auto mt-[80px]">
+        <button
+          class="bg-[#1386d1] block rounded-[41px] py-2 px-5 text-white mx-auto mt-[80px]"
+        >
           See More
         </button>
       </div>
@@ -702,24 +645,32 @@
       >
         <!-- first flex -->
         <div class="flex flex-col gap-9 justify-start">
-          <button class="block max-w-[218px] bg-[#ffcfe2] p-2 rounded-3xl">About Us</button>
-          <h2 class="font-montserrat font-bold max-md:text-[30px] text-[44px] text-[#1e1e1e]">
+          <button class="block max-w-[218px] bg-[#ffcfe2] p-2 rounded-3xl">
+            About Us
+          </button>
+          <h2
+            class="font-montserrat font-bold max-md:text-[30px] text-[44px] text-[#1e1e1e]"
+          >
             Providing The Best Care Service for Your Pets
           </h2>
           <p class="font-poppings font-normal text-[16px] text-[#787878]">
-            At [Clinic Name], we are passionate about providing exceptional care for your furry
-            family members. Our team of experienced veterinarians and compassionate staff are
-            dedicated to ensuring the health and happiness of your pets. We offer a wide range of
-            services, from routine check-ups to specialized treatments, all tailored to meet the
-            unique needs of each pet. With a focus on building lasting relationships with our
-            clients, we strive to create a welcoming and supportive environment for both pets and
-            their owners. Trust us to be your partner in keeping your beloved companions healthy and
+            At [Clinic Name], we are passionate about providing exceptional care
+            for your furry family members. Our team of experienced veterinarians
+            and compassionate staff are dedicated to ensuring the health and
+            happiness of your pets. We offer a wide range of services, from
+            routine check-ups to specialized treatments, all tailored to meet
+            the unique needs of each pet. With a focus on building lasting
+            relationships with our clients, we strive to create a welcoming and
+            supportive environment for both pets and their owners. Trust us to
+            be your partner in keeping your beloved companions healthy and
             thriving.
           </p>
         </div>
         <!-- second flex -->
 
-        <div class="lg:self-start relative w-full max-w-[533px] flex flex-col items-center">
+        <div
+          class="lg:self-start relative w-full max-w-[533px] flex flex-col items-center"
+        >
           <div class="w-full max-w-[278px] relative z-10">
             <img
               src="./assets/images/dog.png"
@@ -730,7 +681,9 @@
           <button
             class="block w-full -mt-16 bg-[#3f9463] rounded-[24px] h-[85px] group-hover:h-auto lg:group-hover:h-[256px] transition-[height] duration-500 ease-in-out hover:ease-[cubic-bezier(0.68,-0.55,0.265,1.55)]"
           >
-            <p class="text-white font-montserrat font-bold text-[44px] pt-20 pb-11">
+            <p
+              class="text-white font-montserrat font-bold text-[44px] pt-20 pb-11"
+            >
               Trusted by 150k+ Pet Owners
             </p>
           </button>
@@ -754,7 +707,11 @@
           Your browser doesn't support the video tag
         </video>
 
-        <img class="play absolute cursor-pointer" src="./assets/images/play.png" alt="" />
+        <img
+          class="play absolute cursor-pointer"
+          src="./assets/images/play.png"
+          alt=""
+        />
 
         <img
           class="hidden pause absolute cursor-pointer"
@@ -793,7 +750,9 @@
             />
           </svg>
           <!-- image absolute div -->
-          <div class="absolute w-full max-w-[470px] bottom-[60px] right-20 scale-125 max-sm:hidden">
+          <div
+            class="absolute w-full max-w-[470px] bottom-[60px] right-20 scale-125 max-sm:hidden"
+          >
             <img
               class="object-cover h-full max-w-full"
               src="./assets/images/nurse&dog.webp"
@@ -806,18 +765,23 @@
           </div>
         </div>
         <!-- second flex div -->
-        <div class="flex flex-[1.5] flex-col gap-x-5 justify-center w-full relative">
+        <div
+          class="flex flex-[1.5] flex-col gap-x-5 justify-center w-full relative"
+        >
           <div class="max-w-[652px] min-h-[257px] self-end">
-            <h2 class="font-montserrat font-bold text-[44px] max-md:text-[30px] text-[#1e1e1e]">
+            <h2
+              class="font-montserrat font-bold text-[44px] max-md:text-[30px] text-[#1e1e1e]"
+            >
               Your Pet's Health and Happiness First.
             </h2>
             <p
               class="font-poppings font-normal text-base text-[#787878] text-pretty tracking-wider"
             >
-              We provide expert care with highly skilled veterinarians, compassionate service
-              treating pets like family, advanced facilities for accurate diagnoses, personalized
-              attention for customized care plans, and are trusted by thousands of pet owners to
-              keep their furry friends healthy and happy.
+              We provide expert care with highly skilled veterinarians,
+              compassionate service treating pets like family, advanced
+              facilities for accurate diagnoses, personalized attention for
+              customized care plans, and are trusted by thousands of pet owners
+              to keep their furry friends healthy and happy.
             </p>
           </div>
           <div
@@ -854,7 +818,9 @@
                   <span>50</span>
                   <span> +</span>
                 </div>
-                <p class="font-poppings font-normal text-sm">Years Experience</p>
+                <p class="font-poppings font-normal text-sm">
+                  Years Experience
+                </p>
               </div>
               <!-- fourth review -->
               <div class="flex flex-col items-center justify-center">
@@ -864,12 +830,16 @@
                   <span>10</span>
                   <span> +</span>
                 </div>
-                <p class="font-poppings font-normal text-sm">Professional Vets</p>
+                <p class="font-poppings font-normal text-sm">
+                  Professional Vets
+                </p>
               </div>
             </div>
             <div class="p-4 bg-[#f97a2c] rounded-3xl">
               <div class="flex flex-col justify-center items-center text-white">
-                <p class="font-montserrat font-bold text-[clamp(1rem,-0.8617rem+5.9574vw,4.5rem);]">
+                <p
+                  class="font-montserrat font-bold text-[clamp(1rem,-0.8617rem+5.9574vw,4.5rem);]"
+                >
                   24/7
                 </p>
                 <p class="font-poppins font-normal text-base">Customer Care</p>
@@ -891,32 +861,43 @@
 
     <!-- testimonial section  -->
     <section class="w-full py-[80px] px-[10px]">
-      <div class="max-w-[750px] mx-auto flex flex-col gap-[32px] justify-center">
+      <div
+        class="max-w-[750px] mx-auto flex flex-col gap-[32px] justify-center"
+      >
         <div class="flex flex-col gap-[51px] items-center">
           <button
             class="bg-[#FFDFCC] text-[#f97a2c] font-poppings font-normal text-[16px] rounded-[24px] p-[10px]"
           >
             Testimonials
           </button>
-          <h2 class="text-[#1e1e1e] text-[44px] max-md:text-[30px] font-bold font-montserrat">
+          <h2
+            class="text-[#1e1e1e] text-[44px] max-md:text-[30px] font-bold font-montserrat"
+          >
             Our Clients Feedback
           </h2>
         </div>
         <div class="overflow-hidden">
-          <div class="flex carousel-track transition-transform duration-500 ease-in-out">
+          <div
+            class="flex carousel-track transition-transform duration-500 ease-in-out"
+          >
             <!-- first testimonial -->
-            <div class="flex flex-col items-center justify-center gap-[59px] min-w-full">
+            <div
+              class="flex flex-col items-center justify-center gap-[59px] min-w-full"
+            >
               <div
                 class="bg-white rounded-[32px] w-[108px] aspect-square shadow-[0px_5.4px_21.6px_0px_#0000001A] flex justify-center items-center"
               >
                 <img src="./assets/images/quotation.png" alt="quotation" />
               </div>
               <div>
-                <p class="font-normal font-poppings text-base text-[#787878] text-justify">
-                  The team at [Clinic Name] is amazing! They treated my dog with such care and
-                  professionalism throughout the entire process. From the first consultation to the
-                  follow-up care, I felt completely at ease knowing my pet was in such capable
-                  hands. I wouldn’t trust anyone else with my dog's health.
+                <p
+                  class="font-normal font-poppings text-base text-[#787878] text-justify"
+                >
+                  The team at [Clinic Name] is amazing! They treated my dog with
+                  such care and professionalism throughout the entire process.
+                  From the first consultation to the follow-up care, I felt
+                  completely at ease knowing my pet was in such capable hands. I
+                  wouldn’t trust anyone else with my dog's health.
                 </p>
               </div>
               <span class="self-start">
@@ -929,25 +910,32 @@
                     />
                   </div>
                   <div>
-                    <h3 class="font-poppings font-semibold text-base">Michael T</h3>
+                    <h3 class="font-poppings font-semibold text-base">
+                      Michael T
+                    </h3>
                     <p class="font-poppings font-normal text-sm">Dog Owner</p>
                   </div>
                 </div>
               </span>
             </div>
             <!-- second testimonial -->
-            <div class="flex flex-col items-center justify-center gap-[59px] min-w-full">
+            <div
+              class="flex flex-col items-center justify-center gap-[59px] min-w-full"
+            >
               <div
                 class="bg-white rounded-[32px] w-[108px] aspect-square shadow-[0px_5.4px_21.6px_0px_#0000001A] flex justify-center items-center"
               >
                 <img src="./assets/images/quotation.png" alt="quotation" />
               </div>
               <div>
-                <p class="font-normal font-poppings text-base text-[#787878] text-justify">
-                  The team at [Clinic Name] is amazing! They treated my dog with such care and
-                  professionalism throughout the entire process. From the first consultation to the
-                  follow-up care, I felt completely at ease knowing my pet was in such capable
-                  hands. I wouldn’t trust anyone else with my dog's health.
+                <p
+                  class="font-normal font-poppings text-base text-[#787878] text-justify"
+                >
+                  The team at [Clinic Name] is amazing! They treated my dog with
+                  such care and professionalism throughout the entire process.
+                  From the first consultation to the follow-up care, I felt
+                  completely at ease knowing my pet was in such capable hands. I
+                  wouldn’t trust anyone else with my dog's health.
                 </p>
               </div>
               <span class="self-start">
@@ -960,25 +948,32 @@
                     />
                   </div>
                   <div>
-                    <h3 class="font-poppings font-semibold text-base">Michael T</h3>
+                    <h3 class="font-poppings font-semibold text-base">
+                      Michael T
+                    </h3>
                     <p class="font-poppings font-normal text-sm">Dog Owner</p>
                   </div>
                 </div>
               </span>
             </div>
             <!-- third testimonial -->
-            <div class="flex flex-col items-center justify-center gap-[59px] min-w-full">
+            <div
+              class="flex flex-col items-center justify-center gap-[59px] min-w-full"
+            >
               <div
                 class="bg-white rounded-[32px] w-[108px] aspect-square shadow-[0px_5.4px_21.6px_0px_#0000001A] flex justify-center items-center"
               >
                 <img src="./assets/images/quotation.png" alt="quotation" />
               </div>
               <div>
-                <p class="font-normal font-poppings text-base text-[#787878] text-justify">
-                  The team at [Clinic Name] is amazing! They treated my dog with such care and
-                  professionalism throughout the entire process. From the first consultation to the
-                  follow-up care, I felt completely at ease knowing my pet was in such capable
-                  hands. I wouldn’t trust anyone else with my dog's health.
+                <p
+                  class="font-normal font-poppings text-base text-[#787878] text-justify"
+                >
+                  The team at [Clinic Name] is amazing! They treated my dog with
+                  such care and professionalism throughout the entire process.
+                  From the first consultation to the follow-up care, I felt
+                  completely at ease knowing my pet was in such capable hands. I
+                  wouldn’t trust anyone else with my dog's health.
                 </p>
               </div>
               <span class="self-start">
@@ -991,7 +986,9 @@
                     />
                   </div>
                   <div>
-                    <h3 class="font-poppings font-semibold text-base">Michael T</h3>
+                    <h3 class="font-poppings font-semibold text-base">
+                      Michael T
+                    </h3>
                     <p class="font-poppings font-normal text-sm">Dog Owner</p>
                   </div>
                 </div>
@@ -1005,7 +1002,9 @@
     <!-- blog card section -->
     <section class="py-[43px] md:px-[98px] px-[10px]">
       <!-- blog div -->
-      <div class="max-w-[1242px] flex flex-col gap-[68px] justify-center items-center">
+      <div
+        class="max-w-[1242px] flex flex-col gap-[68px] justify-center items-center"
+      >
         <!-- first div section -->
         <div class="flex flex-col w-full">
           <div class="self-start">
@@ -1017,14 +1016,17 @@
           </div>
 
           <div class="flex justify-between items-center max-md:flex-col">
-            <h2 class="font-montserrat font-bold text-[44px] max-w-[499px] max-md:text-[30px]">
+            <h2
+              class="font-montserrat font-bold text-[44px] max-w-[499px] max-md:text-[30px]"
+            >
               Act Now! Check Out Our Blog Before It’s Too Late!
             </h2>
 
             <p class="font-poppings font-normal text-base max-w-[520px]">
-              Don’t let your pet’s health wait! Discover expert tips, practical advice, and
-              essential information to keep your furry friend happy and thriving. Dive into our blog
-              today and take the first step toward a healthier future for your pet!
+              Don’t let your pet’s health wait! Discover expert tips, practical
+              advice, and essential information to keep your furry friend happy
+              and thriving. Dive into our blog today and take the first step
+              toward a healthier future for your pet!
             </p>
           </div>
         </div>
@@ -1054,7 +1056,9 @@
               >
                 Tips
               </p>
-              <p class="font-montserrat font-bold text-black text-[21px] group-hover:text-white">
+              <p
+                class="font-montserrat font-bold text-black text-[21px] group-hover:text-white"
+              >
                 Keeping Your Dog's Eyes Healthy
               </p>
               <p
@@ -1084,7 +1088,9 @@
               >
                 Insight
               </p>
-              <p class="font-montserrat font-bold text-black text-[21px] group-hover:text-white">
+              <p
+                class="font-montserrat font-bold text-black text-[21px] group-hover:text-white"
+              >
                 Prevent and Treat Eye Infections in Cats
               </p>
               <p
@@ -1114,7 +1120,9 @@
               >
                 Tips
               </p>
-              <p class="font-montserrat font-bold text-black text-[21px] group-hover:text-white">
+              <p
+                class="font-montserrat font-bold text-black text-[21px] group-hover:text-white"
+              >
                 Keeping Your Dog's Eyes Healthy
               </p>
               <p
@@ -1145,7 +1153,9 @@
               >
                 News
               </p>
-              <p class="font-montserrat font-bold text-black text-[21px] group-hover:text-white">
+              <p
+                class="font-montserrat font-bold text-black text-[21px] group-hover:text-white"
+              >
                 Prevent and Treat Eye Infections in Cats
               </p>
               <p
@@ -1169,14 +1179,21 @@
           Contact
         </button>
 
-        <div class="w-full flex flex-wrap lg:justify-center items-center gap-[46px]">
+        <div
+          class="w-full flex flex-wrap lg:justify-center items-center gap-[46px]"
+        >
           <!-- first div -->
-          <div class="w-full lg:max-w-[401px] flex flex-col justify-center items-center">
+          <div
+            class="w-full lg:max-w-[401px] flex flex-col justify-center items-center"
+          >
             <div class="border-b border-b-[#787878] pb-[20px]">
-              <h2 class="font-montserrat font-bold text-[36px] text-[#0c0c0c]">Let's talk</h2>
+              <h2 class="font-montserrat font-bold text-[36px] text-[#0c0c0c]">
+                Let's talk
+              </h2>
               <p class="font-poppings font-normal text-[#787878] text-base">
-                Don’t let your pet’s health wait! Discover expert tips, practical advice, and
-                essential information to keep your furry friend happy and thriving.
+                Don’t let your pet’s health wait! Discover expert tips,
+                practical advice, and essential information to keep your furry
+                friend happy and thriving.
               </p>
             </div>
             <div class="w-full pt-[20px] flex flex-col gap-6">
@@ -1191,8 +1208,12 @@
                   />
                 </div>
                 <div>
-                  <h3 class="font-poppings text-base text-[#0c0c0c]">Our email</h3>
-                  <p class="font-poppings text-sm text-[#787878]">hello@example.com</p>
+                  <h3 class="font-poppings text-base text-[#0c0c0c]">
+                    Our email
+                  </h3>
+                  <p class="font-poppings text-sm text-[#787878]">
+                    hello@example.com
+                  </p>
                 </div>
               </div>
               <!-- phone -->
@@ -1207,8 +1228,12 @@
                   />
                 </div>
                 <div>
-                  <h3 class="font-poppings text-base text-[#0c0c0c]">Call us</h3>
-                  <p class="font-poppings text-sm text-[#787878]">+123 456 7892</p>
+                  <h3 class="font-poppings text-base text-[#0c0c0c]">
+                    Call us
+                  </h3>
+                  <p class="font-poppings text-sm text-[#787878]">
+                    +123 456 7892
+                  </p>
                 </div>
               </div>
               <!-- find us -->
@@ -1223,8 +1248,12 @@
                   />
                 </div>
                 <div>
-                  <h3 class="font-poppings text-base text-[#0c0c0c]">Find us</h3>
-                  <p class="font-poppings text-sm text-[#787878]">Open Google Maps</p>
+                  <h3 class="font-poppings text-base text-[#0c0c0c]">
+                    Find us
+                  </h3>
+                  <p class="font-poppings text-sm text-[#787878]">
+                    Open Google Maps
+                  </p>
                 </div>
               </div>
             </div>
@@ -1235,23 +1264,38 @@
           >
             <div class="grid gap-1">
               <label for="">First name</label>
-              <input type="text" class="outline-none border-b border-b-[#787878] bg-transparent" />
+              <input
+                type="text"
+                class="outline-none border-b border-b-[#787878] bg-transparent"
+              />
             </div>
             <div class="grid gap-1">
               <label for="">Last name</label>
-              <input type="text" class="outline-none border-b border-b-[#787878] bg-transparent" />
+              <input
+                type="text"
+                class="outline-none border-b border-b-[#787878] bg-transparent"
+              />
             </div>
             <div class="grid gap-1">
               <label for="">Email</label>
-              <input type="text" class="outline-none border-b border-b-[#787878] bg-transparent" />
+              <input
+                type="text"
+                class="outline-none border-b border-b-[#787878] bg-transparent"
+              />
             </div>
             <div class="grid gap-1">
               <label for="">Phone</label>
-              <input type="text" class="outline-none border-b border-b-[#787878] bg-transparent" />
+              <input
+                type="text"
+                class="outline-none border-b border-b-[#787878] bg-transparent"
+              />
             </div>
             <div class="grid gap-1 col-span-full">
               <label for="">Message</label>
-              <input type="text" class="outline-none border-b border-b-[#787878] bg-transparent" />
+              <input
+                type="text"
+                class="outline-none border-b border-b-[#787878] bg-transparent"
+              />
             </div>
 
             <button
@@ -1265,85 +1309,6 @@
     </section>
 
     <!-- footer section -->
-    <footer
-      class="w-full py-[73px] md:px-[100px] px-[10px] border-t border-t[#787878] flex flex-col gap-[120px]"
-    >
-      <div class="max-w-[1240px] w-full flex max-sm:flex-col justify-between gap-[16px]">
-        <div
-          class="flex-1 max-w-[612px] flex flex-col gap-[24px] max-sm:flex-row max-sm:justify-between max-sm:mb-8"
-        >
-          <div class="flex gap-[10px] justify-start items-center">
-            <svg
-              width="40"
-              height="36"
-              viewBox="0 0 40 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.738634" width="39.8339" height="34.5227" rx="9.41869" fill="#58D68D" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M31.215 11.4736H35.1246L24.1623 28.7986L21.556 24.2757L18.5662 28.7986L16.8796 26.4987L21.556 19.1394L24.0856 23.0492L31.215 11.4736Z"
-                fill="white"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M23.2301 18.227L27.9669 11.4758H24.3809L22.8979 14.0215C22.0036 15.583 22.6726 16.921 23.2301 18.227Z"
-                fill="white"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M19.8325 18.0323L21.0409 16.2014C19.669 10.6731 16.5604 7.00503 11.7759 7.20967C6.22543 7.5802 3.36791 13.462 5.32527 17.6541L11.06 28.1396C11.5419 28.94 12.4541 28.979 12.9358 28.2114L15.4515 23.3802L14.479 21.4862L12.0822 26.4585L7.11692 17.0908C5.41604 13.8303 8.12347 9.43423 11.7759 9.15293C13.9162 8.86466 16.7453 10.9306 17.9207 14.0618L19.8325 18.0321V18.0323Z"
-                fill="white"
-              />
-              <path
-                d="M12.3337 17.5186C13.4523 17.5186 14.359 16.6118 14.359 15.4933C14.359 14.3747 13.4523 13.4679 12.3337 13.4679C11.2151 13.4679 10.3083 14.3747 10.3083 15.4933C10.3083 16.6118 11.2151 17.5186 12.3337 17.5186Z"
-                fill="white"
-              />
-            </svg>
-
-            <p class="font-mulish text-base">Wivali AI</p>
-          </div>
-          <button
-            class="w-fit rounded-3xl flex gap-1 justify-center items-center font-poppings text-sm text-[#1e1e1e] border border-[#58d68d] py-[11px] px-[28px]"
-          >
-            <span><img src="./assets/images/small-message.png" alt="" /></span> Drop a line
-          </button>
-        </div>
-        <div
-          class="flex-1 max-w-[612px] flex justify-between gap-[16px] text-[#1e1e1e] text-sm font-poppings font-normal"
-        >
-          <div class="flex-1">
-            <h3 class="font-semibold text-[10px]">NAV</h3>
-            <p>Home</p>
-            <p>Services</p>
-          </div>
-          <div class="flex-1">
-            <h3 class="font-semibold text-[10px]">ABOUT</h3>
-            <p>Blog</p>
-            <p>About us</p>
-          </div>
-          <div class="flex-1">
-            <h3 class="font-semibold text-[10px]">CONTACT US</h3>
-            <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-            <p>+1 891 989-11-91</p>
-            <p>hello@logoipsum.com</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <span class="font-poppings font-medium text-[10px] text-[#1e1e1e]">© 2025 — Copyright</span>
-        <span class="flex gap-6">
-          <img src="./assets/images/instagram.png" alt="instagram icon" /><img
-            src="./assets/images/facebook.png"
-            alt="facebook icon"
-          />
-        </span>
-      </div>
-    </footer>
 
     <script src="./js/index.js"></script>
   </body>
