@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
@@ -16,6 +18,30 @@
     <script src="./assets/js/favourite.js" defer></script>
     <script src="./assets/js/slideTestimonial.js" defer></script>
     <script src="./assets/js/slideTeamCarousel.js" defer></script>
+    <style>
+        :root{
+            --blog-color:#F6F6F6;
+            --form-bg:#30303082;
+            --grey:#70798B;
+            --black-1:#081420
+        
+        }
+
+        @layer utilities {
+            .bg-blog-img-1 {
+                background-image: url('./assets/images/blog-img-1.png');
+            }
+             .bg-blog-img-2 {
+                background-image: url('./assets/images/blog-img-2.png');
+            }
+            .font-inter{
+                font-family: "Inter", sans-serif;
+            }
+            .bg-input{
+                background: linear-gradient(to right, #12121260, #26252560, #17161660, #19191960);
+            }
+        }
+    </style>
 
 </head>
 <body class="font-poppins text-white">
@@ -28,10 +54,10 @@
         <div id="header-bigscreen-navigation" class="hidden  md:flex  px-4">
             <ul class= "justify-between flex items-center gap-8 w-full  text-white text-xs lg:text-sm">
                 <li> <a href="/" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Home</a> </li>
-                <li> <a href="/about" class="hover:text-primary p-2 rounded-lg   transition-[color] ">About</a> </li>
-                <li> <a href="/shop" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Shop</a> </li>
-                <li> <a href="/blog" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Blog</a> </li>
-                <li> <a href="/contact-us" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
+                <li> <a href="/about.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">About</a> </li>
+                <li> <a href="/shop.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Shop</a> </li>
+                <li> <a href="/blog.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Blog</a> </li>
+                <li> <a href="/contact-us.html" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
             </ul>
         </div>
 
@@ -495,7 +521,9 @@
     </section>
     <section id="team" class="flex flex-col mx-auto my-32 w-[calc(65%+4rem)]">
         <!-- Tailwind class safelist -->
-    <div class="hidden opacity-0 opacity-100 absolute top-0 left-0 transition-opacity duration-1000"></div>
+         <div class="hidden opacity-0 opacity-100 absolute top-0 left-0 transition-opacity duration-1000"></div>
+        <h1 class="text-primary text-5xl font-semibold ">Meet Our Dedicated Team</h1>
+         <p class="text-base text-black my-9">Our farm is powered by a passionate team of individuals committed to sustainable farming and community engagement. Together, we work tirelessly to bring you the best organic produce and foster a connection between people and nature.</p>
 
         <div id="team-carousel-wrapper" class="relative overflow-hidden w-full" >
             <div id="team-carousel" class="flex items-center gap-4 relative left-[40%] px-4 py-16 transition-all duration-700">
@@ -582,5 +610,83 @@
             </div>
         </div>
     </section>
+    <section id='blog' class="flex flex-col items-center bg-[var(--blog-color)] mx-auto my-32 py-20">
+        <h1 class="text-primary text-5xl font-semibold  w-[calc(65%+4rem)]">Blog</h1>
+         <p class="text-base text-black my-12 w-[calc(65%+4rem)]">Explore Our Insights and Tips on Organic Farming, Sustainable Practices, and Healthy Living</p>
+        <div id="posts" class="grid grid-cols-2 gap-x-7 w-[calc(65%+4rem)]">
+            <div class="relative rounded-xl h-[35rem] roundedx-xl overflow-clip">
+                <img class="absolute  inset-0 h-full object-cover object-center" src="./assets/images/blog-img-1.png" />
+                <div class="relative z-10 flex flex-col justify-between h-full p-10 bg-black/50" >
+                    <p class="text-3xl">5 Benefits of Eating Organic Produce</p>
+                    <a href="/posts/" class="p-10 text-black bg-[var(--blog-color)] rounded-xl hover:bg-orange transition-colors duration-300">
+                        <p class="font-inter font-medium">January 1, 2024</p>
+                        <p class="text-2xl font-semibold py-2">Discover the health benefits of incorporating organic fruits and vegetables into your diet....</p>
+                    </a>
+                </div>
+            </div>
+           <div class="relative rounded-xl h-[35rem] roundedx-xl overflow-clip">
+                <img class="absolute  inset-0 h-full object-cover object-center" src="./assets/images/blog-img-2.png" />
+                <div class="relative z-10 flex flex-col justify-between h-full p-10 bg-black/50" >
+                    <p class="text-3xl">5 Benefits of Eating Organic Produce</p>
+                    <a href="/posts/" class="p-10 text-black bg-[var(--blog-color)] rounded-xl hover:bg-orange transition-colors duration-300">
+                        <p class="font-inter font-medium">January 1, 2024</p>
+                        <p class="text-2xl font-semibold py-2">Discover the health benefits of incorporating organic fruits and vegetables into your diet....</p>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section id="newsletter" class="flex flex-col items-center gap-4 font-inter bg-primary w-[calc(75%+4rem)] mx-auto my-9 p px-6 py-12 rounded-2xl">
+        <p class="text-xl font-medium pb-2">Sign Up Newsletter & Promotions!</p>
+        <p class="text-5xl font-bold">get 25% discount</p>
+        <p class="text-5xl ">on your next purchase</p>
+        <form class="flex bg-[var(--form-bg)] p-3 gap-2 w-4/5 max-w-[560px] rounded-xl mt-4" method="post" action="/newsletter">
+            <input type="email" name="email" id="email" aria-label="Email address" class="grow rounded-md pl-3 bg-input focus:outline-0 focus:border-2 focus:border-primary" placeholder="Enter Your Email">
+            <button class="bg-primary rounded-lg text-center py-3 w-32 hover:bg-white hover:text-primary transition-colors duration-300">Submit</button>
+        </form>
+    </section>
+    <section id="footer" class="flex flex-col items-center  text-[var(--grey)]  my-9 p px-6 py-12 rounded-2xl">
+        <div class="flex items-center justify-evenly gap-4 font-inter font-medium w-[calc(75%+4rem)] mb-24">
+            <img src="./assets/images/footer-logo.svg" alt="logo image" class="w-20">
+            <div class="grow flex gap-8 justify-evenly">
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Visit Link</li>
+                    <li class="hover:text-primary transition-colors"><a href="/shop">Shop</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/privacy">Privacy</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/terms">Terms & Conditions</a></li>
+                </ul>
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Company</li>
+                    <li class="hover:text-primary transition-colors"><a href="/">Home</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/about">About Us</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="grow flex gap-8 justify-evenly">
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Contact</li>
+                    <li class="hover:text-primary transition-colors"><a href="tel:+2345678910">+2345678910</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="mailto:info@name.com">info@name.com</a></li>
+                </ul>
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Company</li>
+                    <li class="hover:text-primary transition-colors">123 Kings Street.</li>
+                    <li class="hover:text-primary transition-colors">California, USA.</li>
+                    <li class="hover:text-primary transition-colors">Post-Code: 111111</li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-[1px] w-full bg-[var(--grey)]"></div>
+        <div class="flex flex-col md:flex-row justify-between w-[calc(75%+4rem)] mt-16">
+            <p class="font-poppins font-normal">© 2024 By Name. All rights reserved.</p>
+            <div class="flex gap-2 items-center">
+                <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%23000000" alt="sarah green's instagram  link" class="w-4">
+                <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%23000000" alt="sarah green's link on linkedin" class="w-4">
+                <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%23000000" alt="sarah green's facebook  link" class="w-4"></a>
+                <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%23000000" alt="sarah green's twitter  link" class="w-4"></a>    
+            </div>
+        </div>
+    </section>
 </body>
 </html>
+
+

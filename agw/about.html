@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGW | Wivali- About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <script src="./assets/js/hero.js" defer></script> -->
+    <script src="./assets/js/activeLink.js" defer></script>
+    <!-- <script src="./assets/js/favourite.js" defer></script>
+    <script src="./assets/js/slideTestimonial.js" defer></script>
+    <script src="./assets/js/slideTeamCarousel.js" defer></script>
+    <style> -->
+        :root{
+            --blog-color:#F6F6F6;
+            --form-bg:#30303082;
+            --grey:#70798B;
+            --black-1:#081420
+        
+        }
+
+        @layer utilities {
+            .bg-blog-img-1 {
+                background-image: url('./assets/images/blog-img-1.png');
+            }
+             .bg-blog-img-2 {
+                background-image: url('./assets/images/blog-img-2.png');
+            }
+            .font-inter{
+                font-family: "Inter", sans-serif;
+            }
+            .bg-input{
+                background: linear-gradient(to right, #12121260, #26252560, #17161660, #19191960);
+            }
+        }
+    </style>
+
+</head>
+<body class="font-poppins text-white">
+    <section id="header" class="fixed z-50 w-full flex justify-center top-4 left-1/2 -translate-x-1/2 border-b">
+       <div class="flex justify-between items-center gap-16 w-[90%] max-w-[1200px]   px-10 py-4 transition-[top] duration-[1500ms]">
+            <div id="brand" class="">   
+                <span class="iconify mdi:home"></span>
+                <img src="./assets/images/footer-logo.svg" alt="logo" class="w-12">
+            </div>
+
+            <div id="header-bigscreen-navigation" class="hidden  md:flex  px-4">
+                <ul class= "justify-between flex items-center gap-8 w-full  text-black text-xs lg:text-sm">
+                    <li> <a href="/" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Home</a> </li>
+                    <li> <a href="/about" class="hover:text-primary p-2 rounded-lg   transition-[color] ">About</a> </li>
+                    <li> <a href="/shop" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Shop</a> </li>
+                    <li> <a href="/blog" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Blog</a> </li>
+                    <li> <a href="/contact-us" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <img src="./assets/images/search-icon.svg" alt="search icon" class="w-6">
+                <button class="flex items-center justify-between gap-2 bg-primary py-2 px-3 rounded-lg text-white hover:bg-black transition-[background-color] duration-300">
+                    Basket  
+                    <div class="relative">
+                        <img src="./assets/images/bag-timer.svg" alt="">
+                    </div>
+                </button>
+            </div>
+       </div>
+    </section>
+
+</body>
