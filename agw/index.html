@@ -23,7 +23,8 @@
             --blog-color:#F6F6F6;
             --form-bg:#30303082;
             --grey:#70798B;
-            --black-1:#081420
+            --black-1:#081420;
+            --primary:#0EAF4B;
         
         }
 
@@ -57,7 +58,7 @@
                 <li> <a href="/about.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">About</a> </li>
                 <li> <a href="/shop.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Shop</a> </li>
                 <li> <a href="/blog.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Blog</a> </li>
-                <li> <a href="/contact-us.html" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
+                <li> <a href="/contact.html" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
             </ul>
         </div>
 
@@ -635,13 +636,13 @@
                 </div>
             </div>
     </section>
-    <section id="newsletter" class="flex flex-col items-center gap-4 font-inter bg-primary w-[calc(75%+4rem)] mx-auto my-9 p px-6 py-12 rounded-2xl">
-        <p class="text-xl font-medium pb-2">Sign Up Newsletter & Promotions!</p>
-        <p class="text-5xl font-bold">get 25% discount</p>
-        <p class="text-5xl ">on your next purchase</p>
-        <form class="flex bg-[var(--form-bg)] p-3 gap-2 w-4/5 max-w-[560px] rounded-xl mt-4" method="post" action="/newsletter">
-            <input type="email" name="email" id="email" aria-label="Email address" class="grow rounded-md pl-3 bg-input focus:outline-0 focus:border-2 focus:border-primary" placeholder="Enter Your Email">
-            <button class="bg-primary rounded-lg text-center py-3 w-32 hover:bg-white hover:text-primary transition-colors duration-300">Submit</button>
+     <section id="newsletter" class="flex flex-col items-center gap-4 font-inter bg-[var(--primary)] w-[calc(75%+4rem)] mx-auto my-9 p px-6 py-12 rounded-2xl">
+        <p class="text-xl text-center font-medium pb-2">Sign Up Newsletter & Promotions!</p>
+        <p class="text-5xl text-center font-bold">get 25% discount</p>
+        <p class="text-5xl text-center">on your next purchase</p>
+        <form class="flex flex-col sm:flex-row bg-[var(--form-bg)] p-3 gap-2 w-full sm:w-4/5 max-w-[560px] rounded-xl mt-4" method="post" action="/newsletter">
+            <input type="email" name="email" id="email" aria-label="Email address" class="text-white grow rounded-md pl-3 bg-input focus:outline-0 focus:border-2 focus:border-primary h-10 sm:h-auto" placeholder="Enter Your Email">
+            <button class="self-end md:self-center bg-[var(--primary)] rounded-lg text-center py-3 w-32 hover:bg-black transition-colors duration-300">Submit</button>
         </form>
     </section>
     <section id="footer" class="flex flex-col items-center  text-[var(--grey)]  my-9 p px-6 py-12 rounded-2xl">
@@ -650,15 +651,15 @@
             <div class="grow flex gap-8 justify-evenly">
                 <ul class="flex flex-col gap-3">
                     <li class="text-[var(--black-1)] text-xl font-medium">Visit Link</li>
-                    <li class="hover:text-primary transition-colors"><a href="/shop">Shop</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/shop.html">Shop</a></li>
                     <li class="hover:text-primary transition-colors"><a href="/privacy">Privacy</a></li>
                     <li class="hover:text-primary transition-colors"><a href="/terms">Terms & Conditions</a></li>
                 </ul>
                 <ul class="flex flex-col gap-3">
                     <li class="text-[var(--black-1)] text-xl font-medium">Company</li>
                     <li class="hover:text-primary transition-colors"><a href="/">Home</a></li>
-                    <li class="hover:text-primary transition-colors"><a href="/about">About Us</a></li>
-                    <li class="hover:text-primary transition-colors"><a href="/contact">Contact Us</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/about.html">About Us</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="grow flex gap-8 justify-evenly">

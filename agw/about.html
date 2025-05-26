@@ -17,27 +17,22 @@
     <script src="./assets/js/activeLink.js" defer></script>
     <!-- <script src="./assets/js/favourite.js" defer></script>
     <script src="./assets/js/slideTestimonial.js" defer></script>
-    <script src="./assets/js/slideTeamCarousel.js" defer></script>
-    <style> -->
+    <script src="./assets/js/slideTeamCarousel.js" defer></script> -->
+    <style>
         :root{
             --blog-color:#F6F6F6;
             --form-bg:#30303082;
             --grey:#70798B;
-            --black-1:#081420
+            --black-1:#081420;
+            --header-height: 5rem
         
         }
 
         @layer utilities {
-            .bg-blog-img-1 {
-                background-image: url('./assets/images/blog-img-1.png');
+            .bg-about-hero{
+                background: url('/assets/images/about-hero.png')
             }
-             .bg-blog-img-2 {
-                background-image: url('./assets/images/blog-img-2.png');
-            }
-            .font-inter{
-                font-family: "Inter", sans-serif;
-            }
-            .bg-input{
+             .bg-input{
                 background: linear-gradient(to right, #12121260, #26252560, #17161660, #19191960);
             }
         }
@@ -45,8 +40,8 @@
 
 </head>
 <body class="font-poppins text-white">
-    <section id="header" class="fixed z-50 w-full flex justify-center top-4 left-1/2 -translate-x-1/2 border-b">
-       <div class="flex justify-between items-center gap-16 w-[90%] max-w-[1200px]   px-10 py-4 transition-[top] duration-[1500ms]">
+    <section id="header" class="fixed z-50 w-full flex justify-center top-0 left-1/2 -translate-x-1/2 bg-white border-b border-[color:var(--black-1)] h-[var(--header-height)]">
+       <div class="flex justify-between items-center gap-16 w-[90%] max-w-[1200px] px-10 py-4 transition-[top] duration-[1500ms]">
             <div id="brand" class="">   
                 <span class="iconify mdi:home"></span>
                 <img src="./assets/images/footer-logo.svg" alt="logo" class="w-12">
@@ -55,15 +50,16 @@
             <div id="header-bigscreen-navigation" class="hidden  md:flex  px-4">
                 <ul class= "justify-between flex items-center gap-8 w-full  text-black text-xs lg:text-sm">
                     <li> <a href="/" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Home</a> </li>
-                    <li> <a href="/about" class="hover:text-primary p-2 rounded-lg   transition-[color] ">About</a> </li>
-                    <li> <a href="/shop" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Shop</a> </li>
-                    <li> <a href="/blog" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Blog</a> </li>
-                    <li> <a href="/contact-us" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
+                    <li> <a href="/about.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">About</a> </li>
+                    <li> <a href="/shop.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Shop</a> </li>
+                    <li> <a href="/blog.html" class="hover:text-primary p-2 rounded-lg   transition-[color] ">Blog</a> </li>
+                    <li> <a href="/contact.html" class="hover:text-primary p-2 rounded-lg transition-[color] whitespace-nowrap">Contact</a> </li>
                 </ul>
             </div>
 
             <div class="flex items-center gap-4">
-                <img src="./assets/images/search-icon.svg" alt="search icon" class="w-6">
+                <button id="search"><img src="https://api.iconify.design/lucide/search.svg?color=%23000000" alt="search icon" aria-label="search icon" class="
+                    w-6"></button>
                 <button class="flex items-center justify-between gap-2 bg-primary py-2 px-3 rounded-lg text-white hover:bg-black transition-[background-color] duration-300">
                     Basket  
                     <div class="relative">
@@ -72,6 +68,91 @@
                 </button>
             </div>
        </div>
+    </section>
+    <section id="about-hero" class="relative w-[calc(75%+4rem)] h-[40svh] rounded-xl mx-auto mt-[calc(var(--header-height)+2rem)] overflow-clip ">
+        <img src="./assets/images/about-hero.png" alt="about page hero background image" class="object-cover object-center w-full h-full">
+    </section>
+     <section id="about" class="flex gap-16 justify-center items-center text-black mt-32 mb-16 ">
+        <div class="max-w-[40%] flex flex-col gap-12">
+            <h1 class="text-primary text-5xl font-semibold ">About US</h1>
+            <p class="">Founded on the principles of sustainability and community, our farm is more than just a place to grow crops it's a way of life. We believe in nurturing the earth and bringing the best organic produce directly from our fields to your table.</p>
+            <div class="flex gap-12 justify-between">
+                <div class=" w-1/2">
+                    <p class="text-2xl">Sustainability</p>
+                    <p class="text-base">We use eco friendly methods that protect and enhance our natural resources.</p>
+                </div>
+                <div class="w-1/2">
+                    <p class="text-2xl">Organic Farming</p>
+                    <p class="text-base">No chemicals, no shortcuts just pure, wholesome produce.</p>
+                </div>
+            </div>
+            <div class="flex gap-12 justify-between">
+                <div class=" w-1/2">
+                    <p class="text-2xl">Community Engagement</p>
+                    <p class="text-base">Supporting local communities through educational farm tours and events.</p>
+                </div>
+                <div class="w-1/2">
+                    <p class="text-2xl whitespace-nowrap">Innovation</p>
+                    <p class="text-base">Embracing new technologies and practices to improve efficiency and sustainability in our farming methods.</p>
+                </div>
+            </div>
+            <button class="self-start bg-primary py-3 px-4 rounded-md text-white hover:bg-black btn-custom-transition">Learn More </button>
+
+        </div>
+        <div class="max-w-[25%] rounded-2xl ">
+            <img src="./assets//images//about-image.png" alt="about us image">
+        </div>
+    </section>
+        <section id="newsletter" class="flex flex-col items-center gap-4 font-inter bg-primary w-[calc(75%+4rem)] mx-auto my-9 p px-6 py-12 rounded-2xl">
+        <p class="text-xl font-medium pb-2">Sign Up Newsletter & Promotions!</p>
+        <p class="text-5xl font-bold">get 25% discount</p>
+        <p class="text-5xl ">on your next purchase</p>
+        <form class="flex bg-[var(--form-bg)] p-3 gap-2 w-4/5 max-w-[560px] rounded-xl mt-4" method="post" action="/newsletter">
+            <input type="email" name="email" id="email" aria-label="Email address" class="grow rounded-md pl-3 bg-input focus:outline-0 focus:border-2 focus:border-primary" placeholder="Enter Your Email">
+            <button class="bg-primary rounded-lg text-center py-3 w-32 hover:bg-white hover:text-primary transition-colors duration-300">Submit</button>
+        </form>
+    </section>
+    <section id="footer" class="flex flex-col items-center  text-[var(--grey)]  my-9 p px-6 py-12 rounded-2xl">
+        <div class="flex items-center justify-evenly gap-4 font-inter font-medium w-[calc(75%+4rem)] mb-24">
+            <img src="./assets/images/footer-logo.svg" alt="logo image" class="w-20">
+            <div class="grow flex gap-8 justify-evenly">
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Visit Link</li>
+                    <li class="hover:text-primary transition-colors"><a href="/shop.html">Shop</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/privacy">Privacy</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/terms">Terms & Conditions</a></li>
+                </ul>
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Company</li>
+                    <li class="hover:text-primary transition-colors"><a href="/">Home</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/about.html">About Us</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="grow flex gap-8 justify-evenly">
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Contact</li>
+                    <li class="hover:text-primary transition-colors"><a href="tel:+2345678910">+2345678910</a></li>
+                    <li class="hover:text-primary transition-colors"><a href="mailto:info@name.com">info@name.com</a></li>
+                </ul>
+                <ul class="flex flex-col gap-3">
+                    <li class="text-[var(--black-1)] text-xl font-medium">Company</li>
+                    <li class="hover:text-primary transition-colors">123 Kings Street.</li>
+                    <li class="hover:text-primary transition-colors">California, USA.</li>
+                    <li class="hover:text-primary transition-colors">Post-Code: 111111</li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-[1px] w-full bg-[var(--grey)]"></div>
+        <div class="flex flex-col md:flex-row justify-between w-[calc(75%+4rem)] mt-16">
+            <p class="font-poppins font-normal">© 2024 By Name. All rights reserved.</p>
+            <div class="flex gap-2 items-center">
+                <a href='#' ><img src="https://api.iconify.design/uil/instagram.svg?color=%23000000" alt="sarah green's instagram  link" class="w-4">
+                <a href='#' ><img src="https://api.iconify.design/basil/linkedin-solid.svg?color=%23000000" alt="sarah green's link on linkedin" class="w-4">
+                <a href='#' ><img src="https://api.iconify.design/gg/facebook.svg?color=%23000000" alt="sarah green's facebook  link" class="w-4"></a>
+                <a href='#' ><img src="https://api.iconify.design/mingcute/twitter-fill.svg?color=%23000000" alt="sarah green's twitter  link" class="w-4"></a>    
+            </div>
+        </div>
     </section>
 
 </body>

@@ -28,18 +28,18 @@ function handleAnimation (element, id, screenWidth){
     const rect = element.getBoundingClientRect()
     const headerHeight= document.getElementById('header').offsetHeight
     const animatedTextPropArr=[
-        'translateY(0)',
-        'translateY(0)',
-        'translateY(0)',
-        'translateY(0)',
+        'translateX(0)',
+        'translateX(0)',
+        'translateX(0)',
+        'translateX(0)',
         'rotate(0deg)',
         'rotate(10deg)',
-        'translateY(3rem)'
+        'translateY(1.5rem)'
     ]
 
     if(screenWidth <= '1024'){ //smaller than desktop view
         if(rect.top >= headerHeight && rect.bottom <= window.innerHeight  ){
-            id == 1 ? null : element.style.transform= animatedTextPropArr   [id]
+            id == 1 ? null : element.style.transform= animatedTextPropArr[id]
         }else{
             id == 1 ? null : element.style.transform = ''
         }
